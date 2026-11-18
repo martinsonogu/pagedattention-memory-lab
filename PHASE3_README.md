@@ -2,8 +2,8 @@
 
 Milestone 1 implements deterministic simulation replay and unit tests. Milestone 2
 adds independent workload generation, canonical serialization, validation, and
-replay adapters. There is no experiment runner, full matrix execution, or
-performance claim. Phase 1 and Phase 2 files and canonical CSVs remain unchanged;
+replay adapters. Milestone 3 adds a single-workload runner and a separate
+correctness smoke harness. No full matrix has been executed or performance claim made. Phase 1 and Phase 2 files and canonical CSVs remain unchanged;
 Milestone 2 also preserves the Milestone 1 simulator and its tests.
 
 ## API and validation
@@ -171,14 +171,15 @@ workload tests, bringing the suite to 60 tests including the unchanged 23 Phase
 mixed-choice thresholds, types, IDs, arrival ordering, splits, burst groups,
 canonical hashes, malformed input, round trips, separate-process reproducibility,
 empty input, and tiny simulator API replays. This is correctness validation, not
-the 72-case smoke matrix or the full experiment matrix; neither was run here.
+the 72-case smoke matrix or the full experiment matrix; neither was run during
+Milestone 2. Milestone 3 smoke validation is described below.
 
 No GPU, prefill compute, allocator runtime, bandwidth, batching, swapping, block
 sharing, or contiguous fragmentation is modeled. Admission can occur early while
 completion is delayed by stalls or compute deferrals. Larger active counts need
 not mean more useful concurrency. The implementation favors explicit invariant
-checks and readable traces over simulation speed. Experiment runners, full-matrix
-controls, and statistical analysis remain future milestones; this core cannot
+checks and readable traces over simulation speed. Full-matrix
+controls and statistical analysis remain future milestones; this core cannot
 reproduce real vLLM GPU throughput.
 
 ## Milestone 2: workload generation and replay
@@ -281,3 +282,123 @@ the simulator or regenerate data. Realized outputs are provided to the existing
 execution component, whose scheduler-visible records still exclude output lengths.
 Use the same loaded workload for every allocation strategy, budget, and compute
 setting; never regenerate condition-specific traces during an experiment.
+
+## Milestone 3: runner and correctness smoke validation
+
+`phase3_experiment.py` accepts one validated saved workload (`--workload`) or an
+explicit complete generator manifest (`--manifest`). A manifest has exactly the
+Milestone 2 `manifest` object's four fields: generator_version, config,
+distribution_definitions, and rng. Every config field must be present; the primary
+matrix plan is not a single-workload manifest. Generation occurs once. Loading
+uses the existing strict loader and never regenerates. One immutable adapter tuple
+is reused for all budgets, compute settings, and four allocators. The simulator,
+generator, primary plan, earlier-phase files, and canonical CSVs are unchanged.
+
+Budgets and compute limits must be nonempty, unique sequences of positive integers
+(excluding bool); `unlimited` on the CLI maps to `None`. Every budget must fit each
+allocator's own R, including block rounding. All condition validation precedes
+simulation. Conditions run in ascending budget order, then unlimited followed by
+ascending finite compute limits, then fixed, paged-8, paged-16, paged-32. There is
+no shared concurrency cap. This runner does not enumerate the primary matrix or
+640 controls.
+
+Example using an already saved workload (choose a new external output path):
+
+```sh
+python3 -B phase3_experiment.py --workload /tmp/phase3-example.json --budgets 2048 4096 --compute unlimited 8 --output /tmp/phase3-example-runs.jsonl
+```
+
+Replace `--workload PATH` with `--manifest PATH` to explicitly generate from a
+complete manifest. `--outcomes` includes input-order per-request outcomes;
+`--trace` includes full event snapshots independently. Both default off. The
+simulator still creates per-request records internally; full traces can consume
+substantial memory. Summaries stream one run at a time to JSONL, using sorted keys,
+compact separators, ASCII escaping, finite numbers only, UTF-8, and one LF per
+row. Existing outputs are never overwritten. Resolved output paths inside the
+repository are rejected, including symlinks resolving there. Output is streamed
+to a hidden sibling `.partial` file, flushed and fsynced, then published by an
+atomic hard link only after the iterator finishes. Publication refuses to replace
+an existing destination, including one created concurrently. Exceptions remove
+the temporary file; abrupt process termination may leave only a `.partial` file,
+which is not a completed output. This requires a filesystem supporting hard links.
+It is process-interruption protection, not a power-loss durability guarantee.
+The declared configuration determines the expected row count; consumers should
+still verify counts if files are subsequently copied or externally truncated.
+
+Each row includes the workload payload SHA-256, generator and workload schema
+versions, seed and generator config, experiment config, allocator config, policy
+version `phase3-fifo-oldest-protection-v1`, metric schema version 1, Git HEAD,
+working-tree dirty flag, and SHA-256 of the simulator, generator, and runner source.
+The source hashes identify uncommitted execution code; a Git revision alone does
+not. Identical source, Git metadata, workload, and conditions yield identical
+bytes. Changing commit or dirty state intentionally changes metadata. Running
+outside a Git checkout fails rather than inventing a revision. Workload integrity
+still does not prove seed provenance; valid noncanonical input is normalized as
+in Milestone 2.
+
+### Summary metrics (simulator values, without substitutions)
+
+All required metrics are available in the existing API. The runner preserves the
+complete `metrics` dictionary and its original names:
+
+| Fields | Definition |
+| --- | --- |
+| admitted_requests, completed_requests | Counts over all input requests, including prompt-only requests |
+| mean_latency_ticks, p95_latency_ticks | Completion minus arrival, across all requests; nearest-rank ceil(0.95 N) percentile |
+| makespan | Last completion timestamp from time zero, including initial and intervening idle time |
+| mean_progressing_requests | Successful generated tokens / makespan, including idle ticks in the denominator |
+| mean_waiting_ticks, p95_waiting_ticks | Admission minus arrival, across all requests, same percentile rule |
+| peak_active_requests | Largest resident population over all event snapshots, including transient prompt-only admissions |
+| generated_tokens | Number of successful one-token generation steps |
+| physical_capacity_stalls, protected_headroom_stalls | Mutually exclusive eligible request-ticks blocked by physical allocation or then protection |
+| compute_deferrals | Eligible request-ticks deferred after the successful-generation budget is consumed; memory eligibility is not tested |
+| allocated_slot_ticks, used_slot_ticks, protected_headroom_slot_ticks | Sum of the respective post-generation, pre-release memory samples over busy intervals; idle intervals contribute zero |
+| peak_occupancy, peak_live_occupancy | Maximum allocated or live slots over all snapshots, divided by budget; protection is not physical allocation |
+| unused_allocated_slot_ticks | Allocated minus used slot-ticks; fixed unused reservation or paged internal rounding waste, not external fragmentation |
+
+Queued/future requests and prompt-only completions are excluded from growth and
+compute outcome counts. Successful generation plus both stall types plus compute
+deferrals equals eligible request-ticks. Empty workloads have zero counts, sums,
+means, peaks, and makespan; undefined percentiles serialize as JSON `null`. Pure
+prompt-only workloads have zero generation and slot-ticks, but may have nonzero
+instantaneous peaks and makespan. No GPU performance is inferred.
+
+### Separate smoke harness
+
+`phase3/configs/smoke.json` freezes six hand-built request lists, M, budget, common
+invariants, and hand-calculated expectations. These bypass the M=2048 workload
+generator and never change primary experimental conditions. `phase3_smoke.py`
+executes each with four allocators and unlimited/G=1/G=2: 72 distinct cases. It
+executes 72 additional identical replays for byte-level determinism checks; that
+is 144 simulator calls, not 144 different experimental conditions. The harness
+rejects duplicate fixture names or workload definitions and verifies the exact
+12-condition set in both passes, not just the aggregate row count. Unit tests
+exercise the runner and one harness case, not the full smoke matrix.
+
+| Fixture | M | Budget | Key expected check |
+| --- | --- | --- | --- |
+| exact_fit | 32 | 64 | Two 31+1 requests complete at tick 1 with unlimited compute, peak allocation equals budget |
+| early_completion_M33 | 33 | 128 | Early completion followed by full-length requests; each allocator retains its own R, paged-32 R=64 |
+| tiny_prompts_growth_stalls | 32 | 64 | Five 1+31 requests; paged-8/unlimited exercises both stall reasons |
+| completion_boundary_arrivals | 32 | 64 | Older queued arrival precedes tick-1 arrival; unlimited completion timestamps [2,1,1,2] in input order |
+| mixed_prompt_only | 32 | 128 | Prompt-only completions at admission; G=1 completion timestamps [0,2,0,3] |
+| sparse_ample | 32 | 1024 | Completion timestamps [5,10,21], 28 used slot-ticks, zero waiting/stalls/deferrals |
+
+Every case checks request/slot conservation, memory and headroom safety at every
+event, rounding, FIFO admission, oldest progress, compute conservation, termination
+bound, release, and aggregate/per-request accounting. Summaries report pass/fail
+and fixture hashes, not comparative performance rankings. Harness runtime is
+printed separately and excluded from deterministic output bytes.
+
+Validation order and commands used for Milestone 3:
+
+```sh
+python3 -B -m unittest -v
+python3 -B phase3_smoke.py --output /tmp/phase3-milestone3-smoke-20261118.jsonl
+```
+
+The initial full suite passed 68 tests in 5.426s. The subsequent smoke invocation
+passed 12/12 cases for each fixture (72 total, plus 72 verification replays), with
+zero invariant failures, in 0.646s. These are correctness checks only. Neither the
+19,200 primary runs nor 640 controls were executed. Smoke outcomes are not a basis
+for selecting favorable primary workloads or budgets.

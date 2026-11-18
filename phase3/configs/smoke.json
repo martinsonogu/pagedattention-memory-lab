@@ -1,0 +1,337 @@
+{
+  "schema_version": 1,
+  "kind": "phase3-correctness-smoke",
+  "compute_budgets": [
+    null,
+    1,
+    2
+  ],
+  "fixtures": [
+    {
+      "name": "exact_fit",
+      "maximum": 32,
+      "budget": 64,
+      "requests": [
+        {
+          "arrival": 0,
+          "prompt": 31,
+          "output": 1
+        },
+        {
+          "arrival": 0,
+          "prompt": 31,
+          "output": 1
+        }
+      ],
+      "expected": [
+        {
+          "when": {
+            "compute_budget": null
+          },
+          "metrics": {
+            "makespan": 1,
+            "peak_occupancy": 1
+          },
+          "records": {
+            "completion": [
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "when": {
+            "compute_budget": 1
+          },
+          "records": {
+            "completion": [
+              1,
+              2
+            ]
+          }
+        }
+      ],
+      "invariants": [
+        "conservation",
+        "memory_safety",
+        "FIFO",
+        "completion",
+        "deterministic_replay",
+        "accounting"
+      ]
+    },
+    {
+      "name": "early_completion_M33",
+      "maximum": 33,
+      "budget": 128,
+      "requests": [
+        {
+          "arrival": 0,
+          "prompt": 1,
+          "output": 1
+        },
+        {
+          "arrival": 0,
+          "prompt": 1,
+          "output": 32
+        },
+        {
+          "arrival": 0,
+          "prompt": 1,
+          "output": 32
+        }
+      ],
+      "expected": [
+        {
+          "when": {},
+          "metrics": {
+            "generated_tokens": 65
+          }
+        },
+        {
+          "when": {
+            "compute_budget": null,
+            "strategy": "paged",
+            "block_size": 32
+          },
+          "records": {
+            "completion": [
+              1,
+              32,
+              32
+            ]
+          }
+        }
+      ],
+      "invariants": [
+        "conservation",
+        "memory_safety",
+        "FIFO",
+        "completion",
+        "deterministic_replay",
+        "accounting"
+      ]
+    },
+    {
+      "name": "tiny_prompts_growth_stalls",
+      "maximum": 32,
+      "budget": 64,
+      "requests": [
+        {
+          "arrival": 0,
+          "prompt": 1,
+          "output": 31
+        },
+        {
+          "arrival": 0,
+          "prompt": 1,
+          "output": 31
+        },
+        {
+          "arrival": 0,
+          "prompt": 1,
+          "output": 31
+        },
+        {
+          "arrival": 0,
+          "prompt": 1,
+          "output": 31
+        },
+        {
+          "arrival": 0,
+          "prompt": 1,
+          "output": 31
+        }
+      ],
+      "expected": [
+        {
+          "when": {},
+          "metrics": {
+            "generated_tokens": 155
+          }
+        },
+        {
+          "when": {
+            "compute_budget": null,
+            "strategy": "paged",
+            "block_size": 8
+          },
+          "positive": [
+            "physical_capacity_stalls",
+            "protected_headroom_stalls"
+          ]
+        }
+      ],
+      "invariants": [
+        "conservation",
+        "memory_safety",
+        "FIFO",
+        "completion",
+        "deterministic_replay",
+        "accounting"
+      ]
+    },
+    {
+      "name": "completion_boundary_arrivals",
+      "maximum": 32,
+      "budget": 64,
+      "requests": [
+        {
+          "arrival": 1,
+          "prompt": 31,
+          "output": 1
+        },
+        {
+          "arrival": 0,
+          "prompt": 31,
+          "output": 1
+        },
+        {
+          "arrival": 0,
+          "prompt": 31,
+          "output": 1
+        },
+        {
+          "arrival": 0,
+          "prompt": 31,
+          "output": 1
+        }
+      ],
+      "expected": [
+        {
+          "when": {
+            "compute_budget": null
+          },
+          "records": {
+            "admission": [
+              1,
+              0,
+              0,
+              1
+            ],
+            "completion": [
+              2,
+              1,
+              1,
+              2
+            ]
+          }
+        }
+      ],
+      "invariants": [
+        "conservation",
+        "memory_safety",
+        "FIFO",
+        "completion",
+        "deterministic_replay",
+        "accounting"
+      ]
+    },
+    {
+      "name": "mixed_prompt_only",
+      "maximum": 32,
+      "budget": 128,
+      "requests": [
+        {
+          "arrival": 0,
+          "prompt": 1,
+          "output": 0
+        },
+        {
+          "arrival": 0,
+          "prompt": 1,
+          "output": 2
+        },
+        {
+          "arrival": 0,
+          "prompt": 1,
+          "output": 0
+        },
+        {
+          "arrival": 0,
+          "prompt": 1,
+          "output": 1
+        }
+      ],
+      "expected": [
+        {
+          "when": {
+            "compute_budget": 1
+          },
+          "records": {
+            "completion": [
+              0,
+              2,
+              0,
+              3
+            ]
+          }
+        },
+        {
+          "when": {},
+          "metrics": {
+            "total_waiting_ticks": 0,
+            "generated_tokens": 3
+          }
+        }
+      ],
+      "invariants": [
+        "conservation",
+        "memory_safety",
+        "FIFO",
+        "completion",
+        "deterministic_replay",
+        "accounting"
+      ]
+    },
+    {
+      "name": "sparse_ample",
+      "maximum": 32,
+      "budget": 1024,
+      "requests": [
+        {
+          "arrival": 3,
+          "prompt": 8,
+          "output": 2
+        },
+        {
+          "arrival": 10,
+          "prompt": 8,
+          "output": 0
+        },
+        {
+          "arrival": 20,
+          "prompt": 8,
+          "output": 1
+        }
+      ],
+      "expected": [
+        {
+          "when": {},
+          "metrics": {
+            "makespan": 21,
+            "total_waiting_ticks": 0,
+            "growth_stall_request_ticks": 0,
+            "compute_deferrals": 0,
+            "used_slot_ticks": 28
+          },
+          "records": {
+            "completion": [
+              5,
+              10,
+              21
+            ]
+          }
+        }
+      ],
+      "invariants": [
+        "conservation",
+        "memory_safety",
+        "FIFO",
+        "completion",
+        "deterministic_replay",
+        "accounting"
+      ]
+    }
+  ]
+}
