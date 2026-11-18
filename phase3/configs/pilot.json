@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "kind": "phase3-pilot-v1",
+  "maximum": 2048,
+  "request_count": 200,
+  "seeds": [
+    20261117
+  ],
+  "length_regimes": [
+    "short",
+    "medium",
+    "long",
+    "mixed"
+  ],
+  "split_regimes": [
+    "generation-heavy",
+    "prompt-heavy"
+  ],
+  "arrival_regimes": [
+    "dense",
+    "moderate",
+    "bursty"
+  ],
+  "budgets": [
+    2048,
+    8192
+  ],
+  "compute_budgets": [
+    null,
+    8
+  ],
+  "allocators": [
+    {
+      "strategy": "fixed",
+      "block_size": 0
+    },
+    {
+      "strategy": "paged",
+      "block_size": 8
+    },
+    {
+      "strategy": "paged",
+      "block_size": 16
+    },
+    {
+      "strategy": "paged",
+      "block_size": 32
+    }
+  ],
+  "expected_workloads": 24,
+  "expected_runs": 384,
+  "preflight": {
+    "length_regimes": [
+      "short",
+      "long"
+    ],
+    "split_regime": "generation-heavy",
+    "arrival_regime": "dense",
+    "expected_workloads": 2,
+    "expected_runs": 32,
+    "timeout_seconds": 120
+  },
+  "pilot_timeout_seconds": 900,
+  "feasibility_rule": "384 * slowest_preflight_workload_mean_run_seconds <= 900"
+}

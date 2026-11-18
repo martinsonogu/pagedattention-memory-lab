@@ -402,3 +402,81 @@ passed 12/12 cases for each fixture (72 total, plus 72 verification replays), wi
 zero invariant failures, in 0.646s. These are correctness checks only. Neither the
 19,200 primary runs nor 640 controls were executed. Smoke outcomes are not a basis
 for selecting favorable primary workloads or budgets.
+
+## Milestone 4A: frozen pilot and bounded execution
+
+`phase3/configs/pilot.json` freezes 4 lengths * 2 splits * 3 arrivals * one seed
+(20261117) = 24 workloads, with M=2048 and 200 requests each. Two budgets
+(2048,8192), four allocators, and unlimited/G=8 give exactly 384 runs. The primary
+configuration is unchanged. `PHASE3_ANALYSIS_PLAN.md` freezes paired estimands and
+analysis conventions before pilot execution; no comparative analysis is performed.
+
+`phase3_batch.py` wraps the unchanged runner. It generates each workload once,
+retains its canonical realized document in a manifest, and calls the runner once
+per workload with outcomes enabled and traces disabled. Enumeration follows the
+listed length/split/arrival/seed order, then ascending budget, unlimited/G=8,
+fixed/paged-8/paged-16/paged-32. Full SHA-256 condition IDs cover workload hash,
+allocator config (including M), and policy/metric versions. The manifest lists
+every expected condition before execution; it is hashed and includes source
+revision, dirty status, runner dependencies, and the new batch-source digest.
+
+The single JSONL dataset contains one manifest, ordered result records, and one
+machine-readable completion report. Per-request outcomes are retained for offline
+validation of admissions, completions, tokens, timestamps, waiting/latency means
+and nearest-rank percentiles. Every run checks its workload and configuration,
+finite nonnegative values, occupancy and slot-time bounds, accounting, termination,
+and progress identities. The validator rejects duplicates, missing/extra/out-of-order
+runs, wrong metadata, missing completion, digest mismatch, and trailing records.
+Exact event-level slot-time recomputation still requires a trace and is covered by
+the separate smoke suite; primary-style batch execution does not retain traces.
+Empty percentiles remain null; means with zero population/makespan remain zero.
+
+The entire file uses the runner's existing atomic, no-overwrite publication, so
+failed execution never exposes an incomplete final dataset. A killed process may
+leave a hidden `.partial` file, which is not a completed dataset. Outputs must be
+outside the repository. Validation checks completeness again after publication
+and is available as a separate command. No resume or parallel execution is added.
+
+### Preregistered feasibility gate
+
+Before the pilot, run exactly two preflight workloads: short and long,
+generation-heavy, dense, seed 20261117, M=2048, 200 requests; each uses all 16
+pilot conditions (32 runs). Preflight has a 120-second wall-clock cap. Proceed to
+the pilot only if `384 * max(mean run time within each preflight workload)` is at
+most 900 seconds; the pilot itself has a 900-second wall-clock cap. This conservative
+execution-cost screen cannot establish that other arrival/split regimes are faster.
+Timeouts fail explicitly and must be reported, without changing experimental
+conditions. The limits use POSIX signals in the main thread (macOS/Linux).
+
+Tests and a fresh 72-case smoke run must pass before either execution command:
+
+```sh
+python3 -B -m unittest -v
+python3 -B phase3_smoke.py --output /tmp/phase3-4a-smoke.jsonl
+python3 -B phase3_batch.py preflight --output /tmp/phase3-4a-preflight.jsonl
+python3 -B phase3_batch.py pilot --preflight-report /tmp/phase3-4a-preflight.jsonl --output /tmp/phase3-4a-pilot.jsonl
+python3 -B phase3_batch.py validate --output /tmp/phase3-4a-pilot.jsonl
+```
+
+Use unused external paths. The CLI accepts only the frozen pilot plan, not the
+primary or control matrices. Each invocation generates its workloads once;
+preflight and pilot are separate datasets, so their overlapping workloads are
+regenerated deterministically, never independently per strategy.
+
+Wall-clock measurements are explicitly nondeterministic and kept in the completion
+report, separate from the ordered scientific result rows and their checksum.
+Per-run time wraps each runner `next()` (first includes runner metadata overhead),
+excluding batch integrity checks and serialization. Elapsed dataset time includes
+validation between runs but excludes initial manifest preparation and final
+publication; the CLI additionally reports total wall-clock time through offline
+revalidation and final file bytes. Peak RSS is process high-water memory, measured
+via `resource` with platform-normalized byte units, not an allocation delta or
+GPU memory. Full-matrix runtime estimates use measured mean per-run cost times
+19,840 and are extrapolations only: other seeds/budgets and unspecified controls
+may differ substantially. Source files and Git state must remain stable during
+execution; workload checksums establish integrity, not authenticated provenance.
+
+The first Milestone 4A execution hit the 120-second preflight limit, published no
+final dataset, and did not pass the pilot gate. No 384-run pilot was executed.
+See `PHASE3_4A_READINESS.md` for measured evidence, unavailable measurements,
+extrapolation limits, and the next review decision.
