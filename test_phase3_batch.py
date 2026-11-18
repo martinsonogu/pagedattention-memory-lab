@@ -80,7 +80,8 @@ class BatchTests(unittest.TestCase):
 
     def test_integrity_rejects_corrupted_results(self):
         mutations=[lambda r:r.update(run_id='x'),lambda r:r['result'].update(workload_sha256='0'*64),
-                   lambda r:r['result']['config'].update(budget=4096),lambda r:r['result'].update(working_tree_dirty=False),
+                   lambda r:r['result']['config'].update(budget=4096),
+                   lambda r:r['result'].update(working_tree_dirty=not r['result']['working_tree_dirty']),
                    lambda r:r['result']['requests'][0].update(first_token=0)]
         for key,value in [('admitted_requests',199),('completed_requests',0),('generated_tokens',0),
                           ('mean_latency_ticks',-1),('p95_latency_ticks',None),('compute_deferrals',-1),
@@ -89,9 +90,22 @@ class BatchTests(unittest.TestCase):
                           ('allocated_slot_ticks',True)]:
             mutations.append(lambda r,k=key,v=value:r['result']['metrics'].update({k:v}))
         with self.tiny():
-            for mutate in mutations:
-                bad=copy.deepcopy(self.rows[1]); mutate(bad)
-                with self.assertRaises(ValueError): batch.Validator(self.manifest).accept(bad)
+            for dirty in (True,False):
+                manifest=copy.deepcopy(self.manifest)
+                manifest['metadata']['working_tree_dirty']=dirty
+                manifest['manifest_sha256']=batch.digest({k:v for k,v in manifest.items() if k!='manifest_sha256'})
+                original=copy.deepcopy(self.rows[1])
+                original['result']['working_tree_dirty']=dirty
+                batch.Validator(manifest).accept(original)
+                for index,mutate in enumerate(mutations):
+                    with self.subTest(working_tree_dirty=dirty,mutation=index):
+                        bad=copy.deepcopy(original); mutate(bad)
+                        self.assertNotEqual(bad,original)
+                        validator=batch.Validator(manifest)
+                        with self.assertRaises(ValueError): validator.accept(bad)
+                        self.assertEqual(validator.index,0)
+                        self.assertEqual(validator.seen,set())
+                        self.assertEqual(validator.hasher.hexdigest(),hashlib.sha256().hexdigest())
 
     def test_complete_file_revalidation_and_truncation(self):
         with self.tiny(), tempfile.TemporaryDirectory() as temp:
