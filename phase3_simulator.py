@@ -113,6 +113,7 @@ def _replay(public, execution, strategy, budget, maximum, block_size,
                     generated_tokens=0, physical_capacity_stalls=0,
                     protected_headroom_stalls=0, compute_deferrals=0) for r in public]
     events = []
+    total_allocated = total_used = 0
     tick = peak_allocated = peak_used = peak_active = 0
     allocated_ticks = used_ticks = headroom_ticks = eligible_ticks = queue_ticks = 0
     blocked = {"physical_capacity": 0, "protected_headroom": 0}
@@ -121,24 +122,31 @@ def _replay(public, execution, strategy, budget, maximum, block_size,
         return maximum if strategy == "fixed" else rounded(length, block_size)
 
     def memory():
-        allocated = sum(s.allocated for s in active.values())
-        used = sum(s.length for s in active.values())
         oldest = next(iter(active), None)
         headroom = reserve - active[oldest].allocated if oldest is not None else 0
-        return allocated, used, headroom, oldest
+        return total_allocated, total_used, headroom, oldest
 
     def snapshot(event, request_id=None, **details):
         nonlocal peak_allocated, peak_used, peak_active
         allocated, used, headroom, oldest = memory()
         if not (0 <= used <= allocated and 0 <= headroom and allocated + headroom <= budget):
             raise RuntimeError("memory/protection invariant violated")
-        if any(not 1 <= s.length <= maximum or s.allocated != allocation(s.length)
-               for s in active.values()):
-            raise RuntimeError("resident allocation invariant violated")
+        # Only admission and generation change a resident. Check that resident
+        # locally; trace mode additionally audits the complete state below.
+        if event in ("admit", "generate"):
+            state = active[request_id]
+            if not 1 <= state.length <= maximum or state.allocated != allocation(state.length):
+                raise RuntimeError("resident allocation invariant violated")
         peak_allocated = max(peak_allocated, allocated)
         peak_used = max(peak_used, used)
         peak_active = max(peak_active, len(active))
         if tracing:
+            if (allocated != sum(s.allocated for s in active.values()) or
+                    used != sum(s.length for s in active.values())):
+                raise RuntimeError("incremental memory totals disagree with residents")
+            if any(not 1 <= s.length <= maximum or s.allocated != allocation(s.length)
+                   for s in active.values()):
+                raise RuntimeError("resident allocation invariant violated")
             events.append(dict(tick=tick, event=event, request_id=request_id,
                                allocated_slots=allocated, used_slots=used,
                                protected_headroom=headroom, oldest_id=oldest,
@@ -147,7 +155,11 @@ def _replay(public, execution, strategy, budget, maximum, block_size,
                                **details))
 
     def release(request_id, prompt_only=False):
-        released = active.pop(request_id).allocated
+        nonlocal total_allocated, total_used
+        state = active.pop(request_id)
+        released = state.allocated
+        total_allocated -= released
+        total_used -= state.length
         records[request_id]["completion"] = tick
         # Headroom is recomputed atomically from the new oldest before snapshot.
         snapshot("complete", request_id, released_slots=released, prompt_only=prompt_only)
@@ -171,6 +183,8 @@ def _replay(public, execution, strategy, budget, maximum, block_size,
                 break  # Strict FIFO: never bypass the queue head.
             queue.popleft()
             active[candidate.request_id] = _Resident(candidate.prompt, required)
+            total_allocated += required
+            total_used += candidate.prompt
             records[candidate.request_id]["admission"] = tick
             snapshot("admit", candidate.request_id)
             # EOS after prefill is observed only AFTER the same admission test.
@@ -209,6 +223,8 @@ def _replay(public, execution, strategy, budget, maximum, block_size,
                 continue  # Failed attempts do not consume generation opportunities.
             state.length += 1
             state.allocated = required
+            total_allocated += delta
+            total_used += 1
             generated += 1
             record["generated_tokens"] += 1
             if record["first_token"] is None:
