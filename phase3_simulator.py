@@ -170,7 +170,8 @@ def _replay(public, execution, strategy, budget, maximum, block_size,
         while pending and pending[0].arrival <= tick:
             request = pending.popleft()
             queue.append(request)
-            snapshot("arrival", request.request_id)
+            if tracing:
+                snapshot("arrival", request.request_id)
         while queue:
             candidate = queue[0]
             required = allocation(candidate.prompt)
@@ -179,7 +180,8 @@ def _replay(public, execution, strategy, budget, maximum, block_size,
             reason = _failure(allocated + required, prospective_headroom, budget)
             if reason:
                 blocked[reason] += 1
-                snapshot("admission_blocked", candidate.request_id, reason=reason)
+                if tracing:
+                    snapshot("admission_blocked", candidate.request_id, reason=reason)
                 break  # Strict FIFO: never bypass the queue head.
             queue.popleft()
             active[candidate.request_id] = _Resident(candidate.prompt, required)
@@ -197,7 +199,8 @@ def _replay(public, execution, strategy, budget, maximum, block_size,
             if queue:
                 raise RuntimeError("feasible queue cannot remain blocked with no active request")
             continue
-        snapshot("tick_begin", eligible_ids=eligible)
+        if tracing:
+            snapshot("tick_begin", eligible_ids=eligible)
         queue_ticks += len(queue)
         eligible_ticks += len(eligible)
         generated = 0
@@ -208,7 +211,8 @@ def _replay(public, execution, strategy, budget, maximum, block_size,
             if compute_budget is not None and generated == compute_budget:
                 record["compute_deferrals"] += 1
                 outcomes[request_id] = "compute_deferred"
-                snapshot("compute_deferred", request_id)
+                if tracing:
+                    snapshot("compute_deferred", request_id)
                 continue  # Memory eligibility is intentionally not examined.
             state = active[request_id]
             required = allocation(state.length + 1)
@@ -219,7 +223,8 @@ def _replay(public, execution, strategy, budget, maximum, block_size,
             if reason:
                 record[f"{reason}_stalls"] += 1
                 outcomes[request_id] = reason
-                snapshot("growth_stalled", request_id, reason=reason)
+                if tracing:
+                    snapshot("growth_stalled", request_id, reason=reason)
                 continue  # Failed attempts do not consume generation opportunities.
             state.length += 1
             state.allocated = required
@@ -240,7 +245,8 @@ def _replay(public, execution, strategy, budget, maximum, block_size,
         allocated_ticks += allocated
         used_ticks += used
         headroom_ticks += headroom
-        snapshot("tick_end", eligible_ids=eligible, outcomes=tuple(outcomes.items()))
+        if tracing:
+            snapshot("tick_end", eligible_ids=eligible, outcomes=tuple(outcomes.items()))
         tick += 1
         for request_id in finished:
             release(request_id)
