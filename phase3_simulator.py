@@ -215,7 +215,8 @@ def _replay(public, execution, strategy, budget, maximum, block_size,
                     snapshot("compute_deferred", request_id)
                 continue  # Memory eligibility is intentionally not examined.
             state = active[request_id]
-            required = allocation(state.length + 1)
+            required = (maximum if strategy == "fixed" else
+                        state.allocated + (block_size if state.length == state.allocated else 0))
             allocated, _, headroom, oldest = memory()
             delta = required - state.allocated
             prospective_headroom = reserve - required if request_id == oldest else headroom
