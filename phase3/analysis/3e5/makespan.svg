@@ -1,0 +1,833 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1130" height="640" viewBox="0 0 1130 640" role="img">
+<title>Makespan by workload and budget</title>
+<style>text{font-family:Arial,sans-serif;fill:#172c3a}</style>
+<rect x="0.000" y="0.000" width="1130.000" height="640.000" fill="#ffffff"><title></title></rect>
+<text x="20" y="30" font-size="23" text-anchor="start" font-weight="bold">Makespan by workload and budget</text>
+<text x="20" y="53" font-size="13" text-anchor="start" font-weight="normal">Mean paired change versus fixed (%) · Blue favors paged · Orange favors fixed · Gray is undefined</text>
+<text x="298" y="83" font-size="12" text-anchor="middle" font-weight="bold">Unlimited · paged8</text>
+<text x="243" y="104" font-size="9" text-anchor="middle" font-weight="normal">2048</text>
+<text x="269" y="104" font-size="9" text-anchor="middle" font-weight="normal">4096</text>
+<text x="295" y="104" font-size="9" text-anchor="middle" font-weight="normal">8192</text>
+<text x="321" y="104" font-size="9" text-anchor="middle" font-weight="normal">16384</text>
+<text x="347" y="104" font-size="9" text-anchor="middle" font-weight="normal">32768</text>
+<text x="20" y="125" font-size="11" text-anchor="start" font-weight="normal">short · generation-heavy · dense</text>
+<rect x="231.000" y="113.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / dense, 2048 slots, Unlimited, paged8 — 0%</title></rect>
+<rect x="257.000" y="113.000" width="25.000" height="17.000" fill="#eff2f3"><title>short / generation-heavy / dense, 4096 slots, Unlimited, paged8 — -19.7328884623%</title></rect>
+<rect x="283.000" y="113.000" width="25.000" height="17.000" fill="#dae5e9"><title>short / generation-heavy / dense, 8192 slots, Unlimited, paged8 — -77.9063575152%</title></rect>
+<rect x="309.000" y="113.000" width="25.000" height="17.000" fill="#e1eaed"><title>short / generation-heavy / dense, 16384 slots, Unlimited, paged8 — -57.2070552159%</title></rect>
+<rect x="335.000" y="113.000" width="25.000" height="17.000" fill="#eef1f3"><title>short / generation-heavy / dense, 32768 slots, Unlimited, paged8 — -21.0452528356%</title></rect>
+<text x="20" y="143" font-size="11" text-anchor="start" font-weight="normal">short · generation-heavy · moderate</text>
+<rect x="231.000" y="131.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / moderate, 2048 slots, Unlimited, paged8 — 0%</title></rect>
+<rect x="257.000" y="131.000" width="25.000" height="17.000" fill="#edf0f2"><title>short / generation-heavy / moderate, 4096 slots, Unlimited, paged8 — -26.0426936302%</title></rect>
+<rect x="283.000" y="131.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / moderate, 8192 slots, Unlimited, paged8 — -0.0925847590091%</title></rect>
+<rect x="309.000" y="131.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / moderate, 16384 slots, Unlimited, paged8 — 0%</title></rect>
+<rect x="335.000" y="131.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / moderate, 32768 slots, Unlimited, paged8 — 0%</title></rect>
+<text x="20" y="161" font-size="11" text-anchor="start" font-weight="normal">short · generation-heavy · bursty</text>
+<rect x="231.000" y="149.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / bursty, 2048 slots, Unlimited, paged8 — 0%</title></rect>
+<rect x="257.000" y="149.000" width="25.000" height="17.000" fill="#f0f3f3"><title>short / generation-heavy / bursty, 4096 slots, Unlimited, paged8 — -16.0166217999%</title></rect>
+<rect x="283.000" y="149.000" width="25.000" height="17.000" fill="#dae5e9"><title>short / generation-heavy / bursty, 8192 slots, Unlimited, paged8 — -78.2958503806%</title></rect>
+<rect x="309.000" y="149.000" width="25.000" height="17.000" fill="#e1eaed"><title>short / generation-heavy / bursty, 16384 slots, Unlimited, paged8 — -57.7534732224%</title></rect>
+<rect x="335.000" y="149.000" width="25.000" height="17.000" fill="#eff2f3"><title>short / generation-heavy / bursty, 32768 slots, Unlimited, paged8 — -20.230586789%</title></rect>
+<text x="20" y="179" font-size="11" text-anchor="start" font-weight="normal">short · prompt-heavy · dense</text>
+<rect x="231.000" y="167.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / dense, 2048 slots, Unlimited, paged8 — 0%</title></rect>
+<rect x="257.000" y="167.000" width="25.000" height="17.000" fill="#dae5e9"><title>short / prompt-heavy / dense, 4096 slots, Unlimited, paged8 — -77.385930772%</title></rect>
+<rect x="283.000" y="167.000" width="25.000" height="17.000" fill="#dee8eb"><title>short / prompt-heavy / dense, 8192 slots, Unlimited, paged8 — -66.4681941767%</title></rect>
+<rect x="309.000" y="167.000" width="25.000" height="17.000" fill="#e9eef0"><title>short / prompt-heavy / dense, 16384 slots, Unlimited, paged8 — -35.1760960564%</title></rect>
+<rect x="335.000" y="167.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / dense, 32768 slots, Unlimited, paged8 — -0.0680358715927%</title></rect>
+<text x="20" y="197" font-size="11" text-anchor="start" font-weight="normal">short · prompt-heavy · moderate</text>
+<rect x="231.000" y="185.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / moderate, 2048 slots, Unlimited, paged8 — 0%</title></rect>
+<rect x="257.000" y="185.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / moderate, 4096 slots, Unlimited, paged8 — -0.312054773226%</title></rect>
+<rect x="283.000" y="185.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / moderate, 8192 slots, Unlimited, paged8 — 0%</title></rect>
+<rect x="309.000" y="185.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / moderate, 16384 slots, Unlimited, paged8 — 0%</title></rect>
+<rect x="335.000" y="185.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / moderate, 32768 slots, Unlimited, paged8 — 0%</title></rect>
+<text x="20" y="215" font-size="11" text-anchor="start" font-weight="normal">short · prompt-heavy · bursty</text>
+<rect x="231.000" y="203.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / bursty, 2048 slots, Unlimited, paged8 — 0%</title></rect>
+<rect x="257.000" y="203.000" width="25.000" height="17.000" fill="#dde7eb"><title>short / prompt-heavy / bursty, 4096 slots, Unlimited, paged8 — -68.367655868%</title></rect>
+<rect x="283.000" y="203.000" width="25.000" height="17.000" fill="#dee8eb"><title>short / prompt-heavy / bursty, 8192 slots, Unlimited, paged8 — -67.2763599978%</title></rect>
+<rect x="309.000" y="203.000" width="25.000" height="17.000" fill="#e9eef0"><title>short / prompt-heavy / bursty, 16384 slots, Unlimited, paged8 — -36.1469210163%</title></rect>
+<rect x="335.000" y="203.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / bursty, 32768 slots, Unlimited, paged8 — -0.137724550898%</title></rect>
+<text x="20" y="233" font-size="11" text-anchor="start" font-weight="normal">medium · generation-heavy · dense</text>
+<rect x="231.000" y="221.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / generation-heavy / dense, 2048 slots, Unlimited, paged8 — 0%</title></rect>
+<rect x="257.000" y="221.000" width="25.000" height="17.000" fill="#eee2de"><title>medium / generation-heavy / dense, 4096 slots, Unlimited, paged8 — 74.8098158441%</title></rect>
+<rect x="283.000" y="221.000" width="25.000" height="17.000" fill="#e1c3b8"><title>medium / generation-heavy / dense, 8192 slots, Unlimited, paged8 — 191.034898736%</title></rect>
+<rect x="309.000" y="221.000" width="25.000" height="17.000" fill="#debbae"><title>medium / generation-heavy / dense, 16384 slots, Unlimited, paged8 — 220.29127466%</title></rect>
+<rect x="335.000" y="221.000" width="25.000" height="17.000" fill="#ebdbd6"><title>medium / generation-heavy / dense, 32768 slots, Unlimited, paged8 — 98.6292376432%</title></rect>
+<text x="20" y="251" font-size="11" text-anchor="start" font-weight="normal">medium · generation-heavy · moderate</text>
+<rect x="231.000" y="239.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / generation-heavy / moderate, 2048 slots, Unlimited, paged8 — 0%</title></rect>
+<rect x="257.000" y="239.000" width="25.000" height="17.000" fill="#eee2de"><title>medium / generation-heavy / moderate, 4096 slots, Unlimited, paged8 — 73.4148784477%</title></rect>
+<rect x="283.000" y="239.000" width="25.000" height="17.000" fill="#e4c9bf"><title>medium / generation-heavy / moderate, 8192 slots, Unlimited, paged8 — 167.514123598%</title></rect>
+<rect x="309.000" y="239.000" width="25.000" height="17.000" fill="#e4ebee"><title>medium / generation-heavy / moderate, 16384 slots, Unlimited, paged8 — -50.5301428783%</title></rect>
+<rect x="335.000" y="239.000" width="25.000" height="17.000" fill="#f3f4f5"><title>medium / generation-heavy / moderate, 32768 slots, Unlimited, paged8 — -7.05014137215%</title></rect>
+<text x="20" y="269" font-size="11" text-anchor="start" font-weight="normal">medium · generation-heavy · bursty</text>
+<rect x="231.000" y="257.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / generation-heavy / bursty, 2048 slots, Unlimited, paged8 — 0%</title></rect>
+<rect x="257.000" y="257.000" width="25.000" height="17.000" fill="#eee2dd"><title>medium / generation-heavy / bursty, 4096 slots, Unlimited, paged8 — 75.8015888629%</title></rect>
+<rect x="283.000" y="257.000" width="25.000" height="17.000" fill="#e1c3b8"><title>medium / generation-heavy / bursty, 8192 slots, Unlimited, paged8 — 189.192848815%</title></rect>
+<rect x="309.000" y="257.000" width="25.000" height="17.000" fill="#debbae"><title>medium / generation-heavy / bursty, 16384 slots, Unlimited, paged8 — 220.560696189%</title></rect>
+<rect x="335.000" y="257.000" width="25.000" height="17.000" fill="#ebdad4"><title>medium / generation-heavy / bursty, 32768 slots, Unlimited, paged8 — 103.562948227%</title></rect>
+<text x="20" y="287" font-size="11" text-anchor="start" font-weight="normal">medium · prompt-heavy · dense</text>
+<rect x="231.000" y="275.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / dense, 2048 slots, Unlimited, paged8 — 0%</title></rect>
+<rect x="257.000" y="275.000" width="25.000" height="17.000" fill="#e6ecef"><title>medium / prompt-heavy / dense, 4096 slots, Unlimited, paged8 — -44.9814783047%</title></rect>
+<rect x="283.000" y="275.000" width="25.000" height="17.000" fill="#e2eaed"><title>medium / prompt-heavy / dense, 8192 slots, Unlimited, paged8 — -55.6207285483%</title></rect>
+<rect x="309.000" y="275.000" width="25.000" height="17.000" fill="#e6ecef"><title>medium / prompt-heavy / dense, 16384 slots, Unlimited, paged8 — -45.8415794127%</title></rect>
+<rect x="335.000" y="275.000" width="25.000" height="17.000" fill="#f5f5f6"><title>medium / prompt-heavy / dense, 32768 slots, Unlimited, paged8 — -2.73980136125%</title></rect>
+<text x="20" y="305" font-size="11" text-anchor="start" font-weight="normal">medium · prompt-heavy · moderate</text>
+<rect x="231.000" y="293.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / moderate, 2048 slots, Unlimited, paged8 — 0%</title></rect>
+<rect x="257.000" y="293.000" width="25.000" height="17.000" fill="#f5f5f5"><title>medium / prompt-heavy / moderate, 4096 slots, Unlimited, paged8 — -3.49296597955%</title></rect>
+<rect x="283.000" y="293.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / moderate, 8192 slots, Unlimited, paged8 — -0.017464773905%</title></rect>
+<rect x="309.000" y="293.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / moderate, 16384 slots, Unlimited, paged8 — 0%</title></rect>
+<rect x="335.000" y="293.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / moderate, 32768 slots, Unlimited, paged8 — 0%</title></rect>
+<text x="20" y="323" font-size="11" text-anchor="start" font-weight="normal">medium · prompt-heavy · bursty</text>
+<rect x="231.000" y="311.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / bursty, 2048 slots, Unlimited, paged8 — 0%</title></rect>
+<rect x="257.000" y="311.000" width="25.000" height="17.000" fill="#e6ecef"><title>medium / prompt-heavy / bursty, 4096 slots, Unlimited, paged8 — -45.1234850536%</title></rect>
+<rect x="283.000" y="311.000" width="25.000" height="17.000" fill="#e2eaed"><title>medium / prompt-heavy / bursty, 8192 slots, Unlimited, paged8 — -55.427473861%</title></rect>
+<rect x="309.000" y="311.000" width="25.000" height="17.000" fill="#e5ecee"><title>medium / prompt-heavy / bursty, 16384 slots, Unlimited, paged8 — -46.23000206%</title></rect>
+<rect x="335.000" y="311.000" width="25.000" height="17.000" fill="#f5f6f6"><title>medium / prompt-heavy / bursty, 32768 slots, Unlimited, paged8 — -1.43228865778%</title></rect>
+<text x="20" y="341" font-size="11" text-anchor="start" font-weight="normal">long · generation-heavy · dense</text>
+<rect x="231.000" y="329.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / generation-heavy / dense, 2048 slots, Unlimited, paged8 — 0%</title></rect>
+<rect x="257.000" y="329.000" width="25.000" height="17.000" fill="#ecded9"><title>long / generation-heavy / dense, 4096 slots, Unlimited, paged8 — 89.0407093331%</title></rect>
+<rect x="283.000" y="329.000" width="25.000" height="17.000" fill="#dbb3a4"><title>long / generation-heavy / dense, 8192 slots, Unlimited, paged8 — 249.754578414%</title></rect>
+<rect x="309.000" y="329.000" width="25.000" height="17.000" fill="#c37a60"><title>long / generation-heavy / dense, 16384 slots, Unlimited, paged8 — 459.966202459%</title></rect>
+<rect x="335.000" y="329.000" width="25.000" height="17.000" fill="#ad441e"><title>long / generation-heavy / dense, 32768 slots, Unlimited, paged8 — 660.917516563%</title></rect>
+<text x="20" y="359" font-size="11" text-anchor="start" font-weight="normal">long · generation-heavy · moderate</text>
+<rect x="231.000" y="347.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / generation-heavy / moderate, 2048 slots, Unlimited, paged8 — 0%</title></rect>
+<rect x="257.000" y="347.000" width="25.000" height="17.000" fill="#ecded9"><title>long / generation-heavy / moderate, 4096 slots, Unlimited, paged8 — 88.5540957455%</title></rect>
+<rect x="283.000" y="347.000" width="25.000" height="17.000" fill="#dbb3a5"><title>long / generation-heavy / moderate, 8192 slots, Unlimited, paged8 — 247.413330918%</title></rect>
+<rect x="309.000" y="347.000" width="25.000" height="17.000" fill="#c57f65"><title>long / generation-heavy / moderate, 16384 slots, Unlimited, paged8 — 442.994008422%</title></rect>
+<rect x="335.000" y="347.000" width="25.000" height="17.000" fill="#b75b3a"><title>long / generation-heavy / moderate, 32768 slots, Unlimited, paged8 — 573.85270523%</title></rect>
+<text x="20" y="377" font-size="11" text-anchor="start" font-weight="normal">long · generation-heavy · bursty</text>
+<rect x="231.000" y="365.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / generation-heavy / bursty, 2048 slots, Unlimited, paged8 — 0%</title></rect>
+<rect x="257.000" y="365.000" width="25.000" height="17.000" fill="#ecded9"><title>long / generation-heavy / bursty, 4096 slots, Unlimited, paged8 — 89.4224648607%</title></rect>
+<rect x="283.000" y="365.000" width="25.000" height="17.000" fill="#dbb3a5"><title>long / generation-heavy / bursty, 8192 slots, Unlimited, paged8 — 248.938200428%</title></rect>
+<rect x="309.000" y="365.000" width="25.000" height="17.000" fill="#c37a5f"><title>long / generation-heavy / bursty, 16384 slots, Unlimited, paged8 — 460.67365544%</title></rect>
+<rect x="335.000" y="365.000" width="25.000" height="17.000" fill="#ad431d"><title>long / generation-heavy / bursty, 32768 slots, Unlimited, paged8 — 664.092665699%</title></rect>
+<text x="20" y="395" font-size="11" text-anchor="start" font-weight="normal">long · prompt-heavy · dense</text>
+<rect x="231.000" y="383.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / dense, 2048 slots, Unlimited, paged8 — 0%</title></rect>
+<rect x="257.000" y="383.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / dense, 4096 slots, Unlimited, paged8 — 0.113524242393%</title></rect>
+<rect x="283.000" y="383.000" width="25.000" height="17.000" fill="#f2f4f4"><title>long / prompt-heavy / dense, 8192 slots, Unlimited, paged8 — -9.8319428249%</title></rect>
+<rect x="309.000" y="383.000" width="25.000" height="17.000" fill="#f0f3f3"><title>long / prompt-heavy / dense, 16384 slots, Unlimited, paged8 — -15.83731006%</title></rect>
+<rect x="335.000" y="383.000" width="25.000" height="17.000" fill="#f5f5f6"><title>long / prompt-heavy / dense, 32768 slots, Unlimited, paged8 — -2.70845339887%</title></rect>
+<text x="20" y="413" font-size="11" text-anchor="start" font-weight="normal">long · prompt-heavy · moderate</text>
+<rect x="231.000" y="401.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / moderate, 2048 slots, Unlimited, paged8 — 0%</title></rect>
+<rect x="257.000" y="401.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / moderate, 4096 slots, Unlimited, paged8 — 0.00978825144868%</title></rect>
+<rect x="283.000" y="401.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / moderate, 8192 slots, Unlimited, paged8 — -0.017464773905%</title></rect>
+<rect x="309.000" y="401.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / moderate, 16384 slots, Unlimited, paged8 — 0%</title></rect>
+<rect x="335.000" y="401.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / moderate, 32768 slots, Unlimited, paged8 — 0%</title></rect>
+<text x="20" y="431" font-size="11" text-anchor="start" font-weight="normal">long · prompt-heavy · bursty</text>
+<rect x="231.000" y="419.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / bursty, 2048 slots, Unlimited, paged8 — 0%</title></rect>
+<rect x="257.000" y="419.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / bursty, 4096 slots, Unlimited, paged8 — 0.11147634556%</title></rect>
+<rect x="283.000" y="419.000" width="25.000" height="17.000" fill="#f2f4f4"><title>long / prompt-heavy / bursty, 8192 slots, Unlimited, paged8 — -9.87520909198%</title></rect>
+<rect x="309.000" y="419.000" width="25.000" height="17.000" fill="#f1f3f4"><title>long / prompt-heavy / bursty, 16384 slots, Unlimited, paged8 — -14.4888765666%</title></rect>
+<rect x="335.000" y="419.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / bursty, 32768 slots, Unlimited, paged8 — -1.14896835969%</title></rect>
+<text x="20" y="449" font-size="11" text-anchor="start" font-weight="normal">mixed · generation-heavy · dense</text>
+<rect x="231.000" y="437.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / generation-heavy / dense, 2048 slots, Unlimited, paged8 — 0%</title></rect>
+<rect x="257.000" y="437.000" width="25.000" height="17.000" fill="#efe5e2"><title>mixed / generation-heavy / dense, 4096 slots, Unlimited, paged8 — 62.2309947045%</title></rect>
+<rect x="283.000" y="437.000" width="25.000" height="17.000" fill="#e7d1c9"><title>mixed / generation-heavy / dense, 8192 slots, Unlimited, paged8 — 136.880659991%</title></rect>
+<rect x="309.000" y="437.000" width="25.000" height="17.000" fill="#eddfda"><title>mixed / generation-heavy / dense, 16384 slots, Unlimited, paged8 — 85.8384736794%</title></rect>
+<rect x="335.000" y="437.000" width="25.000" height="17.000" fill="#e5ecef"><title>mixed / generation-heavy / dense, 32768 slots, Unlimited, paged8 — -46.1120007428%</title></rect>
+<text x="20" y="467" font-size="11" text-anchor="start" font-weight="normal">mixed · generation-heavy · moderate</text>
+<rect x="231.000" y="455.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / generation-heavy / moderate, 2048 slots, Unlimited, paged8 — 0%</title></rect>
+<rect x="257.000" y="455.000" width="25.000" height="17.000" fill="#f0e7e3"><title>mixed / generation-heavy / moderate, 4096 slots, Unlimited, paged8 — 57.4247735072%</title></rect>
+<rect x="283.000" y="455.000" width="25.000" height="17.000" fill="#f1ebe8"><title>mixed / generation-heavy / moderate, 8192 slots, Unlimited, paged8 — 41.5744565928%</title></rect>
+<rect x="309.000" y="455.000" width="25.000" height="17.000" fill="#eef1f2"><title>mixed / generation-heavy / moderate, 16384 slots, Unlimited, paged8 — -23.0534744229%</title></rect>
+<rect x="335.000" y="455.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / generation-heavy / moderate, 32768 slots, Unlimited, paged8 — 0%</title></rect>
+<text x="20" y="485" font-size="11" text-anchor="start" font-weight="normal">mixed · generation-heavy · bursty</text>
+<rect x="231.000" y="473.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / generation-heavy / bursty, 2048 slots, Unlimited, paged8 — 0%</title></rect>
+<rect x="257.000" y="473.000" width="25.000" height="17.000" fill="#efe5e1"><title>mixed / generation-heavy / bursty, 4096 slots, Unlimited, paged8 — 63.3873911973%</title></rect>
+<rect x="283.000" y="473.000" width="25.000" height="17.000" fill="#e7d1c9"><title>mixed / generation-heavy / bursty, 8192 slots, Unlimited, paged8 — 138.428971746%</title></rect>
+<rect x="309.000" y="473.000" width="25.000" height="17.000" fill="#ecdfda"><title>mixed / generation-heavy / bursty, 16384 slots, Unlimited, paged8 — 86.6169595242%</title></rect>
+<rect x="335.000" y="473.000" width="25.000" height="17.000" fill="#e5ecee"><title>mixed / generation-heavy / bursty, 32768 slots, Unlimited, paged8 — -46.9476312295%</title></rect>
+<text x="20" y="503" font-size="11" text-anchor="start" font-weight="normal">mixed · prompt-heavy · dense</text>
+<rect x="231.000" y="491.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / dense, 2048 slots, Unlimited, paged8 — 0%</title></rect>
+<rect x="257.000" y="491.000" width="25.000" height="17.000" fill="#e2eaed"><title>mixed / prompt-heavy / dense, 4096 slots, Unlimited, paged8 — -55.6494136456%</title></rect>
+<rect x="283.000" y="491.000" width="25.000" height="17.000" fill="#dfe8ec"><title>mixed / prompt-heavy / dense, 8192 slots, Unlimited, paged8 — -64.331638393%</title></rect>
+<rect x="309.000" y="491.000" width="25.000" height="17.000" fill="#e7edef"><title>mixed / prompt-heavy / dense, 16384 slots, Unlimited, paged8 — -40.356557462%</title></rect>
+<rect x="335.000" y="491.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / dense, 32768 slots, Unlimited, paged8 — -0.346624213463%</title></rect>
+<text x="20" y="521" font-size="11" text-anchor="start" font-weight="normal">mixed · prompt-heavy · moderate</text>
+<rect x="231.000" y="509.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / moderate, 2048 slots, Unlimited, paged8 — 0%</title></rect>
+<rect x="257.000" y="509.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / moderate, 4096 slots, Unlimited, paged8 — -0.951023579381%</title></rect>
+<rect x="283.000" y="509.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / moderate, 8192 slots, Unlimited, paged8 — 0%</title></rect>
+<rect x="309.000" y="509.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / moderate, 16384 slots, Unlimited, paged8 — 0%</title></rect>
+<rect x="335.000" y="509.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / moderate, 32768 slots, Unlimited, paged8 — 0%</title></rect>
+<text x="20" y="539" font-size="11" text-anchor="start" font-weight="normal">mixed · prompt-heavy · bursty</text>
+<rect x="231.000" y="527.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / bursty, 2048 slots, Unlimited, paged8 — 0%</title></rect>
+<rect x="257.000" y="527.000" width="25.000" height="17.000" fill="#e2eaed"><title>mixed / prompt-heavy / bursty, 4096 slots, Unlimited, paged8 — -55.7743662832%</title></rect>
+<rect x="283.000" y="527.000" width="25.000" height="17.000" fill="#dfe8eb"><title>mixed / prompt-heavy / bursty, 8192 slots, Unlimited, paged8 — -64.5675041789%</title></rect>
+<rect x="309.000" y="527.000" width="25.000" height="17.000" fill="#e7edef"><title>mixed / prompt-heavy / bursty, 16384 slots, Unlimited, paged8 — -40.9496971153%</title></rect>
+<rect x="335.000" y="527.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / bursty, 32768 slots, Unlimited, paged8 — 0%</title></rect>
+<text x="446" y="83" font-size="12" text-anchor="middle" font-weight="bold">Unlimited · paged16</text>
+<text x="391" y="104" font-size="9" text-anchor="middle" font-weight="normal">2048</text>
+<text x="417" y="104" font-size="9" text-anchor="middle" font-weight="normal">4096</text>
+<text x="443" y="104" font-size="9" text-anchor="middle" font-weight="normal">8192</text>
+<text x="469" y="104" font-size="9" text-anchor="middle" font-weight="normal">16384</text>
+<text x="495" y="104" font-size="9" text-anchor="middle" font-weight="normal">32768</text>
+<rect x="379.000" y="113.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / dense, 2048 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="405.000" y="113.000" width="25.000" height="17.000" fill="#eef1f2"><title>short / generation-heavy / dense, 4096 slots, Unlimited, paged16 — -21.6603894145%</title></rect>
+<rect x="431.000" y="113.000" width="25.000" height="17.000" fill="#dae5e9"><title>short / generation-heavy / dense, 8192 slots, Unlimited, paged16 — -77.9063575152%</title></rect>
+<rect x="457.000" y="113.000" width="25.000" height="17.000" fill="#e1eaed"><title>short / generation-heavy / dense, 16384 slots, Unlimited, paged16 — -57.2070552159%</title></rect>
+<rect x="483.000" y="113.000" width="25.000" height="17.000" fill="#eef1f3"><title>short / generation-heavy / dense, 32768 slots, Unlimited, paged16 — -21.0452528356%</title></rect>
+<rect x="379.000" y="131.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / moderate, 2048 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="405.000" y="131.000" width="25.000" height="17.000" fill="#edf0f2"><title>short / generation-heavy / moderate, 4096 slots, Unlimited, paged16 — -26.0426936302%</title></rect>
+<rect x="431.000" y="131.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / moderate, 8192 slots, Unlimited, paged16 — -0.0925847590091%</title></rect>
+<rect x="457.000" y="131.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / moderate, 16384 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="483.000" y="131.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / moderate, 32768 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="379.000" y="149.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / bursty, 2048 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="405.000" y="149.000" width="25.000" height="17.000" fill="#f0f2f3"><title>short / generation-heavy / bursty, 4096 slots, Unlimited, paged16 — -17.724660062%</title></rect>
+<rect x="431.000" y="149.000" width="25.000" height="17.000" fill="#dae5e9"><title>short / generation-heavy / bursty, 8192 slots, Unlimited, paged16 — -78.2958503806%</title></rect>
+<rect x="457.000" y="149.000" width="25.000" height="17.000" fill="#e1eaed"><title>short / generation-heavy / bursty, 16384 slots, Unlimited, paged16 — -57.7534732224%</title></rect>
+<rect x="483.000" y="149.000" width="25.000" height="17.000" fill="#eff2f3"><title>short / generation-heavy / bursty, 32768 slots, Unlimited, paged16 — -20.230586789%</title></rect>
+<rect x="379.000" y="167.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / dense, 2048 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="405.000" y="167.000" width="25.000" height="17.000" fill="#d9e5e9"><title>short / prompt-heavy / dense, 4096 slots, Unlimited, paged16 — -80.9503872296%</title></rect>
+<rect x="431.000" y="167.000" width="25.000" height="17.000" fill="#dee8eb"><title>short / prompt-heavy / dense, 8192 slots, Unlimited, paged16 — -66.4681941767%</title></rect>
+<rect x="457.000" y="167.000" width="25.000" height="17.000" fill="#e9eef0"><title>short / prompt-heavy / dense, 16384 slots, Unlimited, paged16 — -35.1760960564%</title></rect>
+<rect x="483.000" y="167.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / dense, 32768 slots, Unlimited, paged16 — -0.0680358715927%</title></rect>
+<rect x="379.000" y="185.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / moderate, 2048 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="405.000" y="185.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / moderate, 4096 slots, Unlimited, paged16 — -0.312054773226%</title></rect>
+<rect x="431.000" y="185.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / moderate, 8192 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="457.000" y="185.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / moderate, 16384 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="483.000" y="185.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / moderate, 32768 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="379.000" y="203.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / bursty, 2048 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="405.000" y="203.000" width="25.000" height="17.000" fill="#dbe6ea"><title>short / prompt-heavy / bursty, 4096 slots, Unlimited, paged16 — -75.5673992774%</title></rect>
+<rect x="431.000" y="203.000" width="25.000" height="17.000" fill="#dee8eb"><title>short / prompt-heavy / bursty, 8192 slots, Unlimited, paged16 — -67.2763599978%</title></rect>
+<rect x="457.000" y="203.000" width="25.000" height="17.000" fill="#e9eef0"><title>short / prompt-heavy / bursty, 16384 slots, Unlimited, paged16 — -36.1469210163%</title></rect>
+<rect x="483.000" y="203.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / bursty, 32768 slots, Unlimited, paged16 — -0.137724550898%</title></rect>
+<rect x="379.000" y="221.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / generation-heavy / dense, 2048 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="405.000" y="221.000" width="25.000" height="17.000" fill="#eee2de"><title>medium / generation-heavy / dense, 4096 slots, Unlimited, paged16 — 73.8961354182%</title></rect>
+<rect x="431.000" y="221.000" width="25.000" height="17.000" fill="#e2c6bb"><title>medium / generation-heavy / dense, 8192 slots, Unlimited, paged16 — 179.592218041%</title></rect>
+<rect x="457.000" y="221.000" width="25.000" height="17.000" fill="#e3c8bf"><title>medium / generation-heavy / dense, 16384 slots, Unlimited, paged16 — 169.108524216%</title></rect>
+<rect x="483.000" y="221.000" width="25.000" height="17.000" fill="#f2ecea"><title>medium / generation-heavy / dense, 32768 slots, Unlimited, paged16 — 38.2447016347%</title></rect>
+<rect x="379.000" y="239.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / generation-heavy / moderate, 2048 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="405.000" y="239.000" width="25.000" height="17.000" fill="#eee2de"><title>medium / generation-heavy / moderate, 4096 slots, Unlimited, paged16 — 72.444541137%</title></rect>
+<rect x="431.000" y="239.000" width="25.000" height="17.000" fill="#e5ccc3"><title>medium / generation-heavy / moderate, 8192 slots, Unlimited, paged16 — 156.003831682%</title></rect>
+<rect x="457.000" y="239.000" width="25.000" height="17.000" fill="#e4ebee"><title>medium / generation-heavy / moderate, 16384 slots, Unlimited, paged16 — -50.5301428783%</title></rect>
+<rect x="483.000" y="239.000" width="25.000" height="17.000" fill="#f3f4f5"><title>medium / generation-heavy / moderate, 32768 slots, Unlimited, paged16 — -7.05014137215%</title></rect>
+<rect x="379.000" y="257.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / generation-heavy / bursty, 2048 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="405.000" y="257.000" width="25.000" height="17.000" fill="#eee2de"><title>medium / generation-heavy / bursty, 4096 slots, Unlimited, paged16 — 74.9484217045%</title></rect>
+<rect x="431.000" y="257.000" width="25.000" height="17.000" fill="#e2c6bc"><title>medium / generation-heavy / bursty, 8192 slots, Unlimited, paged16 — 177.634338284%</title></rect>
+<rect x="457.000" y="257.000" width="25.000" height="17.000" fill="#e3c8be"><title>medium / generation-heavy / bursty, 16384 slots, Unlimited, paged16 — 171.215290994%</title></rect>
+<rect x="483.000" y="257.000" width="25.000" height="17.000" fill="#f1ebe8"><title>medium / generation-heavy / bursty, 32768 slots, Unlimited, paged16 — 41.9655600442%</title></rect>
+<rect x="379.000" y="275.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / dense, 2048 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="405.000" y="275.000" width="25.000" height="17.000" fill="#e6ecef"><title>medium / prompt-heavy / dense, 4096 slots, Unlimited, paged16 — -45.4314680889%</title></rect>
+<rect x="431.000" y="275.000" width="25.000" height="17.000" fill="#e1eaed"><title>medium / prompt-heavy / dense, 8192 slots, Unlimited, paged16 — -57.659582074%</title></rect>
+<rect x="457.000" y="275.000" width="25.000" height="17.000" fill="#e6ecef"><title>medium / prompt-heavy / dense, 16384 slots, Unlimited, paged16 — -45.8415794127%</title></rect>
+<rect x="483.000" y="275.000" width="25.000" height="17.000" fill="#f5f5f6"><title>medium / prompt-heavy / dense, 32768 slots, Unlimited, paged16 — -2.73980136125%</title></rect>
+<rect x="379.000" y="293.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / moderate, 2048 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="405.000" y="293.000" width="25.000" height="17.000" fill="#f5f5f5"><title>medium / prompt-heavy / moderate, 4096 slots, Unlimited, paged16 — -3.48850700214%</title></rect>
+<rect x="431.000" y="293.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / moderate, 8192 slots, Unlimited, paged16 — -0.017464773905%</title></rect>
+<rect x="457.000" y="293.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / moderate, 16384 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="483.000" y="293.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / moderate, 32768 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="379.000" y="311.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / bursty, 2048 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="405.000" y="311.000" width="25.000" height="17.000" fill="#e6ecef"><title>medium / prompt-heavy / bursty, 4096 slots, Unlimited, paged16 — -45.4611487846%</title></rect>
+<rect x="431.000" y="311.000" width="25.000" height="17.000" fill="#e1eaed"><title>medium / prompt-heavy / bursty, 8192 slots, Unlimited, paged16 — -57.2055348599%</title></rect>
+<rect x="457.000" y="311.000" width="25.000" height="17.000" fill="#e5ecee"><title>medium / prompt-heavy / bursty, 16384 slots, Unlimited, paged16 — -46.1317268851%</title></rect>
+<rect x="483.000" y="311.000" width="25.000" height="17.000" fill="#f5f6f6"><title>medium / prompt-heavy / bursty, 32768 slots, Unlimited, paged16 — -1.43228865778%</title></rect>
+<rect x="379.000" y="329.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / generation-heavy / dense, 2048 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="405.000" y="329.000" width="25.000" height="17.000" fill="#ecded9"><title>long / generation-heavy / dense, 4096 slots, Unlimited, paged16 — 88.595809854%</title></rect>
+<rect x="431.000" y="329.000" width="25.000" height="17.000" fill="#dbb4a6"><title>long / generation-heavy / dense, 8192 slots, Unlimited, paged16 — 243.513835599%</title></rect>
+<rect x="457.000" y="329.000" width="25.000" height="17.000" fill="#c8866f"><title>long / generation-heavy / dense, 16384 slots, Unlimited, paged16 — 414.048747666%</title></rect>
+<rect x="483.000" y="329.000" width="25.000" height="17.000" fill="#be6d50"><title>long / generation-heavy / dense, 32768 slots, Unlimited, paged16 — 509.107099523%</title></rect>
+<rect x="379.000" y="347.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / generation-heavy / moderate, 2048 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="405.000" y="347.000" width="25.000" height="17.000" fill="#ecded9"><title>long / generation-heavy / moderate, 4096 slots, Unlimited, paged16 — 88.107018673%</title></rect>
+<rect x="431.000" y="347.000" width="25.000" height="17.000" fill="#dbb5a7"><title>long / generation-heavy / moderate, 8192 slots, Unlimited, paged16 — 241.103892384%</title></rect>
+<rect x="457.000" y="347.000" width="25.000" height="17.000" fill="#cb8c75"><title>long / generation-heavy / moderate, 16384 slots, Unlimited, paged16 — 393.487543553%</title></rect>
+<rect x="483.000" y="347.000" width="25.000" height="17.000" fill="#c98870"><title>long / generation-heavy / moderate, 32768 slots, Unlimited, paged16 — 409.05748584%</title></rect>
+<rect x="379.000" y="365.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / generation-heavy / bursty, 2048 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="405.000" y="365.000" width="25.000" height="17.000" fill="#ecded9"><title>long / generation-heavy / bursty, 4096 slots, Unlimited, paged16 — 89.0014957526%</title></rect>
+<rect x="431.000" y="365.000" width="25.000" height="17.000" fill="#dbb5a7"><title>long / generation-heavy / bursty, 8192 slots, Unlimited, paged16 — 242.768898482%</title></rect>
+<rect x="457.000" y="365.000" width="25.000" height="17.000" fill="#c8866e"><title>long / generation-heavy / bursty, 16384 slots, Unlimited, paged16 — 415.900002636%</title></rect>
+<rect x="483.000" y="365.000" width="25.000" height="17.000" fill="#be6c4e"><title>long / generation-heavy / bursty, 32768 slots, Unlimited, paged16 — 512.688496277%</title></rect>
+<rect x="379.000" y="383.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / dense, 2048 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="405.000" y="383.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / dense, 4096 slots, Unlimited, paged16 — 0.06979012517%</title></rect>
+<rect x="431.000" y="383.000" width="25.000" height="17.000" fill="#f2f4f4"><title>long / prompt-heavy / dense, 8192 slots, Unlimited, paged16 — -10.3135524619%</title></rect>
+<rect x="457.000" y="383.000" width="25.000" height="17.000" fill="#f0f2f3"><title>long / prompt-heavy / dense, 16384 slots, Unlimited, paged16 — -16.7551996419%</title></rect>
+<rect x="483.000" y="383.000" width="25.000" height="17.000" fill="#f5f5f6"><title>long / prompt-heavy / dense, 32768 slots, Unlimited, paged16 — -2.67188077609%</title></rect>
+<rect x="379.000" y="401.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / moderate, 2048 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="405.000" y="401.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / moderate, 4096 slots, Unlimited, paged16 — -0.0140515286308%</title></rect>
+<rect x="431.000" y="401.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / moderate, 8192 slots, Unlimited, paged16 — -0.017464773905%</title></rect>
+<rect x="457.000" y="401.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / moderate, 16384 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="483.000" y="401.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / moderate, 32768 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="379.000" y="419.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / bursty, 2048 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="405.000" y="419.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / bursty, 4096 slots, Unlimited, paged16 — 0.0685418510833%</title></rect>
+<rect x="431.000" y="419.000" width="25.000" height="17.000" fill="#f2f4f4"><title>long / prompt-heavy / bursty, 8192 slots, Unlimited, paged16 — -10.162456346%</title></rect>
+<rect x="457.000" y="419.000" width="25.000" height="17.000" fill="#f0f2f3"><title>long / prompt-heavy / bursty, 16384 slots, Unlimited, paged16 — -16.7746970001%</title></rect>
+<rect x="483.000" y="419.000" width="25.000" height="17.000" fill="#f5f6f6"><title>long / prompt-heavy / bursty, 32768 slots, Unlimited, paged16 — -1.43228865778%</title></rect>
+<rect x="379.000" y="437.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / generation-heavy / dense, 2048 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="405.000" y="437.000" width="25.000" height="17.000" fill="#efe5e2"><title>mixed / generation-heavy / dense, 4096 slots, Unlimited, paged16 — 61.2469274077%</title></rect>
+<rect x="431.000" y="437.000" width="25.000" height="17.000" fill="#e7d2cb"><title>mixed / generation-heavy / dense, 8192 slots, Unlimited, paged16 — 132.174275619%</title></rect>
+<rect x="457.000" y="437.000" width="25.000" height="17.000" fill="#eee3de"><title>mixed / generation-heavy / dense, 16384 slots, Unlimited, paged16 — 72.0865176014%</title></rect>
+<rect x="483.000" y="437.000" width="25.000" height="17.000" fill="#e5ecee"><title>mixed / generation-heavy / dense, 32768 slots, Unlimited, paged16 — -46.6830921159%</title></rect>
+<rect x="379.000" y="455.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / generation-heavy / moderate, 2048 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="405.000" y="455.000" width="25.000" height="17.000" fill="#f0e7e3"><title>mixed / generation-heavy / moderate, 4096 slots, Unlimited, paged16 — 56.7411416432%</title></rect>
+<rect x="431.000" y="455.000" width="25.000" height="17.000" fill="#f2edeb"><title>mixed / generation-heavy / moderate, 8192 slots, Unlimited, paged16 — 32.8931523926%</title></rect>
+<rect x="457.000" y="455.000" width="25.000" height="17.000" fill="#eef1f2"><title>mixed / generation-heavy / moderate, 16384 slots, Unlimited, paged16 — -23.0534744229%</title></rect>
+<rect x="483.000" y="455.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / generation-heavy / moderate, 32768 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="379.000" y="473.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / generation-heavy / bursty, 2048 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="405.000" y="473.000" width="25.000" height="17.000" fill="#efe5e1"><title>mixed / generation-heavy / bursty, 4096 slots, Unlimited, paged16 — 62.7600199191%</title></rect>
+<rect x="431.000" y="473.000" width="25.000" height="17.000" fill="#e7d2cb"><title>mixed / generation-heavy / bursty, 8192 slots, Unlimited, paged16 — 133.063498811%</title></rect>
+<rect x="457.000" y="473.000" width="25.000" height="17.000" fill="#eee2de"><title>mixed / generation-heavy / bursty, 16384 slots, Unlimited, paged16 — 72.3676266631%</title></rect>
+<rect x="483.000" y="473.000" width="25.000" height="17.000" fill="#e5ecee"><title>mixed / generation-heavy / bursty, 32768 slots, Unlimited, paged16 — -47.3775120536%</title></rect>
+<rect x="379.000" y="491.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / dense, 2048 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="405.000" y="491.000" width="25.000" height="17.000" fill="#e1eaed"><title>mixed / prompt-heavy / dense, 4096 slots, Unlimited, paged16 — -57.1636676746%</title></rect>
+<rect x="431.000" y="491.000" width="25.000" height="17.000" fill="#dee8eb"><title>mixed / prompt-heavy / dense, 8192 slots, Unlimited, paged16 — -66.0969446053%</title></rect>
+<rect x="457.000" y="491.000" width="25.000" height="17.000" fill="#e7edef"><title>mixed / prompt-heavy / dense, 16384 slots, Unlimited, paged16 — -40.356557462%</title></rect>
+<rect x="483.000" y="491.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / dense, 32768 slots, Unlimited, paged16 — -0.346624213463%</title></rect>
+<rect x="379.000" y="509.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / moderate, 2048 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="405.000" y="509.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / moderate, 4096 slots, Unlimited, paged16 — -0.951023579381%</title></rect>
+<rect x="431.000" y="509.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / moderate, 8192 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="457.000" y="509.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / moderate, 16384 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="483.000" y="509.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / moderate, 32768 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="379.000" y="527.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / bursty, 2048 slots, Unlimited, paged16 — 0%</title></rect>
+<rect x="405.000" y="527.000" width="25.000" height="17.000" fill="#e1eaed"><title>mixed / prompt-heavy / bursty, 4096 slots, Unlimited, paged16 — -57.3332439925%</title></rect>
+<rect x="431.000" y="527.000" width="25.000" height="17.000" fill="#dee8eb"><title>mixed / prompt-heavy / bursty, 8192 slots, Unlimited, paged16 — -66.9846706014%</title></rect>
+<rect x="457.000" y="527.000" width="25.000" height="17.000" fill="#e7edef"><title>mixed / prompt-heavy / bursty, 16384 slots, Unlimited, paged16 — -40.8186487282%</title></rect>
+<rect x="483.000" y="527.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / bursty, 32768 slots, Unlimited, paged16 — 0%</title></rect>
+<text x="594" y="83" font-size="12" text-anchor="middle" font-weight="bold">Unlimited · paged32</text>
+<text x="539" y="104" font-size="9" text-anchor="middle" font-weight="normal">2048</text>
+<text x="565" y="104" font-size="9" text-anchor="middle" font-weight="normal">4096</text>
+<text x="591" y="104" font-size="9" text-anchor="middle" font-weight="normal">8192</text>
+<text x="617" y="104" font-size="9" text-anchor="middle" font-weight="normal">16384</text>
+<text x="643" y="104" font-size="9" text-anchor="middle" font-weight="normal">32768</text>
+<rect x="527.000" y="113.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / dense, 2048 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="553.000" y="113.000" width="25.000" height="17.000" fill="#eff2f3"><title>short / generation-heavy / dense, 4096 slots, Unlimited, paged32 — -18.80323502%</title></rect>
+<rect x="579.000" y="113.000" width="25.000" height="17.000" fill="#dae5e9"><title>short / generation-heavy / dense, 8192 slots, Unlimited, paged32 — -77.9063575152%</title></rect>
+<rect x="605.000" y="113.000" width="25.000" height="17.000" fill="#e1eaed"><title>short / generation-heavy / dense, 16384 slots, Unlimited, paged32 — -57.2070552159%</title></rect>
+<rect x="631.000" y="113.000" width="25.000" height="17.000" fill="#eef1f3"><title>short / generation-heavy / dense, 32768 slots, Unlimited, paged32 — -21.0452528356%</title></rect>
+<rect x="527.000" y="131.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / moderate, 2048 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="553.000" y="131.000" width="25.000" height="17.000" fill="#edf0f2"><title>short / generation-heavy / moderate, 4096 slots, Unlimited, paged32 — -26.0426936302%</title></rect>
+<rect x="579.000" y="131.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / moderate, 8192 slots, Unlimited, paged32 — -0.0925847590091%</title></rect>
+<rect x="605.000" y="131.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / moderate, 16384 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="631.000" y="131.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / moderate, 32768 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="527.000" y="149.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / bursty, 2048 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="553.000" y="149.000" width="25.000" height="17.000" fill="#f0f3f3"><title>short / generation-heavy / bursty, 4096 slots, Unlimited, paged32 — -16.0002778567%</title></rect>
+<rect x="579.000" y="149.000" width="25.000" height="17.000" fill="#dae5e9"><title>short / generation-heavy / bursty, 8192 slots, Unlimited, paged32 — -78.2958503806%</title></rect>
+<rect x="605.000" y="149.000" width="25.000" height="17.000" fill="#e1eaed"><title>short / generation-heavy / bursty, 16384 slots, Unlimited, paged32 — -57.7534732224%</title></rect>
+<rect x="631.000" y="149.000" width="25.000" height="17.000" fill="#eff2f3"><title>short / generation-heavy / bursty, 32768 slots, Unlimited, paged32 — -20.230586789%</title></rect>
+<rect x="527.000" y="167.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / dense, 2048 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="553.000" y="167.000" width="25.000" height="17.000" fill="#d8e4e9"><title>short / prompt-heavy / dense, 4096 slots, Unlimited, paged32 — -82.2871392821%</title></rect>
+<rect x="579.000" y="167.000" width="25.000" height="17.000" fill="#dee8eb"><title>short / prompt-heavy / dense, 8192 slots, Unlimited, paged32 — -66.4681941767%</title></rect>
+<rect x="605.000" y="167.000" width="25.000" height="17.000" fill="#e9eef0"><title>short / prompt-heavy / dense, 16384 slots, Unlimited, paged32 — -35.1760960564%</title></rect>
+<rect x="631.000" y="167.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / dense, 32768 slots, Unlimited, paged32 — -0.0680358715927%</title></rect>
+<rect x="527.000" y="185.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / moderate, 2048 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="553.000" y="185.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / moderate, 4096 slots, Unlimited, paged32 — -0.312054773226%</title></rect>
+<rect x="579.000" y="185.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / moderate, 8192 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="605.000" y="185.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / moderate, 16384 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="631.000" y="185.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / moderate, 32768 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="527.000" y="203.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / bursty, 2048 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="553.000" y="203.000" width="25.000" height="17.000" fill="#d9e5e9"><title>short / prompt-heavy / bursty, 4096 slots, Unlimited, paged32 — -79.3182870118%</title></rect>
+<rect x="579.000" y="203.000" width="25.000" height="17.000" fill="#dee8eb"><title>short / prompt-heavy / bursty, 8192 slots, Unlimited, paged32 — -67.2763599978%</title></rect>
+<rect x="605.000" y="203.000" width="25.000" height="17.000" fill="#e9eef0"><title>short / prompt-heavy / bursty, 16384 slots, Unlimited, paged32 — -36.1469210163%</title></rect>
+<rect x="631.000" y="203.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / bursty, 32768 slots, Unlimited, paged32 — -0.137724550898%</title></rect>
+<rect x="527.000" y="221.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / generation-heavy / dense, 2048 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="553.000" y="221.000" width="25.000" height="17.000" fill="#eee3df"><title>medium / generation-heavy / dense, 4096 slots, Unlimited, paged32 — 71.8457344133%</title></rect>
+<rect x="579.000" y="221.000" width="25.000" height="17.000" fill="#e3c7bd"><title>medium / generation-heavy / dense, 8192 slots, Unlimited, paged32 — 173.231990804%</title></rect>
+<rect x="605.000" y="221.000" width="25.000" height="17.000" fill="#e8d4cc"><title>medium / generation-heavy / dense, 16384 slots, Unlimited, paged32 — 127.833392027%</title></rect>
+<rect x="631.000" y="221.000" width="25.000" height="17.000" fill="#f5f6f6"><title>medium / generation-heavy / dense, 32768 slots, Unlimited, paged32 — -1.71533091054%</title></rect>
+<rect x="527.000" y="239.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / generation-heavy / moderate, 2048 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="553.000" y="239.000" width="25.000" height="17.000" fill="#eee3df"><title>medium / generation-heavy / moderate, 4096 slots, Unlimited, paged32 — 70.3729085645%</title></rect>
+<rect x="579.000" y="239.000" width="25.000" height="17.000" fill="#e6cec5"><title>medium / generation-heavy / moderate, 8192 slots, Unlimited, paged32 — 149.012132318%</title></rect>
+<rect x="605.000" y="239.000" width="25.000" height="17.000" fill="#e4ebee"><title>medium / generation-heavy / moderate, 16384 slots, Unlimited, paged32 — -50.5301428783%</title></rect>
+<rect x="631.000" y="239.000" width="25.000" height="17.000" fill="#f3f4f5"><title>medium / generation-heavy / moderate, 32768 slots, Unlimited, paged32 — -7.05014137215%</title></rect>
+<rect x="527.000" y="257.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / generation-heavy / bursty, 2048 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="553.000" y="257.000" width="25.000" height="17.000" fill="#eee2de"><title>medium / generation-heavy / bursty, 4096 slots, Unlimited, paged32 — 72.8847337079%</title></rect>
+<rect x="579.000" y="257.000" width="25.000" height="17.000" fill="#e3c8be"><title>medium / generation-heavy / bursty, 8192 slots, Unlimited, paged32 — 171.336023582%</title></rect>
+<rect x="605.000" y="257.000" width="25.000" height="17.000" fill="#e7d2cb"><title>medium / generation-heavy / bursty, 16384 slots, Unlimited, paged32 — 132.625120427%</title></rect>
+<rect x="631.000" y="257.000" width="25.000" height="17.000" fill="#f5f5f5"><title>medium / generation-heavy / bursty, 32768 slots, Unlimited, paged32 — -3.94671161741%</title></rect>
+<rect x="527.000" y="275.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / dense, 2048 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="553.000" y="275.000" width="25.000" height="17.000" fill="#e5ecee"><title>medium / prompt-heavy / dense, 4096 slots, Unlimited, paged32 — -46.1633204891%</title></rect>
+<rect x="579.000" y="275.000" width="25.000" height="17.000" fill="#e1e9ec"><title>medium / prompt-heavy / dense, 8192 slots, Unlimited, paged32 — -59.2227159297%</title></rect>
+<rect x="605.000" y="275.000" width="25.000" height="17.000" fill="#e6ecef"><title>medium / prompt-heavy / dense, 16384 slots, Unlimited, paged32 — -45.8415794127%</title></rect>
+<rect x="631.000" y="275.000" width="25.000" height="17.000" fill="#f5f5f6"><title>medium / prompt-heavy / dense, 32768 slots, Unlimited, paged32 — -2.73980136125%</title></rect>
+<rect x="527.000" y="293.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / moderate, 2048 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="553.000" y="293.000" width="25.000" height="17.000" fill="#f5f5f5"><title>medium / prompt-heavy / moderate, 4096 slots, Unlimited, paged32 — -3.49742495696%</title></rect>
+<rect x="579.000" y="293.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / moderate, 8192 slots, Unlimited, paged32 — -0.017464773905%</title></rect>
+<rect x="605.000" y="293.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / moderate, 16384 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="631.000" y="293.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / moderate, 32768 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="527.000" y="311.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / bursty, 2048 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="553.000" y="311.000" width="25.000" height="17.000" fill="#e5ecee"><title>medium / prompt-heavy / bursty, 4096 slots, Unlimited, paged32 — -46.1563837442%</title></rect>
+<rect x="579.000" y="311.000" width="25.000" height="17.000" fill="#e1e9ec"><title>medium / prompt-heavy / bursty, 8192 slots, Unlimited, paged32 — -59.2518038521%</title></rect>
+<rect x="605.000" y="311.000" width="25.000" height="17.000" fill="#e5ecee"><title>medium / prompt-heavy / bursty, 16384 slots, Unlimited, paged32 — -46.3386977122%</title></rect>
+<rect x="631.000" y="311.000" width="25.000" height="17.000" fill="#f5f6f6"><title>medium / prompt-heavy / bursty, 32768 slots, Unlimited, paged32 — -1.43228865778%</title></rect>
+<rect x="527.000" y="329.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / generation-heavy / dense, 2048 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="553.000" y="329.000" width="25.000" height="17.000" fill="#ecded9"><title>long / generation-heavy / dense, 4096 slots, Unlimited, paged32 — 87.7072193742%</title></rect>
+<rect x="579.000" y="329.000" width="25.000" height="17.000" fill="#dcb6a9"><title>long / generation-heavy / dense, 8192 slots, Unlimited, paged32 — 236.559530472%</title></rect>
+<rect x="605.000" y="329.000" width="25.000" height="17.000" fill="#cf9681"><title>long / generation-heavy / dense, 16384 slots, Unlimited, paged32 — 357.953118223%</title></rect>
+<rect x="631.000" y="329.000" width="25.000" height="17.000" fill="#ce9480"><title>long / generation-heavy / dense, 32768 slots, Unlimited, paged32 — 361.808187252%</title></rect>
+<rect x="527.000" y="347.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / generation-heavy / moderate, 2048 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="553.000" y="347.000" width="25.000" height="17.000" fill="#ecdfda"><title>long / generation-heavy / moderate, 4096 slots, Unlimited, paged32 — 87.1792949711%</title></rect>
+<rect x="579.000" y="347.000" width="25.000" height="17.000" fill="#dcb7a9"><title>long / generation-heavy / moderate, 8192 slots, Unlimited, paged32 — 234.128520575%</title></rect>
+<rect x="605.000" y="347.000" width="25.000" height="17.000" fill="#d19b88"><title>long / generation-heavy / moderate, 16384 slots, Unlimited, paged32 — 336.433137396%</title></rect>
+<rect x="631.000" y="347.000" width="25.000" height="17.000" fill="#dbb3a5"><title>long / generation-heavy / moderate, 32768 slots, Unlimited, paged32 — 248.154266494%</title></rect>
+<rect x="527.000" y="365.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / generation-heavy / bursty, 2048 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="553.000" y="365.000" width="25.000" height="17.000" fill="#ecded9"><title>long / generation-heavy / bursty, 4096 slots, Unlimited, paged32 — 88.107208464%</title></rect>
+<rect x="579.000" y="365.000" width="25.000" height="17.000" fill="#dcb6a9"><title>long / generation-heavy / bursty, 8192 slots, Unlimited, paged32 — 235.816370824%</title></rect>
+<rect x="605.000" y="365.000" width="25.000" height="17.000" fill="#ce9580"><title>long / generation-heavy / bursty, 16384 slots, Unlimited, paged32 — 360.595531316%</title></rect>
+<rect x="631.000" y="365.000" width="25.000" height="17.000" fill="#ce937e"><title>long / generation-heavy / bursty, 32768 slots, Unlimited, paged32 — 366.840369073%</title></rect>
+<rect x="527.000" y="383.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / dense, 2048 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="553.000" y="383.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / dense, 4096 slots, Unlimited, paged32 — 0.0612662461887%</title></rect>
+<rect x="579.000" y="383.000" width="25.000" height="17.000" fill="#f2f4f4"><title>long / prompt-heavy / dense, 8192 slots, Unlimited, paged32 — -11.0102348682%</title></rect>
+<rect x="605.000" y="383.000" width="25.000" height="17.000" fill="#f0f2f3"><title>long / prompt-heavy / dense, 16384 slots, Unlimited, paged32 — -17.7900309341%</title></rect>
+<rect x="631.000" y="383.000" width="25.000" height="17.000" fill="#f5f5f6"><title>long / prompt-heavy / dense, 32768 slots, Unlimited, paged32 — -2.71890271966%</title></rect>
+<rect x="527.000" y="401.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / moderate, 2048 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="553.000" y="401.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / moderate, 4096 slots, Unlimited, paged32 — -0.0231039058852%</title></rect>
+<rect x="579.000" y="401.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / moderate, 8192 slots, Unlimited, paged32 — -0.017464773905%</title></rect>
+<rect x="605.000" y="401.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / moderate, 16384 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="631.000" y="401.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / moderate, 32768 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="527.000" y="419.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / bursty, 2048 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="553.000" y="419.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / bursty, 4096 slots, Unlimited, paged32 — 0.0589824218298%</title></rect>
+<rect x="579.000" y="419.000" width="25.000" height="17.000" fill="#f2f4f4"><title>long / prompt-heavy / bursty, 8192 slots, Unlimited, paged32 — -11.04605516%</title></rect>
+<rect x="605.000" y="419.000" width="25.000" height="17.000" fill="#eff2f3"><title>long / prompt-heavy / bursty, 16384 slots, Unlimited, paged32 — -18.2363636294%</title></rect>
+<rect x="631.000" y="419.000" width="25.000" height="17.000" fill="#f5f6f6"><title>long / prompt-heavy / bursty, 32768 slots, Unlimited, paged32 — -1.43228865778%</title></rect>
+<rect x="527.000" y="437.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / generation-heavy / dense, 2048 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="553.000" y="437.000" width="25.000" height="17.000" fill="#efe6e2"><title>mixed / generation-heavy / dense, 4096 slots, Unlimited, paged32 — 61.0732960136%</title></rect>
+<rect x="579.000" y="437.000" width="25.000" height="17.000" fill="#e8d3cc"><title>mixed / generation-heavy / dense, 8192 slots, Unlimited, paged32 — 128.070367962%</title></rect>
+<rect x="605.000" y="437.000" width="25.000" height="17.000" fill="#f0e8e5"><title>mixed / generation-heavy / dense, 16384 slots, Unlimited, paged32 — 52.2056040077%</title></rect>
+<rect x="631.000" y="437.000" width="25.000" height="17.000" fill="#e5ecee"><title>mixed / generation-heavy / dense, 32768 slots, Unlimited, paged32 — -46.9993879102%</title></rect>
+<rect x="527.000" y="455.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / generation-heavy / moderate, 2048 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="553.000" y="455.000" width="25.000" height="17.000" fill="#f0e7e4"><title>mixed / generation-heavy / moderate, 4096 slots, Unlimited, paged32 — 56.3700573284%</title></rect>
+<rect x="579.000" y="455.000" width="25.000" height="17.000" fill="#f3eeec"><title>mixed / generation-heavy / moderate, 8192 slots, Unlimited, paged32 — 30.8528469448%</title></rect>
+<rect x="605.000" y="455.000" width="25.000" height="17.000" fill="#eef1f2"><title>mixed / generation-heavy / moderate, 16384 slots, Unlimited, paged32 — -23.0534744229%</title></rect>
+<rect x="631.000" y="455.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / generation-heavy / moderate, 32768 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="527.000" y="473.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / generation-heavy / bursty, 2048 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="553.000" y="473.000" width="25.000" height="17.000" fill="#efe5e2"><title>mixed / generation-heavy / bursty, 4096 slots, Unlimited, paged32 — 62.5962971288%</title></rect>
+<rect x="579.000" y="473.000" width="25.000" height="17.000" fill="#e8d3cc"><title>mixed / generation-heavy / bursty, 8192 slots, Unlimited, paged32 — 129.176598895%</title></rect>
+<rect x="605.000" y="473.000" width="25.000" height="17.000" fill="#f0e8e5"><title>mixed / generation-heavy / bursty, 16384 slots, Unlimited, paged32 — 52.1698035879%</title></rect>
+<rect x="631.000" y="473.000" width="25.000" height="17.000" fill="#e5ecee"><title>mixed / generation-heavy / bursty, 32768 slots, Unlimited, paged32 — -47.4574708384%</title></rect>
+<rect x="527.000" y="491.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / dense, 2048 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="553.000" y="491.000" width="25.000" height="17.000" fill="#e1e9ec"><title>mixed / prompt-heavy / dense, 4096 slots, Unlimited, paged32 — -58.497999568%</title></rect>
+<rect x="579.000" y="491.000" width="25.000" height="17.000" fill="#dee8eb"><title>mixed / prompt-heavy / dense, 8192 slots, Unlimited, paged32 — -66.8239562853%</title></rect>
+<rect x="605.000" y="491.000" width="25.000" height="17.000" fill="#e7edef"><title>mixed / prompt-heavy / dense, 16384 slots, Unlimited, paged32 — -40.356557462%</title></rect>
+<rect x="631.000" y="491.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / dense, 32768 slots, Unlimited, paged32 — -0.346624213463%</title></rect>
+<rect x="527.000" y="509.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / moderate, 2048 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="553.000" y="509.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / moderate, 4096 slots, Unlimited, paged32 — -0.951023579381%</title></rect>
+<rect x="579.000" y="509.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / moderate, 8192 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="605.000" y="509.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / moderate, 16384 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="631.000" y="509.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / moderate, 32768 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="527.000" y="527.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / bursty, 2048 slots, Unlimited, paged32 — 0%</title></rect>
+<rect x="553.000" y="527.000" width="25.000" height="17.000" fill="#e1e9ec"><title>mixed / prompt-heavy / bursty, 4096 slots, Unlimited, paged32 — -58.5787938435%</title></rect>
+<rect x="579.000" y="527.000" width="25.000" height="17.000" fill="#dee7eb"><title>mixed / prompt-heavy / bursty, 8192 slots, Unlimited, paged32 — -67.8526419152%</title></rect>
+<rect x="605.000" y="527.000" width="25.000" height="17.000" fill="#e7edef"><title>mixed / prompt-heavy / bursty, 16384 slots, Unlimited, paged32 — -40.9496971153%</title></rect>
+<rect x="631.000" y="527.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / bursty, 32768 slots, Unlimited, paged32 — 0%</title></rect>
+<text x="742" y="83" font-size="12" text-anchor="middle" font-weight="bold">G8 · paged8</text>
+<text x="687" y="104" font-size="9" text-anchor="middle" font-weight="normal">2048</text>
+<text x="713" y="104" font-size="9" text-anchor="middle" font-weight="normal">4096</text>
+<text x="739" y="104" font-size="9" text-anchor="middle" font-weight="normal">8192</text>
+<text x="765" y="104" font-size="9" text-anchor="middle" font-weight="normal">16384</text>
+<text x="791" y="104" font-size="9" text-anchor="middle" font-weight="normal">32768</text>
+<rect x="675.000" y="113.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / dense, 2048 slots, G8, paged8 — 0%</title></rect>
+<rect x="701.000" y="113.000" width="25.000" height="17.000" fill="#f3f4f5"><title>short / generation-heavy / dense, 4096 slots, G8, paged8 — -8.77285985797%</title></rect>
+<rect x="727.000" y="113.000" width="25.000" height="17.000" fill="#f0f2f3"><title>short / generation-heavy / dense, 8192 slots, G8, paged8 — -17.8409582629%</title></rect>
+<rect x="753.000" y="113.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / dense, 16384 slots, G8, paged8 — 0%</title></rect>
+<rect x="779.000" y="113.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / dense, 32768 slots, G8, paged8 — 0%</title></rect>
+<rect x="675.000" y="131.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / moderate, 2048 slots, G8, paged8 — 0%</title></rect>
+<rect x="701.000" y="131.000" width="25.000" height="17.000" fill="#edf0f2"><title>short / generation-heavy / moderate, 4096 slots, G8, paged8 — -26.0426936302%</title></rect>
+<rect x="727.000" y="131.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / moderate, 8192 slots, G8, paged8 — -0.0925847590091%</title></rect>
+<rect x="753.000" y="131.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / moderate, 16384 slots, G8, paged8 — 0%</title></rect>
+<rect x="779.000" y="131.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / moderate, 32768 slots, G8, paged8 — 0%</title></rect>
+<rect x="675.000" y="149.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / bursty, 2048 slots, G8, paged8 — 0%</title></rect>
+<rect x="701.000" y="149.000" width="25.000" height="17.000" fill="#f4f5f5"><title>short / generation-heavy / bursty, 4096 slots, G8, paged8 — -6.26276616654%</title></rect>
+<rect x="727.000" y="149.000" width="25.000" height="17.000" fill="#f1f3f4"><title>short / generation-heavy / bursty, 8192 slots, G8, paged8 — -13.7277598036%</title></rect>
+<rect x="753.000" y="149.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / bursty, 16384 slots, G8, paged8 — 0%</title></rect>
+<rect x="779.000" y="149.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / bursty, 32768 slots, G8, paged8 — 0%</title></rect>
+<rect x="675.000" y="167.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / dense, 2048 slots, G8, paged8 — 0%</title></rect>
+<rect x="701.000" y="167.000" width="25.000" height="17.000" fill="#e3ebed"><title>short / prompt-heavy / dense, 4096 slots, G8, paged8 — -52.6007939278%</title></rect>
+<rect x="727.000" y="167.000" width="25.000" height="17.000" fill="#e7edef"><title>short / prompt-heavy / dense, 8192 slots, G8, paged8 — -42.4181835497%</title></rect>
+<rect x="753.000" y="167.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / dense, 16384 slots, G8, paged8 — 0%</title></rect>
+<rect x="779.000" y="167.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / dense, 32768 slots, G8, paged8 — 0%</title></rect>
+<rect x="675.000" y="185.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / moderate, 2048 slots, G8, paged8 — 0%</title></rect>
+<rect x="701.000" y="185.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / moderate, 4096 slots, G8, paged8 — -0.312054773226%</title></rect>
+<rect x="727.000" y="185.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / moderate, 8192 slots, G8, paged8 — 0%</title></rect>
+<rect x="753.000" y="185.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / moderate, 16384 slots, G8, paged8 — 0%</title></rect>
+<rect x="779.000" y="185.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / moderate, 32768 slots, G8, paged8 — 0%</title></rect>
+<rect x="675.000" y="203.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / bursty, 2048 slots, G8, paged8 — 0%</title></rect>
+<rect x="701.000" y="203.000" width="25.000" height="17.000" fill="#e4ebee"><title>short / prompt-heavy / bursty, 4096 slots, G8, paged8 — -51.3016467219%</title></rect>
+<rect x="727.000" y="203.000" width="25.000" height="17.000" fill="#e8eef0"><title>short / prompt-heavy / bursty, 8192 slots, G8, paged8 — -39.3659265303%</title></rect>
+<rect x="753.000" y="203.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / bursty, 16384 slots, G8, paged8 — 0%</title></rect>
+<rect x="779.000" y="203.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / bursty, 32768 slots, G8, paged8 — 0%</title></rect>
+<rect x="675.000" y="221.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / generation-heavy / dense, 2048 slots, G8, paged8 — 0%</title></rect>
+<rect x="701.000" y="221.000" width="25.000" height="17.000" fill="#eee3df"><title>medium / generation-heavy / dense, 4096 slots, G8, paged8 — 71.325466639%</title></rect>
+<rect x="727.000" y="221.000" width="25.000" height="17.000" fill="#e6cfc7"><title>medium / generation-heavy / dense, 8192 slots, G8, paged8 — 143.158274493%</title></rect>
+<rect x="753.000" y="221.000" width="25.000" height="17.000" fill="#f5f3f2"><title>medium / generation-heavy / dense, 16384 slots, G8, paged8 — 12.5833331701%</title></rect>
+<rect x="779.000" y="221.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / generation-heavy / dense, 32768 slots, G8, paged8 — 0%</title></rect>
+<rect x="675.000" y="239.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / generation-heavy / moderate, 2048 slots, G8, paged8 — 0%</title></rect>
+<rect x="701.000" y="239.000" width="25.000" height="17.000" fill="#eee3df"><title>medium / generation-heavy / moderate, 4096 slots, G8, paged8 — 69.6529766147%</title></rect>
+<rect x="727.000" y="239.000" width="25.000" height="17.000" fill="#ede0db"><title>medium / generation-heavy / moderate, 8192 slots, G8, paged8 — 83.3348363084%</title></rect>
+<rect x="753.000" y="239.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / generation-heavy / moderate, 16384 slots, G8, paged8 — 0%</title></rect>
+<rect x="779.000" y="239.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / generation-heavy / moderate, 32768 slots, G8, paged8 — 0%</title></rect>
+<rect x="675.000" y="257.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / generation-heavy / bursty, 2048 slots, G8, paged8 — 0%</title></rect>
+<rect x="701.000" y="257.000" width="25.000" height="17.000" fill="#eee3de"><title>medium / generation-heavy / bursty, 4096 slots, G8, paged8 — 72.1638976432%</title></rect>
+<rect x="727.000" y="257.000" width="25.000" height="17.000" fill="#e6cfc7"><title>medium / generation-heavy / bursty, 8192 slots, G8, paged8 — 143.243701494%</title></rect>
+<rect x="753.000" y="257.000" width="25.000" height="17.000" fill="#f4f2f1"><title>medium / generation-heavy / bursty, 16384 slots, G8, paged8 — 13.9713977859%</title></rect>
+<rect x="779.000" y="257.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / generation-heavy / bursty, 32768 slots, G8, paged8 — 0%</title></rect>
+<rect x="675.000" y="275.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / dense, 2048 slots, G8, paged8 — 0%</title></rect>
+<rect x="701.000" y="275.000" width="25.000" height="17.000" fill="#e6ecef"><title>medium / prompt-heavy / dense, 4096 slots, G8, paged8 — -44.9814783047%</title></rect>
+<rect x="727.000" y="275.000" width="25.000" height="17.000" fill="#e6edef"><title>medium / prompt-heavy / dense, 8192 slots, G8, paged8 — -43.1384971602%</title></rect>
+<rect x="753.000" y="275.000" width="25.000" height="17.000" fill="#f5f4f3"><title>medium / prompt-heavy / dense, 16384 slots, G8, paged8 — 8.44050416933%</title></rect>
+<rect x="779.000" y="275.000" width="25.000" height="17.000" fill="#f6f5f5"><title>medium / prompt-heavy / dense, 32768 slots, G8, paged8 — 3.06653271324%</title></rect>
+<rect x="675.000" y="293.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / moderate, 2048 slots, G8, paged8 — 0%</title></rect>
+<rect x="701.000" y="293.000" width="25.000" height="17.000" fill="#f5f5f5"><title>medium / prompt-heavy / moderate, 4096 slots, G8, paged8 — -3.49296597955%</title></rect>
+<rect x="727.000" y="293.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / moderate, 8192 slots, G8, paged8 — -0.017464773905%</title></rect>
+<rect x="753.000" y="293.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / moderate, 16384 slots, G8, paged8 — 0%</title></rect>
+<rect x="779.000" y="293.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / moderate, 32768 slots, G8, paged8 — 0%</title></rect>
+<rect x="675.000" y="311.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / bursty, 2048 slots, G8, paged8 — 0%</title></rect>
+<rect x="701.000" y="311.000" width="25.000" height="17.000" fill="#e6ecef"><title>medium / prompt-heavy / bursty, 4096 slots, G8, paged8 — -45.1234850536%</title></rect>
+<rect x="727.000" y="311.000" width="25.000" height="17.000" fill="#e6edef"><title>medium / prompt-heavy / bursty, 8192 slots, G8, paged8 — -43.3005370347%</title></rect>
+<rect x="753.000" y="311.000" width="25.000" height="17.000" fill="#f5f4f3"><title>medium / prompt-heavy / bursty, 16384 slots, G8, paged8 — 9.00952658408%</title></rect>
+<rect x="779.000" y="311.000" width="25.000" height="17.000" fill="#f6f5f5"><title>medium / prompt-heavy / bursty, 32768 slots, G8, paged8 — 3.05528513798%</title></rect>
+<rect x="675.000" y="329.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / generation-heavy / dense, 2048 slots, G8, paged8 — 0%</title></rect>
+<rect x="701.000" y="329.000" width="25.000" height="17.000" fill="#ecded9"><title>long / generation-heavy / dense, 4096 slots, G8, paged8 — 87.4261471%</title></rect>
+<rect x="727.000" y="329.000" width="25.000" height="17.000" fill="#e0c0b5"><title>long / generation-heavy / dense, 8192 slots, G8, paged8 — 198.79408889%</title></rect>
+<rect x="753.000" y="329.000" width="25.000" height="17.000" fill="#ecddd8"><title>long / generation-heavy / dense, 16384 slots, G8, paged8 — 91.8732164449%</title></rect>
+<rect x="779.000" y="329.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / generation-heavy / dense, 32768 slots, G8, paged8 — 0%</title></rect>
+<rect x="675.000" y="347.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / generation-heavy / moderate, 2048 slots, G8, paged8 — 0%</title></rect>
+<rect x="701.000" y="347.000" width="25.000" height="17.000" fill="#ecdfda"><title>long / generation-heavy / moderate, 4096 slots, G8, paged8 — 86.871763085%</title></rect>
+<rect x="727.000" y="347.000" width="25.000" height="17.000" fill="#e1c1b6"><title>long / generation-heavy / moderate, 8192 slots, G8, paged8 — 194.825813112%</title></rect>
+<rect x="753.000" y="347.000" width="25.000" height="17.000" fill="#f2ebe9"><title>long / generation-heavy / moderate, 16384 slots, G8, paged8 — 39.1191793524%</title></rect>
+<rect x="779.000" y="347.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / generation-heavy / moderate, 32768 slots, G8, paged8 — 0%</title></rect>
+<rect x="675.000" y="365.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / generation-heavy / bursty, 2048 slots, G8, paged8 — 0%</title></rect>
+<rect x="701.000" y="365.000" width="25.000" height="17.000" fill="#ecded9"><title>long / generation-heavy / bursty, 4096 slots, G8, paged8 — 87.7484269243%</title></rect>
+<rect x="727.000" y="365.000" width="25.000" height="17.000" fill="#e0c0b5"><title>long / generation-heavy / bursty, 8192 slots, G8, paged8 — 198.799929219%</title></rect>
+<rect x="753.000" y="365.000" width="25.000" height="17.000" fill="#ecddd8"><title>long / generation-heavy / bursty, 16384 slots, G8, paged8 — 92.9634602754%</title></rect>
+<rect x="779.000" y="365.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / generation-heavy / bursty, 32768 slots, G8, paged8 — 0%</title></rect>
+<rect x="675.000" y="383.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / dense, 2048 slots, G8, paged8 — 0%</title></rect>
+<rect x="701.000" y="383.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / dense, 4096 slots, G8, paged8 — 0.113524242393%</title></rect>
+<rect x="727.000" y="383.000" width="25.000" height="17.000" fill="#f2f4f4"><title>long / prompt-heavy / dense, 8192 slots, G8, paged8 — -9.8319428249%</title></rect>
+<rect x="753.000" y="383.000" width="25.000" height="17.000" fill="#f5f5f4"><title>long / prompt-heavy / dense, 16384 slots, G8, paged8 — 4.61826808374%</title></rect>
+<rect x="779.000" y="383.000" width="25.000" height="17.000" fill="#f6f5f5"><title>long / prompt-heavy / dense, 32768 slots, G8, paged8 — 3.14465185088%</title></rect>
+<rect x="675.000" y="401.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / moderate, 2048 slots, G8, paged8 — 0%</title></rect>
+<rect x="701.000" y="401.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / moderate, 4096 slots, G8, paged8 — 0.00978825144868%</title></rect>
+<rect x="727.000" y="401.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / moderate, 8192 slots, G8, paged8 — -0.017464773905%</title></rect>
+<rect x="753.000" y="401.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / moderate, 16384 slots, G8, paged8 — 0%</title></rect>
+<rect x="779.000" y="401.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / moderate, 32768 slots, G8, paged8 — 0%</title></rect>
+<rect x="675.000" y="419.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / bursty, 2048 slots, G8, paged8 — 0%</title></rect>
+<rect x="701.000" y="419.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / bursty, 4096 slots, G8, paged8 — 0.11147634556%</title></rect>
+<rect x="727.000" y="419.000" width="25.000" height="17.000" fill="#f2f4f4"><title>long / prompt-heavy / bursty, 8192 slots, G8, paged8 — -9.87520909198%</title></rect>
+<rect x="753.000" y="419.000" width="25.000" height="17.000" fill="#f5f5f4"><title>long / prompt-heavy / bursty, 16384 slots, G8, paged8 — 4.66421048205%</title></rect>
+<rect x="779.000" y="419.000" width="25.000" height="17.000" fill="#f6f5f5"><title>long / prompt-heavy / bursty, 32768 slots, G8, paged8 — 3.93824756683%</title></rect>
+<rect x="675.000" y="437.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / generation-heavy / dense, 2048 slots, G8, paged8 — 0%</title></rect>
+<rect x="701.000" y="437.000" width="25.000" height="17.000" fill="#efe5e2"><title>mixed / generation-heavy / dense, 4096 slots, G8, paged8 — 61.6939540947%</title></rect>
+<rect x="727.000" y="437.000" width="25.000" height="17.000" fill="#e9d7d1"><title>mixed / generation-heavy / dense, 8192 slots, G8, paged8 — 113.775132052%</title></rect>
+<rect x="753.000" y="437.000" width="25.000" height="17.000" fill="#f6f5f5"><title>mixed / generation-heavy / dense, 16384 slots, G8, paged8 — 2.11848112647%</title></rect>
+<rect x="779.000" y="437.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / generation-heavy / dense, 32768 slots, G8, paged8 — 0%</title></rect>
+<rect x="675.000" y="455.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / generation-heavy / moderate, 2048 slots, G8, paged8 — 0%</title></rect>
+<rect x="701.000" y="455.000" width="25.000" height="17.000" fill="#f0e7e4"><title>mixed / generation-heavy / moderate, 4096 slots, G8, paged8 — 56.2652096829%</title></rect>
+<rect x="727.000" y="455.000" width="25.000" height="17.000" fill="#f5f5f4"><title>mixed / generation-heavy / moderate, 8192 slots, G8, paged8 — 4.97455399066%</title></rect>
+<rect x="753.000" y="455.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / generation-heavy / moderate, 16384 slots, G8, paged8 — 0%</title></rect>
+<rect x="779.000" y="455.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / generation-heavy / moderate, 32768 slots, G8, paged8 — 0%</title></rect>
+<rect x="675.000" y="473.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / generation-heavy / bursty, 2048 slots, G8, paged8 — 0%</title></rect>
+<rect x="701.000" y="473.000" width="25.000" height="17.000" fill="#efe5e2"><title>mixed / generation-heavy / bursty, 4096 slots, G8, paged8 — 62.5399239924%</title></rect>
+<rect x="727.000" y="473.000" width="25.000" height="17.000" fill="#e9d7d0"><title>mixed / generation-heavy / bursty, 8192 slots, G8, paged8 — 115.406041804%</title></rect>
+<rect x="753.000" y="473.000" width="25.000" height="17.000" fill="#f6f5f5"><title>mixed / generation-heavy / bursty, 16384 slots, G8, paged8 — 2.4862872506%</title></rect>
+<rect x="779.000" y="473.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / generation-heavy / bursty, 32768 slots, G8, paged8 — 0%</title></rect>
+<rect x="675.000" y="491.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / dense, 2048 slots, G8, paged8 — 0%</title></rect>
+<rect x="701.000" y="491.000" width="25.000" height="17.000" fill="#e2eaed"><title>mixed / prompt-heavy / dense, 4096 slots, G8, paged8 — -54.9636423662%</title></rect>
+<rect x="727.000" y="491.000" width="25.000" height="17.000" fill="#e7edef"><title>mixed / prompt-heavy / dense, 8192 slots, G8, paged8 — -42.3105767261%</title></rect>
+<rect x="753.000" y="491.000" width="25.000" height="17.000" fill="#f5f5f4"><title>mixed / prompt-heavy / dense, 16384 slots, G8, paged8 — 5.25783254083%</title></rect>
+<rect x="779.000" y="491.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / dense, 32768 slots, G8, paged8 — 0.323254663474%</title></rect>
+<rect x="675.000" y="509.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / moderate, 2048 slots, G8, paged8 — 0%</title></rect>
+<rect x="701.000" y="509.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / moderate, 4096 slots, G8, paged8 — -0.951023579381%</title></rect>
+<rect x="727.000" y="509.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / moderate, 8192 slots, G8, paged8 — 0%</title></rect>
+<rect x="753.000" y="509.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / moderate, 16384 slots, G8, paged8 — 0%</title></rect>
+<rect x="779.000" y="509.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / moderate, 32768 slots, G8, paged8 — 0%</title></rect>
+<rect x="675.000" y="527.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / bursty, 2048 slots, G8, paged8 — 0%</title></rect>
+<rect x="701.000" y="527.000" width="25.000" height="17.000" fill="#e2eaed"><title>mixed / prompt-heavy / bursty, 4096 slots, G8, paged8 — -55.0345329175%</title></rect>
+<rect x="727.000" y="527.000" width="25.000" height="17.000" fill="#e7edef"><title>mixed / prompt-heavy / bursty, 8192 slots, G8, paged8 — -42.0422630249%</title></rect>
+<rect x="753.000" y="527.000" width="25.000" height="17.000" fill="#f5f4f4"><title>mixed / prompt-heavy / bursty, 16384 slots, G8, paged8 — 6.33596895162%</title></rect>
+<rect x="779.000" y="527.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / bursty, 32768 slots, G8, paged8 — 0.413524826591%</title></rect>
+<text x="890" y="83" font-size="12" text-anchor="middle" font-weight="bold">G8 · paged16</text>
+<text x="835" y="104" font-size="9" text-anchor="middle" font-weight="normal">2048</text>
+<text x="861" y="104" font-size="9" text-anchor="middle" font-weight="normal">4096</text>
+<text x="887" y="104" font-size="9" text-anchor="middle" font-weight="normal">8192</text>
+<text x="913" y="104" font-size="9" text-anchor="middle" font-weight="normal">16384</text>
+<text x="939" y="104" font-size="9" text-anchor="middle" font-weight="normal">32768</text>
+<rect x="823.000" y="113.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / dense, 2048 slots, G8, paged16 — 0%</title></rect>
+<rect x="849.000" y="113.000" width="25.000" height="17.000" fill="#f1f3f4"><title>short / generation-heavy / dense, 4096 slots, G8, paged16 — -13.1697477975%</title></rect>
+<rect x="875.000" y="113.000" width="25.000" height="17.000" fill="#f0f2f3"><title>short / generation-heavy / dense, 8192 slots, G8, paged16 — -16.3676081736%</title></rect>
+<rect x="901.000" y="113.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / dense, 16384 slots, G8, paged16 — 0%</title></rect>
+<rect x="927.000" y="113.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / dense, 32768 slots, G8, paged16 — 0%</title></rect>
+<rect x="823.000" y="131.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / moderate, 2048 slots, G8, paged16 — 0%</title></rect>
+<rect x="849.000" y="131.000" width="25.000" height="17.000" fill="#edf0f2"><title>short / generation-heavy / moderate, 4096 slots, G8, paged16 — -26.0426936302%</title></rect>
+<rect x="875.000" y="131.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / moderate, 8192 slots, G8, paged16 — -0.0925847590091%</title></rect>
+<rect x="901.000" y="131.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / moderate, 16384 slots, G8, paged16 — 0%</title></rect>
+<rect x="927.000" y="131.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / moderate, 32768 slots, G8, paged16 — 0%</title></rect>
+<rect x="823.000" y="149.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / bursty, 2048 slots, G8, paged16 — 0%</title></rect>
+<rect x="849.000" y="149.000" width="25.000" height="17.000" fill="#f2f4f4"><title>short / generation-heavy / bursty, 4096 slots, G8, paged16 — -10.0235317628%</title></rect>
+<rect x="875.000" y="149.000" width="25.000" height="17.000" fill="#f1f3f4"><title>short / generation-heavy / bursty, 8192 slots, G8, paged16 — -13.2938961709%</title></rect>
+<rect x="901.000" y="149.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / bursty, 16384 slots, G8, paged16 — 0%</title></rect>
+<rect x="927.000" y="149.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / bursty, 32768 slots, G8, paged16 — 0%</title></rect>
+<rect x="823.000" y="167.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / dense, 2048 slots, G8, paged16 — 0%</title></rect>
+<rect x="849.000" y="167.000" width="25.000" height="17.000" fill="#dfe8ec"><title>short / prompt-heavy / dense, 4096 slots, G8, paged16 — -62.7024337857%</title></rect>
+<rect x="875.000" y="167.000" width="25.000" height="17.000" fill="#e5ecef"><title>short / prompt-heavy / dense, 8192 slots, G8, paged16 — -46.090180831%</title></rect>
+<rect x="901.000" y="167.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / dense, 16384 slots, G8, paged16 — 0%</title></rect>
+<rect x="927.000" y="167.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / dense, 32768 slots, G8, paged16 — 0%</title></rect>
+<rect x="823.000" y="185.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / moderate, 2048 slots, G8, paged16 — 0%</title></rect>
+<rect x="849.000" y="185.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / moderate, 4096 slots, G8, paged16 — -0.312054773226%</title></rect>
+<rect x="875.000" y="185.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / moderate, 8192 slots, G8, paged16 — 0%</title></rect>
+<rect x="901.000" y="185.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / moderate, 16384 slots, G8, paged16 — 0%</title></rect>
+<rect x="927.000" y="185.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / moderate, 32768 slots, G8, paged16 — 0%</title></rect>
+<rect x="823.000" y="203.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / bursty, 2048 slots, G8, paged16 — 0%</title></rect>
+<rect x="849.000" y="203.000" width="25.000" height="17.000" fill="#e0e9ec"><title>short / prompt-heavy / bursty, 4096 slots, G8, paged16 — -61.4383259003%</title></rect>
+<rect x="875.000" y="203.000" width="25.000" height="17.000" fill="#e5ecee"><title>short / prompt-heavy / bursty, 8192 slots, G8, paged16 — -47.2406365261%</title></rect>
+<rect x="901.000" y="203.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / bursty, 16384 slots, G8, paged16 — 0%</title></rect>
+<rect x="927.000" y="203.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / bursty, 32768 slots, G8, paged16 — 0%</title></rect>
+<rect x="823.000" y="221.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / generation-heavy / dense, 2048 slots, G8, paged16 — 0%</title></rect>
+<rect x="849.000" y="221.000" width="25.000" height="17.000" fill="#eee3df"><title>medium / generation-heavy / dense, 4096 slots, G8, paged16 — 71.5093015519%</title></rect>
+<rect x="875.000" y="221.000" width="25.000" height="17.000" fill="#e6cec6"><title>medium / generation-heavy / dense, 8192 slots, G8, paged16 — 147.767290314%</title></rect>
+<rect x="901.000" y="221.000" width="25.000" height="17.000" fill="#f3efed"><title>medium / generation-heavy / dense, 16384 slots, G8, paged16 — 27.323288363%</title></rect>
+<rect x="927.000" y="221.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / generation-heavy / dense, 32768 slots, G8, paged16 — 0%</title></rect>
+<rect x="823.000" y="239.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / generation-heavy / moderate, 2048 slots, G8, paged16 — 0%</title></rect>
+<rect x="849.000" y="239.000" width="25.000" height="17.000" fill="#eee3df"><title>medium / generation-heavy / moderate, 4096 slots, G8, paged16 — 69.766907429%</title></rect>
+<rect x="875.000" y="239.000" width="25.000" height="17.000" fill="#ecddd8"><title>medium / generation-heavy / moderate, 8192 slots, G8, paged16 — 91.1602596718%</title></rect>
+<rect x="901.000" y="239.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / generation-heavy / moderate, 16384 slots, G8, paged16 — 0%</title></rect>
+<rect x="927.000" y="239.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / generation-heavy / moderate, 32768 slots, G8, paged16 — 0%</title></rect>
+<rect x="823.000" y="257.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / generation-heavy / bursty, 2048 slots, G8, paged16 — 0%</title></rect>
+<rect x="849.000" y="257.000" width="25.000" height="17.000" fill="#eee3de"><title>medium / generation-heavy / bursty, 4096 slots, G8, paged16 — 72.158508743%</title></rect>
+<rect x="875.000" y="257.000" width="25.000" height="17.000" fill="#e6cec6"><title>medium / generation-heavy / bursty, 8192 slots, G8, paged16 — 148.092848317%</title></rect>
+<rect x="901.000" y="257.000" width="25.000" height="17.000" fill="#f3eeec"><title>medium / generation-heavy / bursty, 16384 slots, G8, paged16 — 29.3905370858%</title></rect>
+<rect x="927.000" y="257.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / generation-heavy / bursty, 32768 slots, G8, paged16 — 0%</title></rect>
+<rect x="823.000" y="275.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / dense, 2048 slots, G8, paged16 — 0%</title></rect>
+<rect x="849.000" y="275.000" width="25.000" height="17.000" fill="#e6ecef"><title>medium / prompt-heavy / dense, 4096 slots, G8, paged16 — -45.4314680889%</title></rect>
+<rect x="875.000" y="275.000" width="25.000" height="17.000" fill="#e5ecef"><title>medium / prompt-heavy / dense, 8192 slots, G8, paged16 — -46.0442807246%</title></rect>
+<rect x="901.000" y="275.000" width="25.000" height="17.000" fill="#f6f6f5"><title>medium / prompt-heavy / dense, 16384 slots, G8, paged16 — 1.54387683049%</title></rect>
+<rect x="927.000" y="275.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / dense, 32768 slots, G8, paged16 — 0.0714264647426%</title></rect>
+<rect x="823.000" y="293.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / moderate, 2048 slots, G8, paged16 — 0%</title></rect>
+<rect x="849.000" y="293.000" width="25.000" height="17.000" fill="#f5f5f5"><title>medium / prompt-heavy / moderate, 4096 slots, G8, paged16 — -3.48850700214%</title></rect>
+<rect x="875.000" y="293.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / moderate, 8192 slots, G8, paged16 — -0.017464773905%</title></rect>
+<rect x="901.000" y="293.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / moderate, 16384 slots, G8, paged16 — 0%</title></rect>
+<rect x="927.000" y="293.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / moderate, 32768 slots, G8, paged16 — 0%</title></rect>
+<rect x="823.000" y="311.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / bursty, 2048 slots, G8, paged16 — 0%</title></rect>
+<rect x="849.000" y="311.000" width="25.000" height="17.000" fill="#e6ecef"><title>medium / prompt-heavy / bursty, 4096 slots, G8, paged16 — -45.4611487846%</title></rect>
+<rect x="875.000" y="311.000" width="25.000" height="17.000" fill="#e6ecef"><title>medium / prompt-heavy / bursty, 8192 slots, G8, paged16 — -45.6943895095%</title></rect>
+<rect x="901.000" y="311.000" width="25.000" height="17.000" fill="#f6f5f5"><title>medium / prompt-heavy / bursty, 16384 slots, G8, paged16 — 1.87242080629%</title></rect>
+<rect x="927.000" y="311.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / bursty, 32768 slots, G8, paged16 — 0.40462194175%</title></rect>
+<rect x="823.000" y="329.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / generation-heavy / dense, 2048 slots, G8, paged16 — 0%</title></rect>
+<rect x="849.000" y="329.000" width="25.000" height="17.000" fill="#ecded9"><title>long / generation-heavy / dense, 4096 slots, G8, paged16 — 87.4569082429%</title></rect>
+<rect x="875.000" y="329.000" width="25.000" height="17.000" fill="#e0c0b4"><title>long / generation-heavy / dense, 8192 slots, G8, paged16 — 202.034980088%</title></rect>
+<rect x="901.000" y="329.000" width="25.000" height="17.000" fill="#e9d7d0"><title>long / generation-heavy / dense, 16384 slots, G8, paged16 — 116.114832901%</title></rect>
+<rect x="927.000" y="329.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / generation-heavy / dense, 32768 slots, G8, paged16 — 0%</title></rect>
+<rect x="823.000" y="347.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / generation-heavy / moderate, 2048 slots, G8, paged16 — 0%</title></rect>
+<rect x="849.000" y="347.000" width="25.000" height="17.000" fill="#ecdfda"><title>long / generation-heavy / moderate, 4096 slots, G8, paged16 — 86.8554985238%</title></rect>
+<rect x="875.000" y="347.000" width="25.000" height="17.000" fill="#e0c1b5"><title>long / generation-heavy / moderate, 8192 slots, G8, paged16 — 198.221218841%</title></rect>
+<rect x="901.000" y="347.000" width="25.000" height="17.000" fill="#f0e7e3"><title>long / generation-heavy / moderate, 16384 slots, G8, paged16 — 57.0068038647%</title></rect>
+<rect x="927.000" y="347.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / generation-heavy / moderate, 32768 slots, G8, paged16 — 0%</title></rect>
+<rect x="823.000" y="365.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / generation-heavy / bursty, 2048 slots, G8, paged16 — 0%</title></rect>
+<rect x="849.000" y="365.000" width="25.000" height="17.000" fill="#ecded9"><title>long / generation-heavy / bursty, 4096 slots, G8, paged16 — 87.707023177%</title></rect>
+<rect x="875.000" y="365.000" width="25.000" height="17.000" fill="#e0c0b4"><title>long / generation-heavy / bursty, 8192 slots, G8, paged16 — 202.17557714%</title></rect>
+<rect x="901.000" y="365.000" width="25.000" height="17.000" fill="#e9d6d0"><title>long / generation-heavy / bursty, 16384 slots, G8, paged16 — 117.256373623%</title></rect>
+<rect x="927.000" y="365.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / generation-heavy / bursty, 32768 slots, G8, paged16 — 0%</title></rect>
+<rect x="823.000" y="383.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / dense, 2048 slots, G8, paged16 — 0%</title></rect>
+<rect x="849.000" y="383.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / dense, 4096 slots, G8, paged16 — 0.06979012517%</title></rect>
+<rect x="875.000" y="383.000" width="25.000" height="17.000" fill="#f2f4f4"><title>long / prompt-heavy / dense, 8192 slots, G8, paged16 — -10.3135524619%</title></rect>
+<rect x="901.000" y="383.000" width="25.000" height="17.000" fill="#f6f5f5"><title>long / prompt-heavy / dense, 16384 slots, G8, paged16 — 2.00726392918%</title></rect>
+<rect x="927.000" y="383.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / dense, 32768 slots, G8, paged16 — 0.907369058264%</title></rect>
+<rect x="823.000" y="401.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / moderate, 2048 slots, G8, paged16 — 0%</title></rect>
+<rect x="849.000" y="401.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / moderate, 4096 slots, G8, paged16 — -0.0140515286308%</title></rect>
+<rect x="875.000" y="401.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / moderate, 8192 slots, G8, paged16 — -0.017464773905%</title></rect>
+<rect x="901.000" y="401.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / moderate, 16384 slots, G8, paged16 — 0%</title></rect>
+<rect x="927.000" y="401.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / moderate, 32768 slots, G8, paged16 — 0%</title></rect>
+<rect x="823.000" y="419.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / bursty, 2048 slots, G8, paged16 — 0%</title></rect>
+<rect x="849.000" y="419.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / bursty, 4096 slots, G8, paged16 — 0.0685418510833%</title></rect>
+<rect x="875.000" y="419.000" width="25.000" height="17.000" fill="#f2f4f4"><title>long / prompt-heavy / bursty, 8192 slots, G8, paged16 — -10.162456346%</title></rect>
+<rect x="901.000" y="419.000" width="25.000" height="17.000" fill="#f6f5f5"><title>long / prompt-heavy / bursty, 16384 slots, G8, paged16 — 2.77642997268%</title></rect>
+<rect x="927.000" y="419.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / bursty, 32768 slots, G8, paged16 — 1.37360980112%</title></rect>
+<rect x="823.000" y="437.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / generation-heavy / dense, 2048 slots, G8, paged16 — 0%</title></rect>
+<rect x="849.000" y="437.000" width="25.000" height="17.000" fill="#efe6e2"><title>mixed / generation-heavy / dense, 4096 slots, G8, paged16 — 60.8229492981%</title></rect>
+<rect x="875.000" y="437.000" width="25.000" height="17.000" fill="#e9d6d0"><title>mixed / generation-heavy / dense, 8192 slots, G8, paged16 — 116.894516484%</title></rect>
+<rect x="901.000" y="437.000" width="25.000" height="17.000" fill="#f6f5f5"><title>mixed / generation-heavy / dense, 16384 slots, G8, paged16 — 3.63153816488%</title></rect>
+<rect x="927.000" y="437.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / generation-heavy / dense, 32768 slots, G8, paged16 — 0%</title></rect>
+<rect x="823.000" y="455.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / generation-heavy / moderate, 2048 slots, G8, paged16 — 0%</title></rect>
+<rect x="849.000" y="455.000" width="25.000" height="17.000" fill="#f0e7e4"><title>mixed / generation-heavy / moderate, 4096 slots, G8, paged16 — 55.7116790627%</title></rect>
+<rect x="875.000" y="455.000" width="25.000" height="17.000" fill="#f5f3f2"><title>mixed / generation-heavy / moderate, 8192 slots, G8, paged16 — 10.9790018333%</title></rect>
+<rect x="901.000" y="455.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / generation-heavy / moderate, 16384 slots, G8, paged16 — 0%</title></rect>
+<rect x="927.000" y="455.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / generation-heavy / moderate, 32768 slots, G8, paged16 — 0%</title></rect>
+<rect x="823.000" y="473.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / generation-heavy / bursty, 2048 slots, G8, paged16 — 0%</title></rect>
+<rect x="849.000" y="473.000" width="25.000" height="17.000" fill="#efe5e2"><title>mixed / generation-heavy / bursty, 4096 slots, G8, paged16 — 61.7675784715%</title></rect>
+<rect x="875.000" y="473.000" width="25.000" height="17.000" fill="#e9d6cf"><title>mixed / generation-heavy / bursty, 8192 slots, G8, paged16 — 118.349775995%</title></rect>
+<rect x="901.000" y="473.000" width="25.000" height="17.000" fill="#f6f5f5"><title>mixed / generation-heavy / bursty, 16384 slots, G8, paged16 — 4.07269606107%</title></rect>
+<rect x="927.000" y="473.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / generation-heavy / bursty, 32768 slots, G8, paged16 — 0%</title></rect>
+<rect x="823.000" y="491.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / dense, 2048 slots, G8, paged16 — 0%</title></rect>
+<rect x="849.000" y="491.000" width="25.000" height="17.000" fill="#e2eaed"><title>mixed / prompt-heavy / dense, 4096 slots, G8, paged16 — -56.5859842718%</title></rect>
+<rect x="875.000" y="491.000" width="25.000" height="17.000" fill="#e6ecef"><title>mixed / prompt-heavy / dense, 8192 slots, G8, paged16 — -45.722863502%</title></rect>
+<rect x="901.000" y="491.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / dense, 16384 slots, G8, paged16 — 1.28410842466%</title></rect>
+<rect x="927.000" y="491.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / dense, 32768 slots, G8, paged16 — -0.0261321422656%</title></rect>
+<rect x="823.000" y="509.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / moderate, 2048 slots, G8, paged16 — 0%</title></rect>
+<rect x="849.000" y="509.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / moderate, 4096 slots, G8, paged16 — -0.951023579381%</title></rect>
+<rect x="875.000" y="509.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / moderate, 8192 slots, G8, paged16 — 0%</title></rect>
+<rect x="901.000" y="509.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / moderate, 16384 slots, G8, paged16 — 0%</title></rect>
+<rect x="927.000" y="509.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / moderate, 32768 slots, G8, paged16 — 0%</title></rect>
+<rect x="823.000" y="527.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / bursty, 2048 slots, G8, paged16 — 0%</title></rect>
+<rect x="849.000" y="527.000" width="25.000" height="17.000" fill="#e2eaed"><title>mixed / prompt-heavy / bursty, 4096 slots, G8, paged16 — -56.7324148236%</title></rect>
+<rect x="875.000" y="527.000" width="25.000" height="17.000" fill="#e6ecef"><title>mixed / prompt-heavy / bursty, 8192 slots, G8, paged16 — -45.4192101934%</title></rect>
+<rect x="901.000" y="527.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / bursty, 16384 slots, G8, paged16 — 1.01687934645%</title></rect>
+<rect x="927.000" y="527.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / bursty, 32768 slots, G8, paged16 — -0.0106991687843%</title></rect>
+<text x="1038" y="83" font-size="12" text-anchor="middle" font-weight="bold">G8 · paged32</text>
+<text x="983" y="104" font-size="9" text-anchor="middle" font-weight="normal">2048</text>
+<text x="1009" y="104" font-size="9" text-anchor="middle" font-weight="normal">4096</text>
+<text x="1035" y="104" font-size="9" text-anchor="middle" font-weight="normal">8192</text>
+<text x="1061" y="104" font-size="9" text-anchor="middle" font-weight="normal">16384</text>
+<text x="1087" y="104" font-size="9" text-anchor="middle" font-weight="normal">32768</text>
+<rect x="971.000" y="113.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / dense, 2048 slots, G8, paged32 — 0%</title></rect>
+<rect x="997.000" y="113.000" width="25.000" height="17.000" fill="#f1f3f4"><title>short / generation-heavy / dense, 4096 slots, G8, paged32 — -13.4423872741%</title></rect>
+<rect x="1023.000" y="113.000" width="25.000" height="17.000" fill="#f1f3f4"><title>short / generation-heavy / dense, 8192 slots, G8, paged32 — -13.0251881777%</title></rect>
+<rect x="1049.000" y="113.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / dense, 16384 slots, G8, paged32 — 0%</title></rect>
+<rect x="1075.000" y="113.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / dense, 32768 slots, G8, paged32 — 0%</title></rect>
+<rect x="971.000" y="131.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / moderate, 2048 slots, G8, paged32 — 0%</title></rect>
+<rect x="997.000" y="131.000" width="25.000" height="17.000" fill="#edf0f2"><title>short / generation-heavy / moderate, 4096 slots, G8, paged32 — -26.0426936302%</title></rect>
+<rect x="1023.000" y="131.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / moderate, 8192 slots, G8, paged32 — -0.0925847590091%</title></rect>
+<rect x="1049.000" y="131.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / moderate, 16384 slots, G8, paged32 — 0%</title></rect>
+<rect x="1075.000" y="131.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / moderate, 32768 slots, G8, paged32 — 0%</title></rect>
+<rect x="971.000" y="149.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / bursty, 2048 slots, G8, paged32 — 0%</title></rect>
+<rect x="997.000" y="149.000" width="25.000" height="17.000" fill="#f2f4f4"><title>short / generation-heavy / bursty, 4096 slots, G8, paged32 — -10.6450193697%</title></rect>
+<rect x="1023.000" y="149.000" width="25.000" height="17.000" fill="#f3f4f4"><title>short / generation-heavy / bursty, 8192 slots, G8, paged32 — -9.35119287626%</title></rect>
+<rect x="1049.000" y="149.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / bursty, 16384 slots, G8, paged32 — 0%</title></rect>
+<rect x="1075.000" y="149.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / generation-heavy / bursty, 32768 slots, G8, paged32 — 0%</title></rect>
+<rect x="971.000" y="167.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / dense, 2048 slots, G8, paged32 — 0%</title></rect>
+<rect x="997.000" y="167.000" width="25.000" height="17.000" fill="#dde7eb"><title>short / prompt-heavy / dense, 4096 slots, G8, paged32 — -68.9127767044%</title></rect>
+<rect x="1023.000" y="167.000" width="25.000" height="17.000" fill="#e5ecee"><title>short / prompt-heavy / dense, 8192 slots, G8, paged32 — -48.2575350923%</title></rect>
+<rect x="1049.000" y="167.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / dense, 16384 slots, G8, paged32 — 0%</title></rect>
+<rect x="1075.000" y="167.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / dense, 32768 slots, G8, paged32 — 0%</title></rect>
+<rect x="971.000" y="185.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / moderate, 2048 slots, G8, paged32 — 0%</title></rect>
+<rect x="997.000" y="185.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / moderate, 4096 slots, G8, paged32 — -0.312054773226%</title></rect>
+<rect x="1023.000" y="185.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / moderate, 8192 slots, G8, paged32 — 0%</title></rect>
+<rect x="1049.000" y="185.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / moderate, 16384 slots, G8, paged32 — 0%</title></rect>
+<rect x="1075.000" y="185.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / moderate, 32768 slots, G8, paged32 — 0%</title></rect>
+<rect x="971.000" y="203.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / bursty, 2048 slots, G8, paged32 — 0%</title></rect>
+<rect x="997.000" y="203.000" width="25.000" height="17.000" fill="#dde7eb"><title>short / prompt-heavy / bursty, 4096 slots, G8, paged32 — -68.7454247681%</title></rect>
+<rect x="1023.000" y="203.000" width="25.000" height="17.000" fill="#e5ecee"><title>short / prompt-heavy / bursty, 8192 slots, G8, paged32 — -48.3433209296%</title></rect>
+<rect x="1049.000" y="203.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / bursty, 16384 slots, G8, paged32 — 0%</title></rect>
+<rect x="1075.000" y="203.000" width="25.000" height="17.000" fill="#f6f6f6"><title>short / prompt-heavy / bursty, 32768 slots, G8, paged32 — 0%</title></rect>
+<rect x="971.000" y="221.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / generation-heavy / dense, 2048 slots, G8, paged32 — 0%</title></rect>
+<rect x="997.000" y="221.000" width="25.000" height="17.000" fill="#eee3df"><title>medium / generation-heavy / dense, 4096 slots, G8, paged32 — 71.076165234%</title></rect>
+<rect x="1023.000" y="221.000" width="25.000" height="17.000" fill="#e5ccc3"><title>medium / generation-heavy / dense, 8192 slots, G8, paged32 — 157.024970864%</title></rect>
+<rect x="1049.000" y="221.000" width="25.000" height="17.000" fill="#eee2de"><title>medium / generation-heavy / dense, 16384 slots, G8, paged32 — 73.8127845527%</title></rect>
+<rect x="1075.000" y="221.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / generation-heavy / dense, 32768 slots, G8, paged32 — 0%</title></rect>
+<rect x="971.000" y="239.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / generation-heavy / moderate, 2048 slots, G8, paged32 — 0%</title></rect>
+<rect x="997.000" y="239.000" width="25.000" height="17.000" fill="#eee3df"><title>medium / generation-heavy / moderate, 4096 slots, G8, paged32 — 69.3860500049%</title></rect>
+<rect x="1023.000" y="239.000" width="25.000" height="17.000" fill="#eadad4"><title>medium / generation-heavy / moderate, 8192 slots, G8, paged32 — 105.036862371%</title></rect>
+<rect x="1049.000" y="239.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / generation-heavy / moderate, 16384 slots, G8, paged32 — 0%</title></rect>
+<rect x="1075.000" y="239.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / generation-heavy / moderate, 32768 slots, G8, paged32 — 0%</title></rect>
+<rect x="971.000" y="257.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / generation-heavy / bursty, 2048 slots, G8, paged32 — 0%</title></rect>
+<rect x="997.000" y="257.000" width="25.000" height="17.000" fill="#eee3df"><title>medium / generation-heavy / bursty, 4096 slots, G8, paged32 — 71.8349317373%</title></rect>
+<rect x="1023.000" y="257.000" width="25.000" height="17.000" fill="#e5cbc2"><title>medium / generation-heavy / bursty, 8192 slots, G8, paged32 — 158.414722827%</title></rect>
+<rect x="1049.000" y="257.000" width="25.000" height="17.000" fill="#eee1dd"><title>medium / generation-heavy / bursty, 16384 slots, G8, paged32 — 77.0376362231%</title></rect>
+<rect x="1075.000" y="257.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / generation-heavy / bursty, 32768 slots, G8, paged32 — 0%</title></rect>
+<rect x="971.000" y="275.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / dense, 2048 slots, G8, paged32 — 0%</title></rect>
+<rect x="997.000" y="275.000" width="25.000" height="17.000" fill="#e5ecee"><title>medium / prompt-heavy / dense, 4096 slots, G8, paged32 — -46.1633204891%</title></rect>
+<rect x="1023.000" y="275.000" width="25.000" height="17.000" fill="#e5ecee"><title>medium / prompt-heavy / dense, 8192 slots, G8, paged32 — -47.6038221072%</title></rect>
+<rect x="1049.000" y="275.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / dense, 16384 slots, G8, paged32 — -0.0122309369491%</title></rect>
+<rect x="1075.000" y="275.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / dense, 32768 slots, G8, paged32 — 0.00398274969705%</title></rect>
+<rect x="971.000" y="293.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / moderate, 2048 slots, G8, paged32 — 0%</title></rect>
+<rect x="997.000" y="293.000" width="25.000" height="17.000" fill="#f5f5f5"><title>medium / prompt-heavy / moderate, 4096 slots, G8, paged32 — -3.49742495696%</title></rect>
+<rect x="1023.000" y="293.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / moderate, 8192 slots, G8, paged32 — -0.017464773905%</title></rect>
+<rect x="1049.000" y="293.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / moderate, 16384 slots, G8, paged32 — 0%</title></rect>
+<rect x="1075.000" y="293.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / moderate, 32768 slots, G8, paged32 — 0%</title></rect>
+<rect x="971.000" y="311.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / bursty, 2048 slots, G8, paged32 — 0%</title></rect>
+<rect x="997.000" y="311.000" width="25.000" height="17.000" fill="#e5ecee"><title>medium / prompt-heavy / bursty, 4096 slots, G8, paged32 — -46.1563837442%</title></rect>
+<rect x="1023.000" y="311.000" width="25.000" height="17.000" fill="#e5ecee"><title>medium / prompt-heavy / bursty, 8192 slots, G8, paged32 — -47.5214245847%</title></rect>
+<rect x="1049.000" y="311.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / bursty, 16384 slots, G8, paged32 — 0.0714495405001%</title></rect>
+<rect x="1075.000" y="311.000" width="25.000" height="17.000" fill="#f6f6f6"><title>medium / prompt-heavy / bursty, 32768 slots, G8, paged32 — -0.0199079456093%</title></rect>
+<rect x="971.000" y="329.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / generation-heavy / dense, 2048 slots, G8, paged32 — 0%</title></rect>
+<rect x="997.000" y="329.000" width="25.000" height="17.000" fill="#ecded9"><title>long / generation-heavy / dense, 4096 slots, G8, paged32 — 87.2442621497%</title></rect>
+<rect x="1023.000" y="329.000" width="25.000" height="17.000" fill="#dfbeb2"><title>long / generation-heavy / dense, 8192 slots, G8, paged32 — 208.862532385%</title></rect>
+<rect x="1049.000" y="329.000" width="25.000" height="17.000" fill="#e4c9c0"><title>long / generation-heavy / dense, 16384 slots, G8, paged32 — 165.382256929%</title></rect>
+<rect x="1075.000" y="329.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / generation-heavy / dense, 32768 slots, G8, paged32 — 0%</title></rect>
+<rect x="971.000" y="347.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / generation-heavy / moderate, 2048 slots, G8, paged32 — 0%</title></rect>
+<rect x="997.000" y="347.000" width="25.000" height="17.000" fill="#ecdfda"><title>long / generation-heavy / moderate, 4096 slots, G8, paged32 — 86.6546223778%</title></rect>
+<rect x="1023.000" y="347.000" width="25.000" height="17.000" fill="#dfbfb3"><title>long / generation-heavy / moderate, 8192 slots, G8, paged32 — 205.017300276%</title></rect>
+<rect x="1049.000" y="347.000" width="25.000" height="17.000" fill="#ebdbd5"><title>long / generation-heavy / moderate, 16384 slots, G8, paged32 — 100.543689636%</title></rect>
+<rect x="1075.000" y="347.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / generation-heavy / moderate, 32768 slots, G8, paged32 — 0%</title></rect>
+<rect x="971.000" y="365.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / generation-heavy / bursty, 2048 slots, G8, paged32 — 0%</title></rect>
+<rect x="997.000" y="365.000" width="25.000" height="17.000" fill="#ecded9"><title>long / generation-heavy / bursty, 4096 slots, G8, paged32 — 87.5365481767%</title></rect>
+<rect x="1023.000" y="365.000" width="25.000" height="17.000" fill="#dfbeb2"><title>long / generation-heavy / bursty, 8192 slots, G8, paged32 — 209.385360228%</title></rect>
+<rect x="1049.000" y="365.000" width="25.000" height="17.000" fill="#e4c9c0"><title>long / generation-heavy / bursty, 16384 slots, G8, paged32 — 165.606141618%</title></rect>
+<rect x="1075.000" y="365.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / generation-heavy / bursty, 32768 slots, G8, paged32 — 0%</title></rect>
+<rect x="971.000" y="383.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / dense, 2048 slots, G8, paged32 — 0%</title></rect>
+<rect x="997.000" y="383.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / dense, 4096 slots, G8, paged32 — 0.0612662461887%</title></rect>
+<rect x="1023.000" y="383.000" width="25.000" height="17.000" fill="#f2f4f4"><title>long / prompt-heavy / dense, 8192 slots, G8, paged32 — -11.0102348682%</title></rect>
+<rect x="1049.000" y="383.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / dense, 16384 slots, G8, paged32 — 1.02358476374%</title></rect>
+<rect x="1075.000" y="383.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / dense, 32768 slots, G8, paged32 — 0.112466688179%</title></rect>
+<rect x="971.000" y="401.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / moderate, 2048 slots, G8, paged32 — 0%</title></rect>
+<rect x="997.000" y="401.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / moderate, 4096 slots, G8, paged32 — -0.0231039058852%</title></rect>
+<rect x="1023.000" y="401.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / moderate, 8192 slots, G8, paged32 — -0.017464773905%</title></rect>
+<rect x="1049.000" y="401.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / moderate, 16384 slots, G8, paged32 — 0%</title></rect>
+<rect x="1075.000" y="401.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / moderate, 32768 slots, G8, paged32 — 0%</title></rect>
+<rect x="971.000" y="419.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / bursty, 2048 slots, G8, paged32 — 0%</title></rect>
+<rect x="997.000" y="419.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / bursty, 4096 slots, G8, paged32 — 0.0589824218298%</title></rect>
+<rect x="1023.000" y="419.000" width="25.000" height="17.000" fill="#f2f4f4"><title>long / prompt-heavy / bursty, 8192 slots, G8, paged32 — -11.04605516%</title></rect>
+<rect x="1049.000" y="419.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / bursty, 16384 slots, G8, paged32 — 1.31675548239%</title></rect>
+<rect x="1075.000" y="419.000" width="25.000" height="17.000" fill="#f6f6f6"><title>long / prompt-heavy / bursty, 32768 slots, G8, paged32 — 0.0776223704205%</title></rect>
+<rect x="971.000" y="437.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / generation-heavy / dense, 2048 slots, G8, paged32 — 0%</title></rect>
+<rect x="997.000" y="437.000" width="25.000" height="17.000" fill="#efe6e2"><title>mixed / generation-heavy / dense, 4096 slots, G8, paged32 — 60.9487911716%</title></rect>
+<rect x="1023.000" y="437.000" width="25.000" height="17.000" fill="#e8d5cd"><title>mixed / generation-heavy / dense, 8192 slots, G8, paged32 — 123.97881657%</title></rect>
+<rect x="1049.000" y="437.000" width="25.000" height="17.000" fill="#f5f4f3"><title>mixed / generation-heavy / dense, 16384 slots, G8, paged32 — 8.29914077205%</title></rect>
+<rect x="1075.000" y="437.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / generation-heavy / dense, 32768 slots, G8, paged32 — 0%</title></rect>
+<rect x="971.000" y="455.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / generation-heavy / moderate, 2048 slots, G8, paged32 — 0%</title></rect>
+<rect x="997.000" y="455.000" width="25.000" height="17.000" fill="#f0e7e4"><title>mixed / generation-heavy / moderate, 4096 slots, G8, paged32 — 55.781731808%</title></rect>
+<rect x="1023.000" y="455.000" width="25.000" height="17.000" fill="#f3efee"><title>mixed / generation-heavy / moderate, 8192 slots, G8, paged32 — 24.9726501719%</title></rect>
+<rect x="1049.000" y="455.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / generation-heavy / moderate, 16384 slots, G8, paged32 — 0%</title></rect>
+<rect x="1075.000" y="455.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / generation-heavy / moderate, 32768 slots, G8, paged32 — 0%</title></rect>
+<rect x="971.000" y="473.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / generation-heavy / bursty, 2048 slots, G8, paged32 — 0%</title></rect>
+<rect x="997.000" y="473.000" width="25.000" height="17.000" fill="#efe5e2"><title>mixed / generation-heavy / bursty, 4096 slots, G8, paged32 — 61.989943759%</title></rect>
+<rect x="1023.000" y="473.000" width="25.000" height="17.000" fill="#e8d4cd"><title>mixed / generation-heavy / bursty, 8192 slots, G8, paged32 — 125.288107116%</title></rect>
+<rect x="1049.000" y="473.000" width="25.000" height="17.000" fill="#f5f4f3"><title>mixed / generation-heavy / bursty, 16384 slots, G8, paged32 — 8.23906488126%</title></rect>
+<rect x="1075.000" y="473.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / generation-heavy / bursty, 32768 slots, G8, paged32 — 0%</title></rect>
+<rect x="971.000" y="491.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / dense, 2048 slots, G8, paged32 — 0%</title></rect>
+<rect x="997.000" y="491.000" width="25.000" height="17.000" fill="#e1eaed"><title>mixed / prompt-heavy / dense, 4096 slots, G8, paged32 — -57.8033381748%</title></rect>
+<rect x="1023.000" y="491.000" width="25.000" height="17.000" fill="#e5ecee"><title>mixed / prompt-heavy / dense, 8192 slots, G8, paged32 — -47.8078054066%</title></rect>
+<rect x="1049.000" y="491.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / dense, 16384 slots, G8, paged32 — 0.0097777720809%</title></rect>
+<rect x="1075.000" y="491.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / dense, 32768 slots, G8, paged32 — -0.0134828663171%</title></rect>
+<rect x="971.000" y="509.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / moderate, 2048 slots, G8, paged32 — 0%</title></rect>
+<rect x="997.000" y="509.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / moderate, 4096 slots, G8, paged32 — -0.951023579381%</title></rect>
+<rect x="1023.000" y="509.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / moderate, 8192 slots, G8, paged32 — 0%</title></rect>
+<rect x="1049.000" y="509.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / moderate, 16384 slots, G8, paged32 — 0%</title></rect>
+<rect x="1075.000" y="509.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / moderate, 32768 slots, G8, paged32 — 0%</title></rect>
+<rect x="971.000" y="527.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / bursty, 2048 slots, G8, paged32 — 0%</title></rect>
+<rect x="997.000" y="527.000" width="25.000" height="17.000" fill="#e1eaed"><title>mixed / prompt-heavy / bursty, 4096 slots, G8, paged32 — -57.8649841961%</title></rect>
+<rect x="1023.000" y="527.000" width="25.000" height="17.000" fill="#e5ecee"><title>mixed / prompt-heavy / bursty, 8192 slots, G8, paged32 — -47.9295245982%</title></rect>
+<rect x="1049.000" y="527.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / bursty, 16384 slots, G8, paged32 — 0.00109279381954%</title></rect>
+<rect x="1075.000" y="527.000" width="25.000" height="17.000" fill="#f6f6f6"><title>mixed / prompt-heavy / bursty, 32768 slots, G8, paged32 — -0.0364127020904%</title></rect>
+<text x="20" y="104" font-size="12" text-anchor="start" font-weight="normal">Length · split · arrival</text>
+<text x="20" y="580" font-size="13" text-anchor="start" font-weight="normal">Memory budgets are in token slots. Each tile averages 20 paired seed differences.</text>
+<rect x="780.000" y="569.000" width="7.000" height="13.000" fill="#07678a"><title></title></rect>
+<rect x="787.000" y="569.000" width="7.000" height="13.000" fill="#136e8f"><title></title></rect>
+<rect x="794.000" y="569.000" width="7.000" height="13.000" fill="#1f7595"><title></title></rect>
+<rect x="801.000" y="569.000" width="7.000" height="13.000" fill="#2b7c9a"><title></title></rect>
+<rect x="808.000" y="569.000" width="7.000" height="13.000" fill="#3784a0"><title></title></rect>
+<rect x="815.000" y="569.000" width="7.000" height="13.000" fill="#438ba5"><title></title></rect>
+<rect x="822.000" y="569.000" width="7.000" height="13.000" fill="#4f92aa"><title></title></rect>
+<rect x="829.000" y="569.000" width="7.000" height="13.000" fill="#5b99b0"><title></title></rect>
+<rect x="836.000" y="569.000" width="7.000" height="13.000" fill="#67a0b5"><title></title></rect>
+<rect x="843.000" y="569.000" width="7.000" height="13.000" fill="#73a7bb"><title></title></rect>
+<rect x="850.000" y="569.000" width="7.000" height="13.000" fill="#7eaec0"><title></title></rect>
+<rect x="857.000" y="569.000" width="7.000" height="13.000" fill="#8ab6c5"><title></title></rect>
+<rect x="864.000" y="569.000" width="7.000" height="13.000" fill="#96bdcb"><title></title></rect>
+<rect x="871.000" y="569.000" width="7.000" height="13.000" fill="#a2c4d0"><title></title></rect>
+<rect x="878.000" y="569.000" width="7.000" height="13.000" fill="#aecbd6"><title></title></rect>
+<rect x="885.000" y="569.000" width="7.000" height="13.000" fill="#bad2db"><title></title></rect>
+<rect x="892.000" y="569.000" width="7.000" height="13.000" fill="#c6d9e0"><title></title></rect>
+<rect x="899.000" y="569.000" width="7.000" height="13.000" fill="#d2e1e6"><title></title></rect>
+<rect x="906.000" y="569.000" width="7.000" height="13.000" fill="#dee8eb"><title></title></rect>
+<rect x="913.000" y="569.000" width="7.000" height="13.000" fill="#eaeff1"><title></title></rect>
+<rect x="920.000" y="569.000" width="7.000" height="13.000" fill="#f6f6f6"><title></title></rect>
+<rect x="927.000" y="569.000" width="7.000" height="13.000" fill="#f2edeb"><title></title></rect>
+<rect x="934.000" y="569.000" width="7.000" height="13.000" fill="#efe4e0"><title></title></rect>
+<rect x="941.000" y="569.000" width="7.000" height="13.000" fill="#ebdbd5"><title></title></rect>
+<rect x="948.000" y="569.000" width="7.000" height="13.000" fill="#e7d2cb"><title></title></rect>
+<rect x="955.000" y="569.000" width="7.000" height="13.000" fill="#e4c9c0"><title></title></rect>
+<rect x="962.000" y="569.000" width="7.000" height="13.000" fill="#e0c0b5"><title></title></rect>
+<rect x="969.000" y="569.000" width="7.000" height="13.000" fill="#dcb7aa"><title></title></rect>
+<rect x="976.000" y="569.000" width="7.000" height="13.000" fill="#d9ae9f"><title></title></rect>
+<rect x="983.000" y="569.000" width="7.000" height="13.000" fill="#d5a594"><title></title></rect>
+<rect x="990.000" y="569.000" width="7.000" height="13.000" fill="#d29c8a"><title></title></rect>
+<rect x="997.000" y="569.000" width="7.000" height="13.000" fill="#ce947f"><title></title></rect>
+<rect x="1004.000" y="569.000" width="7.000" height="13.000" fill="#ca8b74"><title></title></rect>
+<rect x="1011.000" y="569.000" width="7.000" height="13.000" fill="#c78269"><title></title></rect>
+<rect x="1018.000" y="569.000" width="7.000" height="13.000" fill="#c3795e"><title></title></rect>
+<rect x="1025.000" y="569.000" width="7.000" height="13.000" fill="#bf7053"><title></title></rect>
+<rect x="1032.000" y="569.000" width="7.000" height="13.000" fill="#bc6748"><title></title></rect>
+<rect x="1039.000" y="569.000" width="7.000" height="13.000" fill="#b85e3e"><title></title></rect>
+<rect x="1046.000" y="569.000" width="7.000" height="13.000" fill="#b45533"><title></title></rect>
+<rect x="1053.000" y="569.000" width="7.000" height="13.000" fill="#b14c28"><title></title></rect>
+<rect x="1060.000" y="569.000" width="7.000" height="13.000" fill="#ad431d"><title></title></rect>
+<text x="780" y="598" font-size="12" text-anchor="start" font-weight="normal">-664%</text>
+<text x="923" y="598" font-size="12" text-anchor="middle" font-weight="normal">0%</text>
+<text x="1067" y="598" font-size="12" text-anchor="end" font-weight="normal">664%</text>
+</svg>

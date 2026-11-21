@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="730" height="380" viewBox="0 0 730 380" role="img">
+<title>Unused share of allocated memory</title>
+<style>text{font-family:Arial,sans-serif;fill:#172c3a}</style>
+<rect x="0.000" y="0.000" width="730.000" height="380.000" fill="#ffffff"><title></title></rect>
+<text x="20" y="30" font-size="23" text-anchor="start" font-weight="bold">Unused share of allocated memory</text>
+<text x="20" y="53" font-size="13" text-anchor="start" font-weight="normal">Pooled over matching primary workloads, seeds and compute scenarios within each tile</text>
+<text x="26" y="137" font-size="12" text-anchor="start" font-weight="bold">fixed</text>
+<text x="178" y="100" font-size="12" text-anchor="middle" font-weight="normal">2048</text>
+<rect x="130.000" y="110.000" width="98.000" height="38.000" fill="#5495ad"><title>67.76%</title></rect>
+<text x="179" y="134" text-anchor="middle" font-size="13" style="fill:white">67.76%</text>
+<text x="283" y="100" font-size="12" text-anchor="middle" font-weight="normal">4096</text>
+<rect x="235.000" y="110.000" width="98.000" height="38.000" fill="#5495ad"><title>67.76%</title></rect>
+<text x="284" y="134" text-anchor="middle" font-size="13" style="fill:white">67.76%</text>
+<text x="388" y="100" font-size="12" text-anchor="middle" font-weight="normal">8192</text>
+<rect x="340.000" y="110.000" width="98.000" height="38.000" fill="#5495ad"><title>67.76%</title></rect>
+<text x="389" y="134" text-anchor="middle" font-size="13" style="fill:white">67.76%</text>
+<text x="493" y="100" font-size="12" text-anchor="middle" font-weight="normal">16384</text>
+<rect x="445.000" y="110.000" width="98.000" height="38.000" fill="#5495ad"><title>67.76%</title></rect>
+<text x="494" y="134" text-anchor="middle" font-size="13" style="fill:white">67.76%</text>
+<text x="598" y="100" font-size="12" text-anchor="middle" font-weight="normal">32768</text>
+<rect x="550.000" y="110.000" width="98.000" height="38.000" fill="#4089a4"><title>76.32%</title></rect>
+<text x="599" y="134" text-anchor="middle" font-size="13" style="fill:white">76.32%</text>
+<text x="26" y="179" font-size="12" text-anchor="start" font-weight="bold">paged8</text>
+<rect x="130.000" y="152.000" width="98.000" height="38.000" fill="#f5f5f5"><title>0.53%</title></rect>
+<text x="179" y="176" text-anchor="middle" font-size="13" style="fill:#172c3a">0.53%</text>
+<rect x="235.000" y="152.000" width="98.000" height="38.000" fill="#f6f6f6"><title>0.15%</title></rect>
+<text x="284" y="176" text-anchor="middle" font-size="13" style="fill:#172c3a">0.15%</text>
+<rect x="340.000" y="152.000" width="98.000" height="38.000" fill="#f6f6f6"><title>0.09%</title></rect>
+<text x="389" y="176" text-anchor="middle" font-size="13" style="fill:#172c3a">0.09%</text>
+<rect x="445.000" y="152.000" width="98.000" height="38.000" fill="#f6f6f6"><title>0.14%</title></rect>
+<text x="494" y="176" text-anchor="middle" font-size="13" style="fill:#172c3a">0.14%</text>
+<rect x="550.000" y="152.000" width="98.000" height="38.000" fill="#f5f5f6"><title>0.38%</title></rect>
+<text x="599" y="176" text-anchor="middle" font-size="13" style="fill:#172c3a">0.38%</text>
+<text x="26" y="221" font-size="12" text-anchor="start" font-weight="bold">paged16</text>
+<rect x="130.000" y="194.000" width="98.000" height="38.000" fill="#f3f4f5"><title>1.12%</title></rect>
+<text x="179" y="218" text-anchor="middle" font-size="13" style="fill:#172c3a">1.12%</text>
+<rect x="235.000" y="194.000" width="98.000" height="38.000" fill="#f5f6f6"><title>0.33%</title></rect>
+<text x="284" y="218" text-anchor="middle" font-size="13" style="fill:#172c3a">0.33%</text>
+<rect x="340.000" y="194.000" width="98.000" height="38.000" fill="#f6f6f6"><title>0.19%</title></rect>
+<text x="389" y="218" text-anchor="middle" font-size="13" style="fill:#172c3a">0.19%</text>
+<rect x="445.000" y="194.000" width="98.000" height="38.000" fill="#f5f6f6"><title>0.31%</title></rect>
+<text x="494" y="218" text-anchor="middle" font-size="13" style="fill:#172c3a">0.31%</text>
+<rect x="550.000" y="194.000" width="98.000" height="38.000" fill="#f4f5f5"><title>1.00%</title></rect>
+<text x="599" y="218" text-anchor="middle" font-size="13" style="fill:#172c3a">1.00%</text>
+<text x="26" y="263" font-size="12" text-anchor="start" font-weight="bold">paged32</text>
+<rect x="130.000" y="236.000" width="98.000" height="38.000" fill="#f1f3f4"><title>2.29%</title></rect>
+<text x="179" y="260" text-anchor="middle" font-size="13" style="fill:#172c3a">2.29%</text>
+<rect x="235.000" y="236.000" width="98.000" height="38.000" fill="#f4f5f5"><title>0.68%</title></rect>
+<text x="284" y="260" text-anchor="middle" font-size="13" style="fill:#172c3a">0.68%</text>
+<rect x="340.000" y="236.000" width="98.000" height="38.000" fill="#f5f5f6"><title>0.38%</title></rect>
+<text x="389" y="260" text-anchor="middle" font-size="13" style="fill:#172c3a">0.38%</text>
+<rect x="445.000" y="236.000" width="98.000" height="38.000" fill="#f5f5f5"><title>0.60%</title></rect>
+<text x="494" y="260" text-anchor="middle" font-size="13" style="fill:#172c3a">0.60%</text>
+<rect x="550.000" y="236.000" width="98.000" height="38.000" fill="#f0f2f3"><title>2.64%</title></rect>
+<text x="599" y="260" text-anchor="middle" font-size="13" style="fill:#172c3a">2.64%</text>
+<text x="130" y="82" font-size="12" text-anchor="start" font-weight="bold">Memory budget (token slots)</text>
+<text x="26" y="310" font-size="12" text-anchor="start" font-weight="normal">Unused allocated slot-ticks ÷ allocated slot-ticks. Protected headroom is separate.</text>
+<rect x="130.000" y="325.000" width="7.000" height="13.000" fill="#f6f6f6"><title></title></rect>
+<rect x="137.000" y="325.000" width="7.000" height="13.000" fill="#eaeff1"><title></title></rect>
+<rect x="144.000" y="325.000" width="7.000" height="13.000" fill="#dee8eb"><title></title></rect>
+<rect x="151.000" y="325.000" width="7.000" height="13.000" fill="#d2e1e6"><title></title></rect>
+<rect x="158.000" y="325.000" width="7.000" height="13.000" fill="#c6d9e0"><title></title></rect>
+<rect x="165.000" y="325.000" width="7.000" height="13.000" fill="#bad2db"><title></title></rect>
+<rect x="172.000" y="325.000" width="7.000" height="13.000" fill="#aecbd6"><title></title></rect>
+<rect x="179.000" y="325.000" width="7.000" height="13.000" fill="#a2c4d0"><title></title></rect>
+<rect x="186.000" y="325.000" width="7.000" height="13.000" fill="#96bdcb"><title></title></rect>
+<rect x="193.000" y="325.000" width="7.000" height="13.000" fill="#8ab6c5"><title></title></rect>
+<rect x="200.000" y="325.000" width="7.000" height="13.000" fill="#7eaec0"><title></title></rect>
+<rect x="207.000" y="325.000" width="7.000" height="13.000" fill="#73a7bb"><title></title></rect>
+<rect x="214.000" y="325.000" width="7.000" height="13.000" fill="#67a0b5"><title></title></rect>
+<rect x="221.000" y="325.000" width="7.000" height="13.000" fill="#5b99b0"><title></title></rect>
+<rect x="228.000" y="325.000" width="7.000" height="13.000" fill="#4f92aa"><title></title></rect>
+<rect x="235.000" y="325.000" width="7.000" height="13.000" fill="#438ba5"><title></title></rect>
+<rect x="242.000" y="325.000" width="7.000" height="13.000" fill="#3784a0"><title></title></rect>
+<rect x="249.000" y="325.000" width="7.000" height="13.000" fill="#2b7c9a"><title></title></rect>
+<rect x="256.000" y="325.000" width="7.000" height="13.000" fill="#1f7595"><title></title></rect>
+<rect x="263.000" y="325.000" width="7.000" height="13.000" fill="#136e8f"><title></title></rect>
+<rect x="270.000" y="325.000" width="7.000" height="13.000" fill="#07678a"><title></title></rect>
+<text x="130" y="354" font-size="12" text-anchor="start" font-weight="normal">0%</text>
+<text x="277" y="354" font-size="12" text-anchor="end" font-weight="normal">100%</text>
+</svg>

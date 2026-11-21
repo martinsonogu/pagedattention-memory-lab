@@ -1,0 +1,256 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1030" height="480" viewBox="0 0 1030 480" role="img">
+<title>Relative effects by compute scenario</title>
+<style>text{font-family:Arial,sans-serif;fill:#172c3a}</style>
+<rect x="0.000" y="0.000" width="1030.000" height="480.000" fill="#ffffff"><title></title></rect>
+<text x="20" y="30" font-size="23" text-anchor="start" font-weight="bold">Relative effects by compute scenario</text>
+<text x="20" y="53" font-size="13" text-anchor="start" font-weight="normal">Exploratory marginal means over the 24 observed workload definitions at each budget</text>
+<text x="312" y="84" font-size="12" text-anchor="middle" font-weight="normal">2048</text>
+<text x="408" y="84" font-size="12" text-anchor="middle" font-weight="normal">4096</text>
+<text x="504" y="84" font-size="12" text-anchor="middle" font-weight="normal">8192</text>
+<text x="600" y="84" font-size="12" text-anchor="middle" font-weight="normal">16384</text>
+<text x="696" y="84" font-size="12" text-anchor="middle" font-weight="normal">32768</text>
+<text x="780" y="84" font-size="12" text-anchor="start" font-weight="normal">Memory budget (token slots)</text>
+<text x="20" y="110" font-size="11" text-anchor="start" font-weight="normal">Unlimited · paged8 · Mean latency</text>
+<rect x="266.000" y="98.000" width="92.000" height="16.000" fill="#f6f6f6"><title>0%</title></rect>
+<text x="312" y="110" text-anchor="middle" font-size="11" style="fill:#172c3a">+0.00%</text>
+<rect x="362.000" y="98.000" width="92.000" height="16.000" fill="#f6f5f5"><title>3.31444429779%</title></rect>
+<text x="408" y="110" text-anchor="middle" font-size="11" style="fill:#172c3a">+3.31%</text>
+<rect x="458.000" y="98.000" width="92.000" height="16.000" fill="#f2edeb"><title>48.2157174502%</title></rect>
+<text x="504" y="110" text-anchor="middle" font-size="11" style="fill:#172c3a">+48.22%</text>
+<rect x="554.000" y="98.000" width="92.000" height="16.000" fill="#f1eae7"><title>63.7647709885%</title></rect>
+<text x="600" y="110" text-anchor="middle" font-size="11" style="fill:#172c3a">+63.76%</text>
+<rect x="650.000" y="98.000" width="92.000" height="16.000" fill="#eee2dd"><title>106.037862099%</title></rect>
+<text x="696" y="110" text-anchor="middle" font-size="11" style="fill:#172c3a">+106.04%</text>
+<text x="20" y="127" font-size="11" text-anchor="start" font-weight="normal">Unlimited · paged8 · P95 latency</text>
+<rect x="266.000" y="115.000" width="92.000" height="16.000" fill="#f6f6f6"><title>0%</title></rect>
+<text x="312" y="127" text-anchor="middle" font-size="11" style="fill:#172c3a">+0.00%</text>
+<rect x="362.000" y="115.000" width="92.000" height="16.000" fill="#f6f5f5"><title>3.17738972394%</title></rect>
+<text x="408" y="127" text-anchor="middle" font-size="11" style="fill:#172c3a">+3.18%</text>
+<rect x="458.000" y="115.000" width="92.000" height="16.000" fill="#f2edeb"><title>47.1779950826%</title></rect>
+<text x="504" y="127" text-anchor="middle" font-size="11" style="fill:#172c3a">+47.18%</text>
+<rect x="554.000" y="115.000" width="92.000" height="16.000" fill="#f1eae8"><title>60.5200086917%</title></rect>
+<text x="600" y="127" text-anchor="middle" font-size="11" style="fill:#172c3a">+60.52%</text>
+<rect x="650.000" y="115.000" width="92.000" height="16.000" fill="#efe4e0"><title>95.7437809689%</title></rect>
+<text x="696" y="127" text-anchor="middle" font-size="11" style="fill:#172c3a">+95.74%</text>
+<text x="20" y="144" font-size="11" text-anchor="start" font-weight="normal">Unlimited · paged8 · Makespan</text>
+<rect x="266.000" y="132.000" width="92.000" height="16.000" fill="#f6f6f6"><title>0%</title></rect>
+<text x="312" y="144" text-anchor="middle" font-size="11" style="fill:#172c3a">+0.00%</text>
+<rect x="362.000" y="132.000" width="92.000" height="16.000" fill="#f5f4f3"><title>10.8537884663%</title></rect>
+<text x="408" y="144" text-anchor="middle" font-size="11" style="fill:#172c3a">+10.85%</text>
+<rect x="458.000" y="132.000" width="92.000" height="16.000" fill="#f3eeec"><title>44.2084706651%</title></rect>
+<text x="504" y="144" text-anchor="middle" font-size="11" style="fill:#172c3a">+44.21%</text>
+<rect x="554.000" y="132.000" width="92.000" height="16.000" fill="#f1eae7"><title>63.0570868702%</title></rect>
+<text x="600" y="144" text-anchor="middle" font-size="11" style="fill:#172c3a">+63.06%</text>
+<rect x="650.000" y="132.000" width="92.000" height="16.000" fill="#f0e6e3"><title>81.2953151658%</title></rect>
+<text x="696" y="144" text-anchor="middle" font-size="11" style="fill:#172c3a">+81.30%</text>
+<text x="20" y="161" font-size="11" text-anchor="start" font-weight="normal">Unlimited · paged16 · Mean latency</text>
+<rect x="266.000" y="149.000" width="92.000" height="16.000" fill="#f6f6f6"><title>0%</title></rect>
+<text x="312" y="161" text-anchor="middle" font-size="11" style="fill:#172c3a">+0.00%</text>
+<rect x="362.000" y="149.000" width="92.000" height="16.000" fill="#f6f6f5"><title>2.32383129843%</title></rect>
+<text x="408" y="161" text-anchor="middle" font-size="11" style="fill:#172c3a">+2.32%</text>
+<rect x="458.000" y="149.000" width="92.000" height="16.000" fill="#f2edeb"><title>45.8942516254%</title></rect>
+<text x="504" y="161" text-anchor="middle" font-size="11" style="fill:#172c3a">+45.89%</text>
+<rect x="554.000" y="149.000" width="92.000" height="16.000" fill="#f2ecea"><title>52.9927015993%</title></rect>
+<text x="600" y="161" text-anchor="middle" font-size="11" style="fill:#172c3a">+52.99%</text>
+<rect x="650.000" y="149.000" width="92.000" height="16.000" fill="#f0e8e5"><title>74.7955613145%</title></rect>
+<text x="696" y="161" text-anchor="middle" font-size="11" style="fill:#172c3a">+74.80%</text>
+<text x="20" y="178" font-size="11" text-anchor="start" font-weight="normal">Unlimited · paged16 · P95 latency</text>
+<rect x="266.000" y="166.000" width="92.000" height="16.000" fill="#f6f6f6"><title>0%</title></rect>
+<text x="312" y="178" text-anchor="middle" font-size="11" style="fill:#172c3a">+0.00%</text>
+<rect x="362.000" y="166.000" width="92.000" height="16.000" fill="#f6f6f6"><title>2.02641721511%</title></rect>
+<text x="408" y="178" text-anchor="middle" font-size="11" style="fill:#172c3a">+2.03%</text>
+<rect x="458.000" y="166.000" width="92.000" height="16.000" fill="#f3eeec"><title>43.0485167513%</title></rect>
+<text x="504" y="178" text-anchor="middle" font-size="11" style="fill:#172c3a">+43.05%</text>
+<rect x="554.000" y="166.000" width="92.000" height="16.000" fill="#f2edeb"><title>47.1870815844%</title></rect>
+<text x="600" y="178" text-anchor="middle" font-size="11" style="fill:#172c3a">+47.19%</text>
+<rect x="650.000" y="166.000" width="92.000" height="16.000" fill="#f1eae7"><title>64.0490099388%</title></rect>
+<text x="696" y="178" text-anchor="middle" font-size="11" style="fill:#172c3a">+64.05%</text>
+<text x="20" y="195" font-size="11" text-anchor="start" font-weight="normal">Unlimited · paged16 · Makespan</text>
+<rect x="266.000" y="183.000" width="92.000" height="16.000" fill="#f6f6f6"><title>0%</title></rect>
+<text x="312" y="195" text-anchor="middle" font-size="11" style="fill:#172c3a">+0.00%</text>
+<rect x="362.000" y="183.000" width="92.000" height="16.000" fill="#f5f4f4"><title>9.82413118533%</title></rect>
+<text x="408" y="195" text-anchor="middle" font-size="11" style="fill:#172c3a">+9.82%</text>
+<rect x="458.000" y="183.000" width="92.000" height="16.000" fill="#f3eeec"><title>40.8437884987%</title></rect>
+<text x="504" y="195" text-anchor="middle" font-size="11" style="fill:#172c3a">+40.84%</text>
+<rect x="554.000" y="183.000" width="92.000" height="16.000" fill="#f2ecea"><title>51.7361950578%</title></rect>
+<text x="600" y="195" text-anchor="middle" font-size="11" style="fill:#172c3a">+51.74%</text>
+<rect x="650.000" y="183.000" width="92.000" height="16.000" fill="#f2ebe9"><title>56.660338086%</title></rect>
+<text x="696" y="195" text-anchor="middle" font-size="11" style="fill:#172c3a">+56.66%</text>
+<text x="20" y="212" font-size="11" text-anchor="start" font-weight="normal">Unlimited · paged32 · Mean latency</text>
+<rect x="266.000" y="200.000" width="92.000" height="16.000" fill="#f6f6f6"><title>0%</title></rect>
+<text x="312" y="212" text-anchor="middle" font-size="11" style="fill:#172c3a">+0.00%</text>
+<rect x="362.000" y="200.000" width="92.000" height="16.000" fill="#f6f6f6"><title>1.60273093808%</title></rect>
+<text x="408" y="212" text-anchor="middle" font-size="11" style="fill:#172c3a">+1.60%</text>
+<rect x="458.000" y="200.000" width="92.000" height="16.000" fill="#f3edec"><title>44.5976260369%</title></rect>
+<text x="504" y="212" text-anchor="middle" font-size="11" style="fill:#172c3a">+44.60%</text>
+<rect x="554.000" y="200.000" width="92.000" height="16.000" fill="#f3eeec"><title>43.2218957419%</title></rect>
+<text x="600" y="212" text-anchor="middle" font-size="11" style="fill:#172c3a">+43.22%</text>
+<rect x="650.000" y="200.000" width="92.000" height="16.000" fill="#f2edeb"><title>45.8593191523%</title></rect>
+<text x="696" y="212" text-anchor="middle" font-size="11" style="fill:#172c3a">+45.86%</text>
+<text x="20" y="229" font-size="11" text-anchor="start" font-weight="normal">Unlimited · paged32 · P95 latency</text>
+<rect x="266.000" y="217.000" width="92.000" height="16.000" fill="#f6f6f6"><title>0%</title></rect>
+<text x="312" y="229" text-anchor="middle" font-size="11" style="fill:#172c3a">+0.00%</text>
+<rect x="362.000" y="217.000" width="92.000" height="16.000" fill="#f6f6f6"><title>1.37859814339%</title></rect>
+<text x="408" y="229" text-anchor="middle" font-size="11" style="fill:#172c3a">+1.38%</text>
+<rect x="458.000" y="217.000" width="92.000" height="16.000" fill="#f3eeed"><title>40.3107087406%</title></rect>
+<text x="504" y="229" text-anchor="middle" font-size="11" style="fill:#172c3a">+40.31%</text>
+<rect x="554.000" y="217.000" width="92.000" height="16.000" fill="#f3f0ee"><title>32.8933359206%</title></rect>
+<text x="600" y="229" text-anchor="middle" font-size="11" style="fill:#172c3a">+32.89%</text>
+<rect x="650.000" y="217.000" width="92.000" height="16.000" fill="#f3efee"><title>35.2606321641%</title></rect>
+<text x="696" y="229" text-anchor="middle" font-size="11" style="fill:#172c3a">+35.26%</text>
+<text x="20" y="246" font-size="11" text-anchor="start" font-weight="normal">Unlimited · paged32 · Makespan</text>
+<rect x="266.000" y="234.000" width="92.000" height="16.000" fill="#f6f6f6"><title>0%</title></rect>
+<text x="312" y="246" text-anchor="middle" font-size="11" style="fill:#172c3a">+0.00%</text>
+<rect x="362.000" y="234.000" width="92.000" height="16.000" fill="#f5f4f4"><title>9.23438587387%</title></rect>
+<text x="408" y="246" text-anchor="middle" font-size="11" style="fill:#172c3a">+9.23%</text>
+<rect x="458.000" y="234.000" width="92.000" height="16.000" fill="#f3efed"><title>38.4542790829%</title></rect>
+<text x="504" y="246" text-anchor="middle" font-size="11" style="fill:#172c3a">+38.45%</text>
+<rect x="554.000" y="234.000" width="92.000" height="16.000" fill="#f3eeed"><title>39.6014840794%</title></rect>
+<text x="600" y="246" text-anchor="middle" font-size="11" style="fill:#172c3a">+39.60%</text>
+<rect x="650.000" y="234.000" width="92.000" height="16.000" fill="#f3efee"><title>34.1450947714%</title></rect>
+<text x="696" y="246" text-anchor="middle" font-size="11" style="fill:#172c3a">+34.15%</text>
+<text x="20" y="263" font-size="11" text-anchor="start" font-weight="normal">G8 · paged8 · Mean latency</text>
+<rect x="266.000" y="251.000" width="92.000" height="16.000" fill="#f6f6f6"><title>0%</title></rect>
+<text x="312" y="263" text-anchor="middle" font-size="11" style="fill:#172c3a">+0.00%</text>
+<rect x="362.000" y="251.000" width="92.000" height="16.000" fill="#f5f5f4"><title>6.72331374148%</title></rect>
+<text x="408" y="263" text-anchor="middle" font-size="11" style="fill:#172c3a">+6.72%</text>
+<rect x="458.000" y="251.000" width="92.000" height="16.000" fill="#f2ece9"><title>54.2569610514%</title></rect>
+<text x="504" y="263" text-anchor="middle" font-size="11" style="fill:#172c3a">+54.26%</text>
+<rect x="554.000" y="251.000" width="92.000" height="16.000" fill="#f4f2f1"><title>22.279876901%</title></rect>
+<text x="600" y="263" text-anchor="middle" font-size="11" style="fill:#172c3a">+22.28%</text>
+<rect x="650.000" y="251.000" width="92.000" height="16.000" fill="#f6f6f6"><title>1.14075685004%</title></rect>
+<text x="696" y="263" text-anchor="middle" font-size="11" style="fill:#172c3a">+1.14%</text>
+<text x="20" y="280" font-size="11" text-anchor="start" font-weight="normal">G8 · paged8 · P95 latency</text>
+<rect x="266.000" y="268.000" width="92.000" height="16.000" fill="#f6f6f6"><title>0%</title></rect>
+<text x="312" y="280" text-anchor="middle" font-size="11" style="fill:#172c3a">+0.00%</text>
+<rect x="362.000" y="268.000" width="92.000" height="16.000" fill="#f6f5f5"><title>5.55948813361%</title></rect>
+<text x="408" y="280" text-anchor="middle" font-size="11" style="fill:#172c3a">+5.56%</text>
+<rect x="458.000" y="268.000" width="92.000" height="16.000" fill="#f3eeed"><title>39.3543941568%</title></rect>
+<text x="504" y="280" text-anchor="middle" font-size="11" style="fill:#172c3a">+39.35%</text>
+<rect x="554.000" y="268.000" width="92.000" height="16.000" fill="#f5f3f2"><title>15.2180321341%</title></rect>
+<text x="600" y="280" text-anchor="middle" font-size="11" style="fill:#172c3a">+15.22%</text>
+<rect x="650.000" y="268.000" width="92.000" height="16.000" fill="#f6f6f6"><title>1.21084373325%</title></rect>
+<text x="696" y="280" text-anchor="middle" font-size="11" style="fill:#172c3a">+1.21%</text>
+<text x="20" y="297" font-size="11" text-anchor="start" font-weight="normal">G8 · paged8 · Makespan</text>
+<rect x="266.000" y="285.000" width="92.000" height="16.000" fill="#f6f6f6"><title>0%</title></rect>
+<text x="312" y="297" text-anchor="middle" font-size="11" style="fill:#172c3a">+0.00%</text>
+<rect x="362.000" y="285.000" width="92.000" height="16.000" fill="#f5f4f3"><title>12.7534421391%</title></rect>
+<text x="408" y="297" text-anchor="middle" font-size="11" style="fill:#172c3a">+12.75%</text>
+<rect x="458.000" y="285.000" width="92.000" height="16.000" fill="#f3efed"><title>37.1805417936%</title></rect>
+<text x="504" y="297" text-anchor="middle" font-size="11" style="fill:#172c3a">+37.18%</text>
+<rect x="554.000" y="285.000" width="92.000" height="16.000" fill="#f5f4f3"><title>12.2267360924%</title></rect>
+<text x="600" y="297" text-anchor="middle" font-size="11" style="fill:#172c3a">+12.23%</text>
+<rect x="650.000" y="285.000" width="92.000" height="16.000" fill="#f6f6f6"><title>0.580895698292%</title></rect>
+<text x="696" y="297" text-anchor="middle" font-size="11" style="fill:#172c3a">+0.58%</text>
+<text x="20" y="314" font-size="11" text-anchor="start" font-weight="normal">G8 · paged16 · Mean latency</text>
+<rect x="266.000" y="302.000" width="92.000" height="16.000" fill="#f6f6f6"><title>0%</title></rect>
+<text x="312" y="314" text-anchor="middle" font-size="11" style="fill:#172c3a">+0.00%</text>
+<rect x="362.000" y="302.000" width="92.000" height="16.000" fill="#f6f5f5"><title>4.92071303846%</title></rect>
+<text x="408" y="314" text-anchor="middle" font-size="11" style="fill:#172c3a">+4.92%</text>
+<rect x="458.000" y="302.000" width="92.000" height="16.000" fill="#f2ece9"><title>54.3188508675%</title></rect>
+<text x="504" y="314" text-anchor="middle" font-size="11" style="fill:#172c3a">+54.32%</text>
+<rect x="554.000" y="302.000" width="92.000" height="16.000" fill="#f4f1f0"><title>27.3919361692%</title></rect>
+<text x="600" y="314" text-anchor="middle" font-size="11" style="fill:#172c3a">+27.39%</text>
+<rect x="650.000" y="302.000" width="92.000" height="16.000" fill="#f6f6f6"><title>0.27031414528%</title></rect>
+<text x="696" y="314" text-anchor="middle" font-size="11" style="fill:#172c3a">+0.27%</text>
+<text x="20" y="331" font-size="11" text-anchor="start" font-weight="normal">G8 · paged16 · P95 latency</text>
+<rect x="266.000" y="319.000" width="92.000" height="16.000" fill="#f6f6f6"><title>0%</title></rect>
+<text x="312" y="331" text-anchor="middle" font-size="11" style="fill:#172c3a">+0.00%</text>
+<rect x="362.000" y="319.000" width="92.000" height="16.000" fill="#f6f5f5"><title>3.85775658438%</title></rect>
+<text x="408" y="331" text-anchor="middle" font-size="11" style="fill:#172c3a">+3.86%</text>
+<rect x="458.000" y="319.000" width="92.000" height="16.000" fill="#f3eeed"><title>40.0432657479%</title></rect>
+<text x="504" y="331" text-anchor="middle" font-size="11" style="fill:#172c3a">+40.04%</text>
+<rect x="554.000" y="319.000" width="92.000" height="16.000" fill="#f5f3f2"><title>17.4551479976%</title></rect>
+<text x="600" y="331" text-anchor="middle" font-size="11" style="fill:#172c3a">+17.46%</text>
+<rect x="650.000" y="319.000" width="92.000" height="16.000" fill="#f6f6f6"><title>0.231211522105%</title></rect>
+<text x="696" y="331" text-anchor="middle" font-size="11" style="fill:#172c3a">+0.23%</text>
+<text x="20" y="348" font-size="11" text-anchor="start" font-weight="normal">G8 · paged16 · Makespan</text>
+<rect x="266.000" y="336.000" width="92.000" height="16.000" fill="#f6f6f6"><title>0%</title></rect>
+<text x="312" y="348" text-anchor="middle" font-size="11" style="fill:#172c3a">+0.00%</text>
+<rect x="362.000" y="336.000" width="92.000" height="16.000" fill="#f5f4f3"><title>11.3142208645%</title></rect>
+<text x="408" y="348" text-anchor="middle" font-size="11" style="fill:#172c3a">+11.31%</text>
+<rect x="458.000" y="336.000" width="92.000" height="16.000" fill="#f3efed"><title>37.8832866641%</title></rect>
+<text x="504" y="348" text-anchor="middle" font-size="11" style="fill:#172c3a">+37.88%</text>
+<rect x="554.000" y="336.000" width="92.000" height="16.000" fill="#f5f3f2"><title>15.2207103905%</title></rect>
+<text x="600" y="348" text-anchor="middle" font-size="11" style="fill:#172c3a">+15.22%</text>
+<rect x="650.000" y="336.000" width="92.000" height="16.000" fill="#f6f6f6"><title>0.113341498118%</title></rect>
+<text x="696" y="348" text-anchor="middle" font-size="11" style="fill:#172c3a">+0.11%</text>
+<text x="20" y="365" font-size="11" text-anchor="start" font-weight="normal">G8 · paged32 · Mean latency</text>
+<rect x="266.000" y="353.000" width="92.000" height="16.000" fill="#f6f6f6"><title>0%</title></rect>
+<text x="312" y="365" text-anchor="middle" font-size="11" style="fill:#172c3a">+0.00%</text>
+<rect x="362.000" y="353.000" width="92.000" height="16.000" fill="#f6f5f5"><title>3.5332270122%</title></rect>
+<text x="408" y="365" text-anchor="middle" font-size="11" style="fill:#172c3a">+3.53%</text>
+<rect x="458.000" y="353.000" width="92.000" height="16.000" fill="#f2ebe9"><title>56.7609898429%</title></rect>
+<text x="504" y="365" text-anchor="middle" font-size="11" style="fill:#172c3a">+56.76%</text>
+<rect x="554.000" y="353.000" width="92.000" height="16.000" fill="#f3eeec"><title>44.206426318%</title></rect>
+<text x="600" y="365" text-anchor="middle" font-size="11" style="fill:#172c3a">+44.21%</text>
+<rect x="650.000" y="353.000" width="92.000" height="16.000" fill="#f6f6f6"><title>0.0278187625788%</title></rect>
+<text x="696" y="365" text-anchor="middle" font-size="11" style="fill:#172c3a">+0.03%</text>
+<text x="20" y="382" font-size="11" text-anchor="start" font-weight="normal">G8 · paged32 · P95 latency</text>
+<rect x="266.000" y="370.000" width="92.000" height="16.000" fill="#f6f6f6"><title>0%</title></rect>
+<text x="312" y="382" text-anchor="middle" font-size="11" style="fill:#172c3a">+0.00%</text>
+<rect x="362.000" y="370.000" width="92.000" height="16.000" fill="#f6f5f5"><title>2.87864877012%</title></rect>
+<text x="408" y="382" text-anchor="middle" font-size="11" style="fill:#172c3a">+2.88%</text>
+<rect x="458.000" y="370.000" width="92.000" height="16.000" fill="#f3eeec"><title>44.0131081235%</title></rect>
+<text x="504" y="382" text-anchor="middle" font-size="11" style="fill:#172c3a">+44.01%</text>
+<rect x="554.000" y="370.000" width="92.000" height="16.000" fill="#f4f1ef"><title>28.3502904321%</title></rect>
+<text x="600" y="382" text-anchor="middle" font-size="11" style="fill:#172c3a">+28.35%</text>
+<rect x="650.000" y="370.000" width="92.000" height="16.000" fill="#f6f6f6"><title>0.00191660011111%</title></rect>
+<text x="696" y="382" text-anchor="middle" font-size="11" style="fill:#172c3a">+0.00%</text>
+<text x="20" y="399" font-size="11" text-anchor="start" font-weight="normal">G8 · paged32 · Makespan</text>
+<rect x="266.000" y="387.000" width="92.000" height="16.000" fill="#f6f6f6"><title>0%</title></rect>
+<text x="312" y="399" text-anchor="middle" font-size="11" style="fill:#172c3a">+0.00%</text>
+<rect x="362.000" y="387.000" width="92.000" height="16.000" fill="#f5f4f4"><title>10.5005566467%</title></rect>
+<text x="408" y="399" text-anchor="middle" font-size="11" style="fill:#172c3a">+10.50%</text>
+<rect x="458.000" y="387.000" width="92.000" height="16.000" fill="#f3eeec"><title>41.0815710292%</title></rect>
+<text x="504" y="399" text-anchor="middle" font-size="11" style="fill:#172c3a">+41.08%</text>
+<rect x="554.000" y="387.000" width="92.000" height="16.000" fill="#f4f1f0"><title>25.0554643345%</title></rect>
+<text x="600" y="399" text-anchor="middle" font-size="11" style="fill:#172c3a">+25.06%</text>
+<rect x="650.000" y="387.000" width="92.000" height="16.000" fill="#f6f6f6"><title>0.00517784559501%</title></rect>
+<text x="696" y="399" text-anchor="middle" font-size="11" style="fill:#172c3a">+0.01%</text>
+<text x="20" y="430" font-size="12" text-anchor="start" font-weight="normal">Negative favors paged. Compute-scenario comparisons are descriptive.</text>
+<rect x="630.000" y="420.000" width="7.000" height="13.000" fill="#07678a"><title></title></rect>
+<rect x="637.000" y="420.000" width="7.000" height="13.000" fill="#136e8f"><title></title></rect>
+<rect x="644.000" y="420.000" width="7.000" height="13.000" fill="#1f7595"><title></title></rect>
+<rect x="651.000" y="420.000" width="7.000" height="13.000" fill="#2b7c9a"><title></title></rect>
+<rect x="658.000" y="420.000" width="7.000" height="13.000" fill="#3784a0"><title></title></rect>
+<rect x="665.000" y="420.000" width="7.000" height="13.000" fill="#438ba5"><title></title></rect>
+<rect x="672.000" y="420.000" width="7.000" height="13.000" fill="#4f92aa"><title></title></rect>
+<rect x="679.000" y="420.000" width="7.000" height="13.000" fill="#5b99b0"><title></title></rect>
+<rect x="686.000" y="420.000" width="7.000" height="13.000" fill="#67a0b5"><title></title></rect>
+<rect x="693.000" y="420.000" width="7.000" height="13.000" fill="#73a7bb"><title></title></rect>
+<rect x="700.000" y="420.000" width="7.000" height="13.000" fill="#7eaec0"><title></title></rect>
+<rect x="707.000" y="420.000" width="7.000" height="13.000" fill="#8ab6c5"><title></title></rect>
+<rect x="714.000" y="420.000" width="7.000" height="13.000" fill="#96bdcb"><title></title></rect>
+<rect x="721.000" y="420.000" width="7.000" height="13.000" fill="#a2c4d0"><title></title></rect>
+<rect x="728.000" y="420.000" width="7.000" height="13.000" fill="#aecbd6"><title></title></rect>
+<rect x="735.000" y="420.000" width="7.000" height="13.000" fill="#bad2db"><title></title></rect>
+<rect x="742.000" y="420.000" width="7.000" height="13.000" fill="#c6d9e0"><title></title></rect>
+<rect x="749.000" y="420.000" width="7.000" height="13.000" fill="#d2e1e6"><title></title></rect>
+<rect x="756.000" y="420.000" width="7.000" height="13.000" fill="#dee8eb"><title></title></rect>
+<rect x="763.000" y="420.000" width="7.000" height="13.000" fill="#eaeff1"><title></title></rect>
+<rect x="770.000" y="420.000" width="7.000" height="13.000" fill="#f6f6f6"><title></title></rect>
+<rect x="777.000" y="420.000" width="7.000" height="13.000" fill="#f2edeb"><title></title></rect>
+<rect x="784.000" y="420.000" width="7.000" height="13.000" fill="#efe4e0"><title></title></rect>
+<rect x="791.000" y="420.000" width="7.000" height="13.000" fill="#ebdbd5"><title></title></rect>
+<rect x="798.000" y="420.000" width="7.000" height="13.000" fill="#e7d2cb"><title></title></rect>
+<rect x="805.000" y="420.000" width="7.000" height="13.000" fill="#e4c9c0"><title></title></rect>
+<rect x="812.000" y="420.000" width="7.000" height="13.000" fill="#e0c0b5"><title></title></rect>
+<rect x="819.000" y="420.000" width="7.000" height="13.000" fill="#dcb7aa"><title></title></rect>
+<rect x="826.000" y="420.000" width="7.000" height="13.000" fill="#d9ae9f"><title></title></rect>
+<rect x="833.000" y="420.000" width="7.000" height="13.000" fill="#d5a594"><title></title></rect>
+<rect x="840.000" y="420.000" width="7.000" height="13.000" fill="#d29c8a"><title></title></rect>
+<rect x="847.000" y="420.000" width="7.000" height="13.000" fill="#ce947f"><title></title></rect>
+<rect x="854.000" y="420.000" width="7.000" height="13.000" fill="#ca8b74"><title></title></rect>
+<rect x="861.000" y="420.000" width="7.000" height="13.000" fill="#c78269"><title></title></rect>
+<rect x="868.000" y="420.000" width="7.000" height="13.000" fill="#c3795e"><title></title></rect>
+<rect x="875.000" y="420.000" width="7.000" height="13.000" fill="#bf7053"><title></title></rect>
+<rect x="882.000" y="420.000" width="7.000" height="13.000" fill="#bc6748"><title></title></rect>
+<rect x="889.000" y="420.000" width="7.000" height="13.000" fill="#b85e3e"><title></title></rect>
+<rect x="896.000" y="420.000" width="7.000" height="13.000" fill="#b45533"><title></title></rect>
+<rect x="903.000" y="420.000" width="7.000" height="13.000" fill="#b14c28"><title></title></rect>
+<rect x="910.000" y="420.000" width="7.000" height="13.000" fill="#ad431d"><title></title></rect>
+<text x="630" y="449" font-size="12" text-anchor="start" font-weight="normal">-933%</text>
+<text x="773" y="449" font-size="12" text-anchor="middle" font-weight="normal">0%</text>
+<text x="917" y="449" font-size="12" text-anchor="end" font-weight="normal">933%</text>
+</svg>

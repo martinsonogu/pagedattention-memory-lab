@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="410" viewBox="0 0 840 410" role="img">
+<title>Seed-level improvements, ties and regressions</title>
+<style>text{font-family:Arial,sans-serif;fill:#172c3a}</style>
+<rect x="0.000" y="0.000" width="840.000" height="410.000" fill="#ffffff"><title></title></rect>
+<text x="20" y="30" font-size="23" text-anchor="start" font-weight="bold">Seed-level improvements, ties and regressions</text>
+<text x="20" y="53" font-size="13" text-anchor="start" font-weight="normal">All 4,800 paired seed–grid observations per outcome and allocator</text>
+<text x="20" y="97" font-size="12" text-anchor="start" font-weight="normal">paged8 · Mean latency</text>
+<rect x="181.000" y="84.000" width="160.779" height="18.000" fill="#07678a"><title>1642</title></rect>
+<rect x="341.779" y="84.000" width="175.369" height="18.000" fill="#aeb6be"><title>1791</title></rect>
+<rect x="517.148" y="84.000" width="133.852" height="18.000" fill="#ad431d"><title>1367</title></rect>
+<text x="670" y="97" font-size="12" text-anchor="start" font-weight="normal">1642 / 1791 / 1367</text>
+<text x="20" y="127" font-size="12" text-anchor="start" font-weight="normal">paged8 · P95 latency</text>
+<rect x="181.000" y="114.000" width="147.952" height="18.000" fill="#07678a"><title>1511</title></rect>
+<rect x="328.952" y="114.000" width="190.350" height="18.000" fill="#aeb6be"><title>1944</title></rect>
+<rect x="519.302" y="114.000" width="131.698" height="18.000" fill="#ad431d"><title>1345</title></rect>
+<text x="670" y="127" font-size="12" text-anchor="start" font-weight="normal">1511 / 1944 / 1345</text>
+<text x="20" y="157" font-size="12" text-anchor="start" font-weight="normal">paged8 · Makespan</text>
+<rect x="181.000" y="144.000" width="132.383" height="18.000" fill="#07678a"><title>1352</title></rect>
+<rect x="313.383" y="144.000" width="207.975" height="18.000" fill="#aeb6be"><title>2124</title></rect>
+<rect x="521.358" y="144.000" width="129.642" height="18.000" fill="#ad431d"><title>1324</title></rect>
+<text x="670" y="157" font-size="12" text-anchor="start" font-weight="normal">1352 / 2124 / 1324</text>
+<text x="20" y="187" font-size="12" text-anchor="start" font-weight="normal">paged16 · Mean latency</text>
+<rect x="181.000" y="174.000" width="164.500" height="18.000" fill="#07678a"><title>1680</title></rect>
+<rect x="345.500" y="174.000" width="173.900" height="18.000" fill="#aeb6be"><title>1776</title></rect>
+<rect x="519.400" y="174.000" width="131.600" height="18.000" fill="#ad431d"><title>1344</title></rect>
+<text x="670" y="187" font-size="12" text-anchor="start" font-weight="normal">1680 / 1776 / 1344</text>
+<text x="20" y="217" font-size="12" text-anchor="start" font-weight="normal">paged16 · P95 latency</text>
+<rect x="181.000" y="204.000" width="153.925" height="18.000" fill="#07678a"><title>1572</title></rect>
+<rect x="334.925" y="204.000" width="190.644" height="18.000" fill="#aeb6be"><title>1947</title></rect>
+<rect x="525.569" y="204.000" width="125.431" height="18.000" fill="#ad431d"><title>1281</title></rect>
+<text x="670" y="217" font-size="12" text-anchor="start" font-weight="normal">1572 / 1947 / 1281</text>
+<text x="20" y="247" font-size="12" text-anchor="start" font-weight="normal">paged16 · Makespan</text>
+<rect x="181.000" y="234.000" width="136.692" height="18.000" fill="#07678a"><title>1396</title></rect>
+<rect x="317.692" y="234.000" width="208.856" height="18.000" fill="#aeb6be"><title>2133</title></rect>
+<rect x="526.548" y="234.000" width="124.452" height="18.000" fill="#ad431d"><title>1271</title></rect>
+<text x="670" y="247" font-size="12" text-anchor="start" font-weight="normal">1396 / 2133 / 1271</text>
+<text x="20" y="277" font-size="12" text-anchor="start" font-weight="normal">paged32 · Mean latency</text>
+<rect x="181.000" y="264.000" width="163.619" height="18.000" fill="#07678a"><title>1671</title></rect>
+<rect x="344.619" y="264.000" width="173.215" height="18.000" fill="#aeb6be"><title>1769</title></rect>
+<rect x="517.833" y="264.000" width="133.167" height="18.000" fill="#ad431d"><title>1360</title></rect>
+<text x="670" y="277" font-size="12" text-anchor="start" font-weight="normal">1671 / 1769 / 1360</text>
+<text x="20" y="307" font-size="12" text-anchor="start" font-weight="normal">paged32 · P95 latency</text>
+<rect x="181.000" y="294.000" width="158.527" height="18.000" fill="#07678a"><title>1619</title></rect>
+<rect x="339.527" y="294.000" width="191.427" height="18.000" fill="#aeb6be"><title>1955</title></rect>
+<rect x="530.954" y="294.000" width="120.046" height="18.000" fill="#ad431d"><title>1226</title></rect>
+<text x="670" y="307" font-size="12" text-anchor="start" font-weight="normal">1619 / 1955 / 1226</text>
+<text x="20" y="337" font-size="12" text-anchor="start" font-weight="normal">paged32 · Makespan</text>
+<rect x="181.000" y="324.000" width="140.902" height="18.000" fill="#07678a"><title>1439</title></rect>
+<rect x="321.902" y="324.000" width="210.129" height="18.000" fill="#aeb6be"><title>2146</title></rect>
+<rect x="532.031" y="324.000" width="118.969" height="18.000" fill="#ad431d"><title>1215</title></rect>
+<text x="670" y="337" font-size="12" text-anchor="start" font-weight="normal">1439 / 2146 / 1215</text>
+<rect x="181.000" y="365.000" width="15.000" height="15.000" fill="#07678a"><title></title></rect>
+<text x="202" y="377" font-size="12" text-anchor="start" font-weight="normal">Improvement</text>
+<rect x="326.000" y="365.000" width="15.000" height="15.000" fill="#aeb6be"><title></title></rect>
+<text x="347" y="377" font-size="12" text-anchor="start" font-weight="normal">Tie</text>
+<rect x="471.000" y="365.000" width="15.000" height="15.000" fill="#ad431d"><title></title></rect>
+<text x="492" y="377" font-size="12" text-anchor="start" font-weight="normal">Regression</text>
+</svg>

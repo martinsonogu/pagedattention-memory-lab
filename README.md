@@ -1,4 +1,39 @@
-# Phase 1: KV-cache allocation mechanism experiment
+# KV-cache allocation and scheduling simulation
+
+This study asks whether allocating key–value cache memory in blocks improves latency and makespan under FIFO admission with oldest-request memory protection. It uses a deterministic CPU simulator with abstract token slots. The results measure simulator ticks and do not benchmark GPU inference or vLLM.
+
+## Phase 3 findings
+
+The frozen primary study contains 19,200 conditions across 20 matched seeds and 2,160 planned contrasts. Across the equally weighted design grid, paged allocation reduced unused allocation while increasing mean latency, p95 latency, and makespan on average.
+
+| Allocator | Mean latency | P95 latency | Makespan |
+|---|---:|---:|---:|
+| paged8 | +30.57% | +26.80% | +26.22% |
+| paged16 | +26.29% | +21.79% | +22.36% |
+| paged32 | +23.98% | +18.51% | +19.81% |
+
+These are mean paired changes versus fixed reservation. Individual cells showed improvements, regressions, and ties. In a separate 80-condition exploratory ample-memory control, request timings agreed exactly across allocators while unused allocation differed.
+
+- [Manuscript](paper/MANUSCRIPT.md) and [figure and table index](paper/FIGURE_TABLE_INDEX.md)
+- [Statistical results and uncertainty intervals](PHASE3_3E5_PRIMARY_STATISTICAL_RESULTS.md)
+- [Complete contrast table](phase3/analysis/3e5/primary_contrasts.csv) and [exact seed pairs](phase3/analysis/3e5/seed_pairs.csv)
+- [Analysis program](phase3_primary_analysis.py) and [analysis metadata](phase3/analysis/3e5/metadata.json)
+
+## Reproducing the saved-record analysis
+
+The complete raw records and manifests are not publicly archived. A separate data archive is planned and has no DOI. A fresh clone contains the source, results, and figures. The raw-record analysis additionally requires the verified archive extracted at the repository root so the manifests and records land at their original relative paths. Four historical references in the analysis-readiness report point to repository-local materials outside this source release.
+
+With the archive available and verified, use Python 3.12.3 and NumPy 1.26.4, installed in a virtual environment from an approved package source. Run the read-only analysis from the checkout root.
+
+```sh
+OPENBLAS_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 python -B phase3_primary_analysis.py --output "$(mktemp -d)"
+```
+
+The scientific baseline is `df794b67e72740bffb6272248b9d609c8decfaea`. The GitHub source-and-results identity is the commit containing this README update. In a checkout of that commit, use `git rev-parse HEAD` to obtain its SHA. The two identities serve different purposes. [Artifact release plan](paper/ARTIFACT_RELEASE_PLAN.md) · [Candidate verification](paper/RELEASE_CANDIDATE_VERIFICATION.md)
+
+## Earlier experiments
+
+### Phase 1 KV-cache allocation mechanism experiment
 
 Source paper: Kwon et al., *Efficient Memory Management for Large Language Model Serving with PagedAttention* (SOSP 2023), https://arxiv.org/abs/2309.06180
 
